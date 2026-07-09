@@ -1,0 +1,14 @@
+{
+  "name": "graphite",
+  "color": "918888FF",
+  "cost": 0.2,
+  "hardness": 3,
+  "flammability": 0,
+  "explosiveness": 0,
+  "charge": 0,
+  "radioactivity": 0,
+  "research": {
+    "parent": red-coal
+  }
+hiddenOnPlanets: [serpulo, erekir]
+}

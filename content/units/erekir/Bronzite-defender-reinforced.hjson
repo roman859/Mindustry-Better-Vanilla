@@ -1,0 +1,215 @@
+template: ErekirUnitType
+type: legs
+name: Bronzite-defender-reinforced
+canBoost: true
+boostMultiplier: 2
+health: 2650
+armor: 8
+hovering: true
+speed: 0.50
+singleTarget: true
+hitSize: 19
+shadowElevation: 0.28
+allowLegStep: true
+groundLayer: 74
+rotateSpeed: 1.2
+drownTimeMultiplier: 9
+rippleScale: 1
+legStraightness: 0.6
+legSpeed: 0.50
+legCount: 8
+allowLegStep: true
+legLength: 10
+lockLegBase: true
+legContinuousMove: true
+groundLayer: 72
+legExtension: -4
+legBaseOffset: 5
+legMaxLength: 1.5
+legLengthScl: 0.96
+legMinLength: 0.2
+legForwardScl: 1.1
+legGroupSize: 3
+rippleScale: 0.2
+legMoveSpace: 1
+allowLegStep: true
+legPhysicsLayer: false
+research: mech-assembler-T2
+"weapons": [
+  {
+      name: Bronzite-defender-artillery,
+      top: true,
+      mirror: true,
+      alternate: true,
+      y: 1,
+      x: 4,
+      shoot: {
+        shotDelay: 5,
+        shots: 3
+      },
+      rotate: false,
+      inaccuracy: 5,
+      shootY: 10,
+      reload: 45,
+      recoil: 1,
+      shake: 0.5,
+      ejectEffect: casing2,
+      shootSound: shootBig,
+      bullet: {
+        type: BasicBulletType,
+        hitEffect: flakExplosion,
+        shootEffect: shootBig2,
+        despawnEffect: flakExplosion,
+        pierce: true,
+        pierceCap: 1,
+        knockback: 1.8,
+        statusDuration: 80,
+        status: blasted,
+        lifetime: 100,
+        damage: 25,
+        speed: 4,
+        width: 6,
+        height: 14,
+        splashDamage: 20,
+        splashDamageRadius: 20
+      }
+    },
+    {
+name: Bronzite-defender-reinforced-weapon 
+x: -5 
+y: -3
+mirror: true 
+reload: 80 
+recoil: 1.3 
+shootSound: lasershoot
+ 
+shoot: {
+type: ShootSpread
+spread: 3
+shots: 3
+shotDelay: 3 
+}
+bullet: {
+type: BasicBulletType 
+homingPower: 3
+weaveMag: 5 
+weaveScale: 3 
+status: freezing 
+statusDuration: 120 
+width: 10 
+height: 10 
+speed: 6
+lifetime: 100
+damage: 30 
+backColor: BF92F9FF 
+frontColor: BF92F9FF 
+trailColor: BF92F9FF 
+trailLength: 5 
+trailWidth: 2.5 
+ 
+despawnEffect: {
+type: WaveEffect 
+colorFrom: BF92F9FF 
+colorTo: BF92F9FF 
+sizeFrom: 0 
+sizeTo: 11 
+lightScl: 3 
+lightOpacity: 0 
+rotation: 45
+strokeFrom: 5 
+strokeTo: 0 
+sides: 3 
+}
+ 
+hitEffect: {
+type: WaveEffect 
+colorFrom: BF92F9FF 
+colorTo: BF92F9FF 
+sizeFrom: 0 
+sizeTo: 11 
+lightScl: 3 
+lightOpacity: 0 
+rotation: 0 
+strokeFrom: 5 
+strokeTo: 0 
+sides: 3 
+}
+}
+}
+{
+
+display: false 
+shootStatus: slow 
+x: 0 
+y: 8 
+reload: 200 
+recoil: 0 
+shootSound: missle
+ 
+bullet: {
+type: BasicBulletType
+width: 15 
+height: 15 
+speed: 6
+collidesGround: true 
+status: blasted 
+statusDuration: 180 
+lifetime: 100
+damage: 20 
+backColor: BF92F9FF 
+frontColor: BF92F9FF 
+trailColor: BF92F9FF 
+trailLength: 5 
+trailWidth: 5 
+splashDamage: 20 
+splashDamageRadius: 24 
+
+hitEffect: {
+type: MultiEffect 
+effects: [
+{
+type: WaveEffect 
+colorFrom: BF92F9FF 
+colorTo: BF92F9FF 
+sizeFrom: 0 
+sizeTo: 26
+lightScl: 4 
+lightOpacity: 1
+rotation: 0 
+strokeFrom: 5 
+strokeTo: 0 
+sides: 6 
+}
+{
+type: ParticleEffect 
+colorFrom: BF92F9FF 
+colorTo: BF92F9FF
+particles: 8
+cone: 360
+length: 20 
+baseLength: 1
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 8
+sizeTo: 0 
+offset: 1
+}
+]
+}
+}
+}
+ ]
+"abilities": [
+  {
+      type: mindustry.entities.abilities.RegenAbility,
+      amount: 0.6
+    },
+    {
+      type: mindustry.entities.abilities.ForceFieldAbility
+      radius: 80
+      regen: 3
+      max: 1550
+      cooldown: 180
+    }
+   ]

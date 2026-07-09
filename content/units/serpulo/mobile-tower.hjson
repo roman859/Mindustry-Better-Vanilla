@@ -1,0 +1,139 @@
+"type": "naval",
+  "name": "mobile tower",
+  "health": 500,
+  "armor": 5,
+  "speed": 0,
+  "drag": 0.14,
+  "hitSize": 22,
+  "accel": 0.5,
+  "rotateSpeed": 0,
+  "trailLength": 16,
+  "waveTrailX": 4,
+  "trailScl": 1.2,
+  "faceTarget": false,
+"weapons": [
+{
+      "name": "mobile-tower-turret"
+      "shootCone": 15,
+      "shootY": 3,
+      "mirror": false,
+      "rotateSpeed": 3,
+      "inaccuracy": 8,
+      "rotate": true,
+      "x": 0,
+      "y": 0,
+      "reload": 85,
+      "recoil": 3,
+      "ejectEffect": "casing2",
+      "shootSound": "bang",
+      "shoot": {
+        "type": "shootPattern",
+        "shots": 8,
+        "shotDelay": 2
+      },
+      "shake": 1,
+      "bullet": {
+        "keepVelocity": false,
+        "type": "MissileBulletType",
+        "shootEffect": "blastExplosion",
+        "hitEffect": {
+          "type": "multiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 30,
+              "length": 60,
+              "lifetime": 46,
+              "cone": 360,
+              "colorFrom": "BF92F9FF",
+              "colorTo": "665C9FFF",
+              "sizeFrom": 5,
+              "sizeTo": 0
+            },
+            {
+              "type": "WaveEffect",
+              "lifetime": 25,
+              "sizeFrom": 0,
+              "sizeTo": 50,
+              "strokeFrom": 6,
+              "strokeTo": 0,
+              "colorFrom": "BF92F9FF",
+              "colorTo": "665C9FFF"
+            }
+          ]
+        },
+        "despawnEffect": {
+          "type": "multiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 30,
+              "length": 60,
+              "lifetime": 46,
+              "cone": 360,
+              "colorFrom": "BF92F9FF",
+              "colorTo": "665C9FFF",
+              "sizeFrom": 5,
+              "sizeTo": 0
+            },
+            {
+              "type": "WaveEffect",
+              "lifetime": 25,
+              "sizeFrom": 0,
+              "sizeTo": 50,
+              "strokeFrom": 6,
+              "strokeTo": 0,
+              "colorFrom": "BF92F9FF",
+              "colorTo": "665C9FFF"
+            }
+          ]
+        },
+        "damage": 120,
+        "speed": 5,
+        "lifetime": 40,
+        "homingPower": 1.5,
+        "homingRange": 100,
+        "weaveScale": 0,
+        "weaveMag": 0,
+        "height": 20,
+        "knockback": 3,
+        "width": 8,
+        "splashDamageRadius": 25,
+        "splashDamage": 100
+      }
+    },
+]
+"abilities": [
+    {
+      "type": "EnergyFieldAbility",
+      "statusDuration": 100,
+      "status": "electrified",
+      "color": "98ffa9ff",
+      "maxTargets": 50,
+      "damage": 85,
+      "healPercent": 2,
+      "range": 175,
+      "sectors": 5,
+      "rotateSpeed": 3,
+      "hitBuildings": true,
+      "sectorRad": 0.14,
+      "effectRadius": 0,
+      "reload": 70
+    }
+    {
+      "type": "mindustry.entities.abilities.ForceFieldAbility",
+      "radius": 25, 
+      "regen": 1.2,
+      "max": 550,
+      "cooldown": 400
+    }
+    {
+      "type": "StatusFieldAbility",
+      "activeEffect": "none",
+      "effect": "bettervanilla-system-overload",
+      "range": 1,
+      "reload": 3600,
+      "duration": 3600
+    },
+   ]
+"research": "Architect"

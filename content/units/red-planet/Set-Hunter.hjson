@@ -1,0 +1,69 @@
+name: Set-Hunter
+"singleTarget": true,
+  "lowAltitude": true,
+  "type": "mech",
+  fogRadius: 25
+  "lightRadius": 25,
+  "canDrown": false,
+  "fallSpeed": 0.006,
+  "rotateSpeed": 1.82,
+  "crashDamageMultiplier": 10,
+  "speed": 0.45,
+  "accel": 0.4,
+  "drag": 0.4,
+  "aimDst": 15,
+  "faceTarget": true,
+  "flying": false,
+  "health": 1150,
+  "hitSize": 20,
+  "armor": 4,
+  "mechFrontSway": 1,
+  "mechSideSway": 0.85,
+  "mechStepParticles": true,
+  "mechStepShake": 1,
+  "singleTarget": true,
+  "targetAir": true,
+  outlineColor: 282727FF
+"weapons": [
+   {
+    name: Set-Hunter-turret
+      top: true,
+      mirror: true,
+      alternate: true,
+      y: 1,
+      x: 13,
+      layerOffset: 0.01,
+      shoot: {
+        shotDelay: 10,
+        shots: 3
+      },
+      rotate: false
+      inaccuracy: 5,
+      shootY: 4,
+      reload: 120,
+      cooldownTime: 100
+      recoil: 1,
+      shake: 0.5,
+      ejectEffect: casing2,
+      shootSound: shootBig,
+      bullet: {
+        type: BasicBulletType,
+        hitEffect: flakExplosion,
+        shootEffect: shootBig2,
+        despawnEffect: flakExplosion,
+        pierce: true,
+        pierceCap: 1,
+        knockback: 1.8,
+        statusDuration: 80,
+        status: blasted,
+        lifetime: 90,
+        damage: 50,
+        speed: 4.15,
+        width: 14,
+        height: 14,
+        splashDamage: 20,
+        splashDamageRadius: 20
+      }
+    },
+  ],
+research: Photon

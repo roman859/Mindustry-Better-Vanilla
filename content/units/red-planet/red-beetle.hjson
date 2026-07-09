@@ -1,0 +1,90 @@
+type: legs
+name: red-beetle
+health: 650
+armor: 2
+hovering: true
+speed: 0.50
+singleTarget: true
+hitSize: 12
+shadowElevation: 0.28
+allowLegStep: true
+groundLayer: 74
+rotateSpeed: 1.15
+drownTimeMultiplier: 9
+rippleScale: 1
+legStraightness: 0.6
+legSpeed: 0.50
+legCount: 6
+allowLegStep: true
+legLength: 10
+lockLegBase: true
+legContinuousMove: true
+groundLayer: 72
+legExtension: -3
+legBaseOffset: 5
+legMaxLength: 1.5
+legLengthScl: 0.96
+legMinLength: 0.2
+legForwardScl: 1.1
+legGroupSize: 3
+rippleScale: 0.2
+legMoveSpace: 1
+allowLegStep: true
+legPhysicsLayer: false
+outlineColor: 282727FF
+research: incubator
+weapons: [
+  {
+    name: red-beetle-weapon
+    x: 2
+    y: 2
+    mirror: true
+    rotate: false
+    reload: 76
+    recoil: 2
+    inaccuracy: 0
+    shootSound: splash
+    bullet: {
+      type: LiquidBulletType
+      liquid: bettervanilla-Ichor
+      orbSize: 2
+      damage: 75
+      pierce: true
+      pierceCap: 2
+      knockback: 1
+      speed: 12
+      lifetime: 15
+      puddleSize: 96
+      despawnHit: true
+      despawnSound: splash
+      layer: 99
+      trailColor: C62A2AFF
+      trailInterval: 5
+      trailRotation: true
+      trailLength: 24
+      trailWidth: 1
+      trailEffect: {
+        type: ParticleEffect
+        followParent: true
+        rotWithParent: true
+        useRotation: true
+        randLength: false
+        lifetime: 45
+        particles: 1
+        length: 0
+        colorFrom: C62A2AFF
+        colorTo: C62A2AFF
+        sizeFrom: 0
+        sizeTo: 12
+        region: bettervanilla-sound-wave
+        interp: pow2Out
+      }
+    }
+  }
+]
+abilities: [
+  {
+      type: mindustry.entities.abilities.RegenAbility,
+      amount: 0.8
+    },
+   ]

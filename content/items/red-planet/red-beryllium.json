@@ -1,0 +1,15 @@
+{
+  "name": "red-beryllium",
+  "color": "DA7406FF",
+  "cost": 0.5,
+  "hardness": 2,
+  "explosiveness": 1,
+  "flammability": 0,
+  "explosiveness": 0,
+  "charge": 0.2,
+  "radioactivity": 0.05,
+  "research": {
+    "parent": basalt
+  }
+hiddenOnPlanets: [serpulo, erekir]
+}

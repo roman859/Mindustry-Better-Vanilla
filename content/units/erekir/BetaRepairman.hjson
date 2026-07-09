@@ -1,0 +1,63 @@
+ {
+  name: Beta-Repairman,
+  template: ErekirUnitType,
+  singleTarget: true,
+  drawShields: false,
+  research: support-ship-assembler,
+  buildSpeed: 4,
+  lightRadius: 20,
+  fallSpeed: 0.006,
+  rotateSpeed: 0.8,
+  crashDamageMultiplier: 3,
+  speed: 1.15,
+  accel: 0.4,
+  drag: 0.4,
+  fogRadius: 20,
+  faceTarget: true,
+  flying: true,
+  health: 1500,
+  hitSize: 24,
+  armor: 4,
+  engineOffset: 12,
+  targetFlags: [
+    reactor
+  ],
+  engineSize: 2.5,
+  engineColor: 00FF1EFF,
+  lowAltitude: true,
+  targetAir: true,
+  canHeal: true,
+  lowAltitude: true,
+  weapons: [
+      {
+      "name": "Alpha-Repairman-heal-laser-mount",
+      "x": 0,
+      "y": 0,
+      "mirror": false,
+      "reload": 240,
+      "rotate": true,
+      "continuous": true,
+      "shootSound": "laserblast",
+      "bullet": {
+        "type": "ContinuousLaserBulletType",
+        "length": 450,
+        "width": 4,
+        "damage": 40,
+        "lifetime": 130,
+        "collidesTeam": true,
+        "healPercent": 60,
+        "damageInterval": 10,
+        "colors": ["84f491", "ffffff", "62ae7f"],
+        "fadeTime": 60,
+        "status": "sapped",
+        "statusDuration": 30,
+      }
+    }
+  ],
+   "abilities": [
+  {
+      type: mindustry.entities.abilities.RegenAbility,
+      amount: 2
+    },
+   ]
+ }

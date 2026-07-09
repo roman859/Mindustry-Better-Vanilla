@@ -1,0 +1,67 @@
+flying: true
+name: Sirocco
+description: Fires homing crystalline missiles from side launchers.
+drag: 0.05
+speed: 1.7
+rotateSpeed: 3.5
+accel: 0.11
+itemCapacity: 25
+health: 455
+armor: 2
+engineOffset: 8
+engineSize: 3
+hitSize: 14
+outlineColor: 282727FF
+research: Dune-Mosquito
+weapons: [{
+name: Sirocco-turret
+reload: 200
+recoil: 0
+x: 0
+y: 0
+mirror: false
+rotate: false
+chargeTime: 140
+cooldownTime: 240
+shoot: {
+type: ShootSpread
+shots: 4
+shotDelay: 15
+spread: 8
+firstShotDelay: 140
+}
+ "parts": [
+ {
+      suffix: -side1
+      mirror: true
+      outlineColor: 282727FF,
+      outlineRadius: 3,
+      progress: warmup
+      smoothAbility: 0.1
+      interp: pow5Out
+      moveRot: 0
+      moveY: -0.5
+      moveX: -0.2
+      y: 0
+      x: 0
+    }
+    {
+      suffix: -side2
+      mirror: true
+      outlineColor: 282727FF,
+      outlineRadius: 3,
+      progress: warmup
+      smoothAbility: 0.1
+      interp: pow5Out
+      moveRot: 0
+      moveY: 4
+      x: 0
+      y: 0
+    }
+]
+inaccuracy: 1
+ejectEffect: casing1
+bullet: {
+      spawnUnit: bettervanilla-mini-rocket
+     },
+}]

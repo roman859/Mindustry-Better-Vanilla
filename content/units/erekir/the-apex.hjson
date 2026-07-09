@@ -1,0 +1,102 @@
+name: the-apex
+template: ErekirUnitType
+"singleTarget": true,
+  "lowAltitude": true,
+  "type": "mech",
+  fogRadius: 40
+  "lightRadius": 16,
+  "canDrown": false,
+  "fallSpeed": 0.006,
+  "rotateSpeed": 2.85,
+  "crashDamageMultiplier": 10,
+  "speed": 2.60,
+  "accel": 0.4,
+  "drag": 0.4,
+  "aimDst": 15,
+  "faceTarget": true,
+  "flying": false,
+  "health": 1555,
+  "hitSize": 28,
+  "armor": 6,
+  "mechFrontSway": 1,
+  "mechSideSway": 0.85,
+  "mechStepParticles": true,
+  "mechStepShake": 1,
+  "singleTarget": true,
+  "targetAir": true,
+"weapons": [
+   {
+    name: the-apex-turret
+   layerOffset: -0.01,
+   shootCone: 15,
+      shootY: 1,
+      mirror: true,
+      alternate: true,
+      rotate: false,
+      top: false
+      y: 0,
+      x: 10.4,
+reload: 85
+recoil: 1.3 
+shootSound: lasershoot
+shoot: {
+type: ShootSpread
+spread: 3
+shots: 6
+shotDelay: 3 
+}
+bullet: {
+type: BasicBulletType 
+homingPower: 3
+weaveMag: 5 
+weaveScale: 3 
+status: freezing 
+statusDuration: 320 
+width: 10 
+height: 10 
+speed: 6
+lifetime: 58
+damage: 155
+backColor: 9AFFFAFF 
+frontColor: 9AFFFAFF 
+trailColor: 9AFFFAFF 
+trailLength: 5 
+trailWidth: 2.5 
+ 
+despawnEffect: {
+type: WaveEffect 
+colorFrom: 9AFFFAFF 
+colorTo: 9AFFFAFF 
+sizeFrom: 0 
+sizeTo: 11 
+lightScl: 3 
+lightOpacity: 0 
+rotation: 45
+strokeFrom: 5 
+strokeTo: 0 
+sides: 3 
+}
+ 
+hitEffect: {
+type: WaveEffect 
+colorFrom: 9AFFFAFF 
+colorTo: 9AFFFAFF 
+sizeFrom: 0 
+sizeTo: 11 
+lightScl: 3 
+lightOpacity: 0 
+rotation: 0 
+strokeFrom: 5 
+strokeTo: 0 
+sides: 3 
+}
+}
+}
+  ],
+abilities: [
+  {
+      type: mindustry.entities.abilities.RegenAbility,
+      amount: 0.55
+    }
+   ]
+research: The-Impulse

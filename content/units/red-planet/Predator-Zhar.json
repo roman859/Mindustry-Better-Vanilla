@@ -1,0 +1,86 @@
+{
+  "type": "tank",
+  "name": "Predator Zhar",
+  "health": 1550,
+  "armor": 4,
+  "lightRadius": 60,
+  "squareShape": true,
+  "treadPullOffset": 17,
+  "hitSize": 18,
+  "singleTarget": true,
+  "omniMovement": false,
+  "speed": 1.05,
+  "rotateSpeed": 6,
+  "crushDamage": 0.06,
+  "faceTarget": false,
+  "flying": false,
+  "targetAir": true,
+  outlineColor: 282727FF
+  "weapons": [
+   {
+    name: Predator-Zhar-turret,
+     "x": 0,
+      "y": 0,
+      "shootSound": "bolt",
+      "mirror": false,
+      "alternate": true,
+      "reload": 45,
+      cooldownTime: 45
+      "rotate": true,
+      "inaccuracy": 7,
+      "rotateSpeed": 2.85
+    bullet: {
+        type: SapBulletType
+        sapStrength: 1.25
+        length: 125
+        width: 0.75
+        lifetime: 25
+        damage: 55
+        hitColor: FFA566FF 
+        color: FFA566FF
+
+shootEffect: {
+type: ParticleEffect 
+colorFrom: FFA566FF
+colorTo: FFA566FF
+particles: 5
+cone: 4
+length: 12
+baseLength: 5
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 1.5
+sizeTo: 0 
+offset: 1
+}
+
+despawnEffect: {
+type: WaveEffect 
+colorFrom: FFA566FF
+colorTo: FFA566FF
+sizeFrom: 0 
+sizeTo: 4
+lightScl: 4 
+lightOpacity: 1
+rotation: 0 
+strokeFrom: 2
+strokeTo: 0 
+}
+hitEffect: {
+type: WaveEffect 
+colorFrom: FFA566FF
+colorTo: FFA566FF
+sizeFrom: 0 
+sizeTo: 4
+lightScl: 4 
+lightOpacity: 1
+rotation: 0 
+strokeFrom: 2
+strokeTo: 0 
+}
+}
+}
+  ],
+  "research": "Dune-Mosquito"
+}

@@ -1,0 +1,32 @@
+{
+  "type": "missile",
+  "name": T2-rockets
+  "flying": true,
+  "template": "MissileUnitType",
+  "hitSize": 10,
+  "health": 450,
+  "speed": 1.5,
+  "rotateSpeed": 1.85,
+  "lifetime": 400,
+  "trailColor": "BF92F9FF",
+  "trailLength": 30,
+  "drawCell": false,
+   loopSound: missileTrail
+  "weapons": [
+    {
+      "shootCone": 360,
+      "mirror": false,
+      "reload": 1,
+      "shootOnDeath": true,
+      "shake": 1,
+      "bullet": {
+        "type": "ExplosionBulletType",
+        "splashDamage": 350,
+        "splashDamageRadius": 55,
+        "ammoMultiplier": 7
+        "status": "melting",
+        "statusDuration": 280,
+      }
+    }
+  ]
+}

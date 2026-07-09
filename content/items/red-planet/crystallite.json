@@ -1,0 +1,15 @@
+{
+  "name": "crystallite",
+  "color": "FFE18FFF",
+  "cost": 1.2,
+  "hardness": 4,
+  "explosiveness": 1,
+  "flammability": 0,
+  "explosiveness": 0,
+  "charge": 0.70,
+  "radioactivity": 1,
+  "research": {
+    "parent": red-beryllium
+  }
+hiddenOnPlanets: [serpulo, erekir]
+}

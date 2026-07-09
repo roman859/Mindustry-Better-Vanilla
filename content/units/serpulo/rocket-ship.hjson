@@ -1,0 +1,129 @@
+"type": "naval",
+  "name": rocket-ship
+  "health": 915,
+  "armor": 5,
+  "speed": 0.87,
+  "drag": 0.14,
+  "hitSize": 31,
+  "accel": 0.5,
+  "rotateSpeed": 2.75,
+  "trailLength": 16,
+  "waveTrailX": 4,
+  "trailScl": 1.2,
+  "faceTarget": false,
+weapons: [
+{
+name: light-ship-turret
+reload: 30
+recoil: 2
+x: 4
+y: 9
+rotateSpeed: 5
+rotate: true
+mirror: true
+ejectEffect: casing1
+shootSound: missile
+bullet: {
+type: MissileBulletType
+damage: 45
+splashDamage: 55
+splashDamageRadius: 30
+speed: 0.98
+keepVelocity: false
+width: 8
+height: 8
+shrinkY: 0
+drag: -0.03
+lifetime: 85
+sprite: missile
+homingRange: -1
+homingPower: -1
+lifetime: 85.3333333
+trailColor: 4769cc
+backColor: 4769cc
+frontColor: 8125F8FF
+hitEffect: {
+type: ExplosionEffect
+waveRad: 8
+waveLife: 13
+waveColor: 8125F8FF
+sparks: 5
+sparkColor: 8125F8FF
+sparkRad: 12
+sparkStroke: 3
+sparkLen: 7
+smokes: 6
+smokeSize: 7
+smokeRad: 12
+smokeColor: 8125F8FF
+}
+despawnEffect: {
+type: ExplosionEffect
+waveRad: 8
+waveLife: 13
+waveColor: 8125F8FF
+sparks: 5
+sparkColor: 8125F8FF
+sparkRad: 12
+sparkStroke: 3
+sparkLen: 7
+smokes: 6
+smokeSize: 7
+smokeRad: 12
+smokeColor: 8125F8FF
+}
+}
+},
+{
+     name: rocket-ship-turret
+     y: -3
+     x: 5
+     reload: 385
+     mirror: true,
+     alternate: false,
+     rotateSpeed: 3.25,
+     rotate: true,
+     shoot: {
+     type: shootAlternate
+     barrels: 1
+     spread: 1
+     shots: 1
+     },
+     bullet: {
+      spawnUnit: bettervanilla-T1-rockets-2
+     },
+     },
+{
+     name: rocket-ship-turret
+     y: -10
+     x: 0
+     reload: 325
+     mirror: false,
+     alternate: false,
+     rotateSpeed: 3.25,
+     rotate: true,
+     shoot: {
+     type: shootAlternate
+     barrels: 1
+     spread: 1
+     shots: 1
+     },
+     bullet: {
+      spawnUnit: bettervanilla-T1-rockets-3
+     },
+     }
+]
+"abilities": [
+  {
+      type: mindustry.entities.abilities.RegenAbility,
+      amount: 0.45
+    },
+    {
+      type: mindustry.entities.abilities.ForceFieldAbility
+      radius: 100
+      regen: 0.85
+      max: 550
+      cooldown: 360
+    }
+   ]
+research: small-rocket-ship

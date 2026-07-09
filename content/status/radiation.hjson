@@ -1,0 +1,24 @@
+{
+  name: radiation
+  color: 92DD7EFF
+  outline: false
+  speedMultiplier: 0.5
+  reloadMultiplier: 0.4
+  damage: 0.5
+  effect: {
+    type: ParticleEffect
+    line: true
+    particles: 3
+    lifetime: 20
+    length: 30
+    baseColor: 92DD7EFF
+    lightColor: 3A8F64FF
+    interp: circleOut
+    sizeFrom: 3
+    sizeTo: 0
+    strokeFrom: 2
+    strokeTo: 0
+    size: 40
+    shake: 0.5
+  }
+}

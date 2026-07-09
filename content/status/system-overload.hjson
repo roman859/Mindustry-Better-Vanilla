@@ -1,0 +1,25 @@
+{
+  name: "System Overload"
+  color: d1efff
+  outline: false
+  speedMultiplier: 0.5
+  reloadMultiplier: 0.4
+  damage: 2.08
+  effect: {
+    type: ParticleEffect
+    line: true
+    particles: 3
+    lifetime: 20
+    length: 30
+    baseColor: d1efff
+    lightColor: ffffff
+    interp: circleOut
+    sizeFrom: 3
+    sizeTo: 0
+    strokeFrom: 2
+    strokeTo: 0
+    size: 40
+    shake: 0.5
+  }
+  affinities: [ wet ]
+}

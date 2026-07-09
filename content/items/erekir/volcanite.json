@@ -1,0 +1,14 @@
+{
+  "name": "volcanite",
+  "color": "volcanite",
+  "cost": 0.9,
+  "hardness": 4,
+  "flammability": 0,
+  "explosiveness": 0.75,
+  "charge": 0,
+  "radioactivity": 0,
+  "research": {
+    "parent": tungsten
+  }
+hiddenOnPlanets: [serpulo, 312B55A]
+}

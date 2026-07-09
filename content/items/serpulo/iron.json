@@ -1,0 +1,16 @@
+{
+  "name": "Iron",
+  "description": "tne iron",
+  "color": "918888FF",
+  "cost": 1.8,
+  "hardness": 4,
+  "explosiveness": 1,
+  "flammability": 0,
+  "explosiveness": 0,
+  "charge": 0,
+  "radioactivity": 0,
+  "research": {
+    "parent": "titanium",
+  }
+hiddenOnPlanets: [erekir, 312B55A]
+}

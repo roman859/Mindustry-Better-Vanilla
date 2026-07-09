@@ -1,0 +1,8 @@
+name: Start
+description: The beginning of survival!
+alwaysUnlocked: true
+captureWave: 35
+difficulty: 2
+sector: 0
+planet: 312B55A
+research: sand-core

@@ -1,0 +1,14 @@
+{
+  "name": "Isotope Shard",
+  "color": "AF5324FF",
+  "cost": 1.5,
+  "hardness": 2,
+  "flammability": 0,
+  "explosiveness": 0,
+  "charge": 0,
+  "radioactivity": 0,
+  "research": {
+    "parent": basalt
+  }
+hiddenOnPlanets: [serpulo, erekir]
+}

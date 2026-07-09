@@ -1,0 +1,8 @@
+name: polluted-water
+temperature: 0.5
+heatCapacity: 0.25
+color: 779F91FF
+research: basalt
+boilPoint: 0.95
+gasColor: 779F91FF
+effect: bettervanilla-radiation

@@ -1,0 +1,15 @@
+{
+  "name": "fluorite",
+  "description": "tne fluorite",
+  "color": "EFE4CAFF",
+  "cost": 1.8,
+  "hardness": 4,
+  "explosiveness": 1.10,
+  "flammability": 0.5,
+  "charge": 0,
+  "radioactivity": 0.15,
+  "research": {
+    "parent": "titanium",
+  }
+hiddenOnPlanets: [erekir, 312B55A]
+}

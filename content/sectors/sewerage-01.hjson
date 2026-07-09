@@ -1,0 +1,14 @@
+name: sewerage-01
+description: This is a destroyed sewer system with a lot of small enemy bases and little space.
+difficulty: 10
+sector: 10
+planet: erekir
+research: {
+    parent: karst
+    objectives: [
+        {
+            type: SectorComplete
+            preset: karst
+        }
+    ]
+}

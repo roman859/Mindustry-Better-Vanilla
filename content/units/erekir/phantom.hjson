@@ -1,0 +1,156 @@
+template: ErekirUnitType
+type: legs
+name: phantom
+health: 5300
+armor: 16
+hovering: true
+speed: 0.9
+singleTarget: true
+hitSize: 30
+shadowElevation: 0.28
+allowLegStep: true
+groundLayer: 74
+rotateSpeed: 1.25
+"legCount": 4,
+"legLength": 45,
+"legExtension": -4,
+"legPairOffset": 3,
+"legBaseOffset": 5,
+"legContinuousMove": true,
+"baseLegStraightness": 0.8,
+"legMoveSpace": 0.7,
+"legSpeed": 0.9
+"rippleScale": 6.8,
+"allowLegStep": true,
+"hovering": true,
+legSplashDamage: 85
+legSplashRange: 4
+drownTimeMultiplier: 9
+legGroupSize: 4
+rippleScale: 1.2
+research: mech-assembler-T2
+"weapons": [
+  {
+      name: phantom-weapon,
+      "x": 14
+      "shootCone": 45,
+      "y": -3
+      "reload": 155,
+       cooldownTime: 135
+      "alternate": true,
+      "top": true,
+      "rotate": false,
+      "recoil": 2.5,
+      "shootY": 5,
+      "xRand": 0.1,
+      "layerOffset": -0.001,
+      "inaccuracy": 5,
+      shootStatusDuration: 140
+      shootStatus: slow
+      "shoot": {
+        "type": "shootPattern",
+        "shots": 4,
+        "shotDelay": 1
+      },
+      "shake": 3,
+      "shootSound": "shootBig",
+      "ejectEffect": "none",
+      "bullet": {
+        "type": "BasicBulletType",
+        "sprite": "bullet",
+        "damage": 50,
+        "height": 14,
+        "width": 12,
+        "speed": 8,
+        "lifetime": 75,
+        "homingPower": 10.6,
+        "homingDelay": 14,
+        "homingRange": 160,
+        "shrinkX": 0,
+        "shrinkY": 0,
+        "splashDamage": 20,
+        "splashDamageRadius": 10,
+        "lightning": 7,
+        "lightningDamage": 15,
+        "lightningLength": 2,
+        "lightningCone": 40,
+        "lightningLengthRand": 6,
+        "hitEffect": {
+          "type": "ParticleEffect",
+          "line": true,
+          "particles": 6,
+          "lifetime": 20,
+          "length": 75,
+          "cone": -40,
+          "lenFrom": 8,
+          "lenTo": 8,
+          "colorFrom": "BF92F9FF",
+          "colorTo": "BF92F9FF"
+        },
+        "despawnEffect": {
+          "type": "ParticleEffect",
+          "line": true,
+          "particles": 6,
+          "lifetime": 20,
+          "length": 75,
+          "cone": -40,
+          "lenFrom": 8,
+          "lenTo": 8,
+          "colorFrom": "BF92F9FF",
+          "colorTo": "BF92F9FF"
+        },
+        "shootEffect": "shootHealYellow",
+        "trailColor": "BF92F9FF",
+        "trailLength": 20,
+        "trailWidth": 3.5,
+        "absorbable": false,
+        "lightColor": "BF92F9FF",
+        "frontColor": "BF92F9FF",
+        "backColor": "BF92F9FF"
+      }
+    },
+    {
+    name: phantom-weapon1
+      "x": 0
+      mirror: false
+      "shootCone": 20,
+      "y": -5
+      "reload": 255,
+       cooldownTime: 235
+      "alternate": true,
+      "top": true,
+      "rotate": false,
+      "recoil": 2.5,
+      "shootY": 5,
+
+  shootSound: shotgun,
+  shoot: {
+    type: ShootSpread,
+    spread: 5,
+    shots: 5
+  },
+  recoil: 2,
+  shake: 4,
+      bullet: {
+      type: ShrapnelBulletType,
+      pierce: true,
+      width: 25,
+      lifetime: 18,
+      length: 160,
+      serrations: 8,
+      damage: 120,
+      ammoMultiplier: 5,
+      knockback: 1.4,
+      status: slow,
+      statusDuration: 120
+      "colorFrom": "BF92F9FF",
+      "colorTo": "BF92F9FF"
+    },
+    }
+ ]
+"abilities": [
+  {
+      type: mindustry.entities.abilities.RegenAbility,
+      amount: 0.85
+    },
+   ]

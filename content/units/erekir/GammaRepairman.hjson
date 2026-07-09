@@ -1,0 +1,87 @@
+ {
+  name: Gamma-Repairman,
+  template: ErekirUnitType,
+  singleTarget: true,
+  drawShields: false,
+  research: BetaRepairman,
+  buildSpeed: 8,
+  lightRadius: 20,
+  fallSpeed: 0.006,
+  rotateSpeed: 0.8,
+  crashDamageMultiplier: 3,
+  speed: 1,
+  accel: 0.4,
+  drag: 0.4,
+  fogRadius: 20,
+  faceTarget: true,
+  flying: true,
+  health: 2500,
+  hitSize: 32,
+  armor: 8,
+  engineOffset: 12,
+  targetFlags: [
+    reactor
+  ],
+  engineSize: 3,
+  engineColor: 00FF1EFF,
+  lowAltitude: true,
+  targetAir: true,
+  canHeal: true,
+  lowAltitude: true,
+  weapons: [
+      {
+      "name": "Alpha-Repairman-heal-laser-mount",
+      "x": 10,
+      "y": 0,
+      "mirror": false,
+      "reload": 240,
+      "rotate": true,
+      "continuous": true,
+      "shootSound": "laserblast",
+      "bullet": {
+        "type": "ContinuousLaserBulletType",
+        "length": 450,
+        "width": 4,
+        "damage": 60,
+        "lifetime": 130,
+        "collidesTeam": true,
+        "healPercent": 60,
+        "damageInterval": 10,
+        "colors": ["84f491", "ffffff", "62ae7f"],
+        "fadeTime": 60,
+        "status": "sapped",
+        "statusDuration": 30,
+      }
+    },
+     {
+      "name": "Alpha-Repairman-heal-laser-mount",
+      "x": -10,
+      "y": 0,
+      "mirror": false,
+      "reload": 240,
+      "rotate": true,
+      "continuous": true,
+      "shootSound": "laserblast",
+      "bullet": {
+        "type": "ContinuousLaserBulletType",
+        "length": 450,
+        "width": 4,
+        "damage": 60,
+        "lifetime": 130,
+        "collidesTeam": true,
+        "healPercent": 60,
+        "damageInterval": 10,
+        "colors": ["84f491", "ffffff", "62ae7f"],
+        "fadeTime": 60,
+        "status": "sapped",
+        "statusDuration": 30,
+      }
+    }
+  ],
+     "abilities": [
+  {
+      type: mindustry.entities.abilities.RegenAbility,
+      amount: 4
+    },
+   ]
+ }

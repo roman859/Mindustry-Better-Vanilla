@@ -1,0 +1,184 @@
+{
+  "type": "tank",
+  "name": "Sarcophagus",
+  "health": 18555,
+  "armor": 12,
+  "lightRadius": 75,
+  "squareShape": true,
+  "treadPullOffset": 43,
+  "hitSize": 44,
+  "singleTarget": true,
+  "omniMovement": false,
+  "speed": 0.65,
+  "rotateSpeed": 6,
+  "crushDamage": 0.1,
+  "faceTarget": false,
+  "flying": false,
+  "targetAir": true,
+  outlineColor: 282727FF
+  "weapons": [
+   {
+  name: Sarcophagus-turret1
+  x: 13.5
+  y: 12.0
+  shootSound: bolt
+  mirror: true
+  alternate: true
+  reload: 60
+  cooldownTime: 50
+  rotate: true
+  inaccuracy: 7
+  rotateSpeed: 2.95
+  controllable: false 
+  autoTarget: true
+  bullet: {
+    type: SapBulletType
+    sapStrength: 1.375
+    length: 220
+    width: 0.8
+    lifetime: 35
+    damage: 165
+    hitColor: FFA566FF 
+    color: FFA566FF
+    status: sapped
+    statusDuration: 90
+    shootEffect: {
+      type: ParticleEffect 
+      colorFrom: FFA566FF
+      colorTo: d46b15
+      particles: 10
+      cone: 20
+      length: 12
+      sizeFrom: 2
+      sizeTo: 0 
+    }
+    hitEffect: {
+      type: MultiEffect
+      effects: [
+        {
+          type: WaveEffect 
+          colorFrom: FFA566FF
+          colorTo: FFA566FF
+          sizeFrom: 0 
+          sizeTo: 6
+          strokeFrom: 2
+          strokeTo: 0 
+        }
+        {
+          type: ParticleEffect
+          particles: 6
+          length: 8
+          colorFrom: FFA566FF
+          colorTo: ffffff
+          sizeFrom: 1.5
+          sizeTo: 0
+        }
+      ]
+    }
+  }
+}
+{
+      "name": "Sarcophagus-turret",
+    x: 0
+    y: 0
+    layerOffset: 0.01,
+    top: true
+    mirror: false
+    rotate: true
+    roteteSpeed: 0.55
+    reload: 165
+    range: 440
+    shootSound: largeCannon
+    recoil: 0
+    shootWarmupSpeed: 0.04
+    minWarmup: 0.9
+  parts: [
+    {
+      type: RegionPart
+      suffix: "-spine1"
+      under: true
+      layerOffset: -0.001
+      outline: true
+      progress: warmup
+      mirror: true
+      moveX: -2.5
+      moveRot: 5
+    }
+    {
+      type: RegionPart
+      suffix: "-spine2"
+      under: true
+      layerOffset: -0.001
+      outline: true
+      progress: warmup
+      mirror: true
+      moveX: 1.5
+    }
+    {
+      type: RegionPart
+      suffix: "-spine3"
+      under: true
+      layerOffset: -0.001
+      outline: true
+      progress: warmup
+      mirror: true
+      moveX: 1.5
+      moveY: 0.5
+    }
+  ]
+    bullet: {
+      type: BasicBulletType
+      damage: 450
+      speed: 7
+      lifetime: 63
+      width: 18
+      height: 26
+      splashDamage: 220
+      splashDamageRadius: 24
+      buildingDamageMultiplier: 1.15
+      hitEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: ExplosionEffect
+            smokeColor: 454545
+            smokeSize: 5
+            smokes: 8
+            sparkColor: bf1b1b
+            sparks: 12
+          }
+          {
+            type: ParticleEffect
+            particles: 15
+            length: 30
+            lifetime: 80
+            sizeFrom: 4
+            sizeTo: 0
+            colorFrom: 666666
+            colorTo: 333333
+          }
+        ]
+      }
+      fragBullets: 5
+      fragBullet: {
+        type: BasicBulletType
+        damage: 35
+        speed: 3
+        lifetime: 15
+        width: 6
+        height: 8
+        backColor: 7a7a7a
+        frontColor: ffffff
+      }
+      trailColor: bf1b1b
+      trailLength: 25
+      trailWidth: 4
+      backColor: 7a7a7a
+      frontColor: bf1b1b
+      status: sapped
+      statusDuration: 180
+    }
+  }
+  ],
+  "research": "Desert-Vector"
+}

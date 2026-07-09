@@ -1,0 +1,83 @@
+template: ErekirUnitType
+type: legs
+name: Bronzite-defender
+canBoost: true
+boostMultiplier: 2.5
+health: 650
+armor: 5
+hovering: true
+speed: 0.50
+singleTarget: true
+hitSize: 14
+shadowElevation: 0.28
+allowLegStep: true
+groundLayer: 74
+rotateSpeed: 0.8
+drownTimeMultiplier: 9
+rippleScale: 1
+legStraightness: 0.6
+legSpeed: 0.50
+legCount: 6
+allowLegStep: true
+legLength: 10
+lockLegBase: true
+legContinuousMove: true
+groundLayer: 72
+legExtension: -3
+legBaseOffset: 5
+legMaxLength: 1.5
+legLengthScl: 0.96
+legMinLength: 0.2
+legForwardScl: 1.1
+legGroupSize: 3
+rippleScale: 0.2
+legMoveSpace: 1
+allowLegStep: true
+legPhysicsLayer: false
+research: mech-assembler-T2
+"weapons": [
+  {
+      name: Bronzite-defender-artillery,
+      top: true,
+      mirror: true,
+      alternate: true,
+      y: 0,
+      x: 4,
+      shoot: {
+        shotDelay: 5,
+        shots: 3
+      },
+      rotate: false,
+      inaccuracy: 5,
+      shootY: 10,
+      reload: 45,
+      recoil: 1,
+      shake: 0.5,
+      ejectEffect: casing2,
+      shootSound: shootBig,
+      bullet: {
+        type: BasicBulletType,
+        hitEffect: flakExplosion,
+        shootEffect: shootBig2,
+        despawnEffect: flakExplosion,
+        pierce: true,
+        pierceCap: 1,
+        knockback: 1.8,
+        statusDuration: 80,
+        status: blasted,
+        lifetime: 90,
+        damage: 25,
+        speed: 4,
+        width: 6,
+        height: 14,
+        splashDamage: 20,
+        splashDamageRadius: 20
+      }
+    },
+ ]
+"abilities": [
+  {
+      type: mindustry.entities.abilities.RegenAbility,
+      amount: 0.5
+    },
+   ]

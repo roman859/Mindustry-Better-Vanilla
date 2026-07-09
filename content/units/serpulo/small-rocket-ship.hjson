@@ -1,0 +1,110 @@
+"type": "naval",
+  "name": small-rocket-ship
+  "health": 460,
+  "armor": 3,
+  "speed": 1.12,
+  "drag": 0.14,
+  "hitSize": 24,
+  "accel": 0.5,
+  "rotateSpeed": 3.85,
+  "trailLength": 16,
+  "waveTrailX": 4,
+  "trailScl": 1.2,
+  "faceTarget": false,
+weapons: [
+{
+name: light-ship-turret
+reload: 35
+recoil: 2
+x: 4
+y: -10
+rotateSpeed: 5
+rotate: true
+mirror: true
+ejectEffect: casing1
+shootSound: missile
+bullet: {
+type: MissileBulletType
+damage: 24
+splashDamage: 20
+splashDamageRadius: 22
+speed: 0.98
+keepVelocity: false
+width: 8
+height: 8
+shrinkY: 0
+drag: -0.03
+lifetime: 85
+sprite: missile
+homingRange: -1
+homingPower: -1
+lifetime: 85.3333333
+trailColor: 4769cc
+backColor: 4769cc
+frontColor: 8125F8FF
+hitEffect: {
+type: ExplosionEffect
+waveRad: 8
+waveLife: 13
+waveColor: 8125F8FF
+sparks: 5
+sparkColor: 8125F8FF
+sparkRad: 12
+sparkStroke: 3
+sparkLen: 7
+smokes: 6
+smokeSize: 7
+smokeRad: 12
+smokeColor: 8125F8FF
+}
+despawnEffect: {
+type: ExplosionEffect
+waveRad: 8
+waveLife: 13
+waveColor: 8125F8FF
+sparks: 5
+sparkColor: 8125F8FF
+sparkRad: 12
+sparkStroke: 3
+sparkLen: 7
+smokes: 6
+smokeSize: 7
+smokeRad: 12
+smokeColor: 8125F8FF
+}
+}
+},
+{
+     name: rocket-ship-turret
+     y: 0
+     x: 0
+     reload: 155
+     mirror: false,
+     alternate: true,
+     rotateSpeed: 3.25,
+     rotate: true,
+     shoot: {
+     type: shootAlternate
+     barrels: 1
+     spread: 1
+     shots: 1
+     },
+     bullet: {
+      spawnUnit: bettervanilla-T1-rockets-2
+     },
+     }
+]
+"abilities": [
+  {
+      type: mindustry.entities.abilities.RegenAbility,
+      amount: 0.25
+    },
+    {
+      type: mindustry.entities.abilities.ForceFieldAbility
+      radius: 85
+      regen: 0.485
+      max: 315
+      cooldown: 550
+    }
+   ]
+research: light-ship

@@ -1,0 +1,96 @@
+name: The Impulse
+template: ErekirUnitType
+"singleTarget": true,
+  "lowAltitude": true,
+  "type": "mech",
+  fogRadius: 32
+  "lightRadius": 16,
+  "canDrown": false,
+  "fallSpeed": 0.006,
+  "rotateSpeed": 2.85,
+  "crashDamageMultiplier": 10,
+  "speed": 2.75,
+  "accel": 0.4,
+  "drag": 0.4,
+  "aimDst": 15,
+  "faceTarget": true,
+  "flying": false,
+  "health": 950,
+  "hitSize": 20,
+  "armor": 4,
+  "mechFrontSway": 1,
+  "mechSideSway": 0.85,
+  "mechStepParticles": true,
+  "mechStepShake": 1,
+  "singleTarget": true,
+  "targetAir": true,
+"weapons": [
+   {
+    name: The-Impulse-turret
+   layerOffset: -0.01,
+   shootCone: 15,
+      shootY: 1,
+      mirror: true,
+      alternate: true,
+      rotate: false,
+      top: false
+      y: 0,
+      x: 7.4,
+reload: 75
+recoil: 1.3 
+shootSound: lasershoot
+shoot: {
+type: ShootSpread
+spread: 3
+shots: 3
+shotDelay: 3 
+}
+bullet: {
+type: BasicBulletType 
+homingPower: 3
+weaveMag: 5 
+weaveScale: 3 
+status: freezing 
+statusDuration: 120 
+width: 10 
+height: 10 
+speed: 6
+lifetime: 38
+damage: 55
+backColor: 9AFFFAFF 
+frontColor: 9AFFFAFF 
+trailColor: 9AFFFAFF 
+trailLength: 5 
+trailWidth: 2.5 
+ 
+despawnEffect: {
+type: WaveEffect 
+colorFrom: 9AFFFAFF 
+colorTo: 9AFFFAFF 
+sizeFrom: 0 
+sizeTo: 11 
+lightScl: 3 
+lightOpacity: 0 
+rotation: 45
+strokeFrom: 5 
+strokeTo: 0 
+sides: 3 
+}
+ 
+hitEffect: {
+type: WaveEffect 
+colorFrom: 9AFFFAFF 
+colorTo: 9AFFFAFF 
+sizeFrom: 0 
+sizeTo: 11 
+lightScl: 3 
+lightOpacity: 0 
+rotation: 0 
+strokeFrom: 5 
+strokeTo: 0 
+sides: 3 
+}
+}
+}
+  ],
+research: alpha-mech

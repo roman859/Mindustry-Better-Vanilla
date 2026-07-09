@@ -1,0 +1,72 @@
+{
+  "type": "missile",
+  "flying": true,
+  "template": "MissileUnitType",
+  "health": 650,
+  "hitSize": 16,
+  "speed": 15,
+  "drag": 0.01,
+  "lifetime": 30,
+  "deathExplosionEffect": "massiveExplosion",
+  "trailColor": "F2EB27FF",
+  "weapons": [
+    {
+      "shootCone": 360,
+      "mirror": false,
+      "reload": 1,
+      "shootOnDeath": true,
+      "bullet": {
+        "type": "ExplosionBulletType",
+        "splashDamage": 4500,
+        "splashDamageRadius": 240,
+        "hitSound": "nuke-hit",
+        "hitSoundVolume": 6,
+        "status": "bettervanilla-cleansing",
+        "statusDuration": 800,
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sizeFrom": 0,
+              "sizeTo": 250,
+              "lifetime": 120,
+              "colorFrom": "A8A31FFF",
+              "colorTo": "F2EB27FF",
+              "startDelay": 20
+            },
+            {
+              "type": "ParticleEffect",
+              "baseLength": 120,
+              "lifetime": 120,
+              "colorFrom": "A8A31FFF",
+              "colorTo": "F2EB27FF",
+              "interp": "circleOut",
+              "cone": 360,
+              "particles": 32,
+              "sizeFrom": 12,
+              "sizeTo": 0,
+              "spin": 0.2
+            }
+          ]
+        }
+        "fragBullets": 8,
+        "fragVelocityMin": 0.8,
+        "fragVelocityMax": 1.5,
+        "fragLifeMin": 1,
+        "fragBullet": {
+          "type": "BulletType",
+          "spawnUnit": "bettervanilla-divine-compassion-small-steel-missile",
+          "keepVelocity": false
+        },
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            { "type": "WaveEffect", "sizeTo": 250, "lifetime": 120, "colorTo": "F2EB27FF" },
+            { "type": "ParticleEffect", "particles": 40, "colorTo": "F2EB27FF" }
+          ]
+        }
+      }
+    }
+  ]
+}

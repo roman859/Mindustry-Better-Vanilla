@@ -1,0 +1,32 @@
+{
+  "type": "missile",
+  "name": small-rocket
+  "flying": true,
+  "template": "MissileUnitType",
+  "hitSize": 2,
+  "health": 155,
+  "speed": 2.5,
+  "rotateSpeed": 3.35,
+  "lifetime": 195,
+  "trailColor": "FFA566FF",
+  "trailLength": 10,
+  "drawCell": false,
+  "weapons": [
+    {
+      "shootCone": 360,
+      "mirror": false,
+      "reload": 1,
+      "shootOnDeath": true,
+      "shake": 1,
+      "bullet": {
+        "type": "ExplosionBulletType",
+        "buildingDamageMultiplier": 0.2,
+        "splashDamage": 225,
+        "splashDamageRadius": 35,
+        "ammoMultiplier": 7
+        "status": "melting",
+        "statusDuration": 180,
+      }
+    }
+  ]
+}

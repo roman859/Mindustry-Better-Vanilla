@@ -1,0 +1,21 @@
+{
+  "name": "Multiplast",
+  "description": "Multiplast is the pinnacle of synthetic engineering, representing a unique polymer composite designed for operation in extreme conditions.
+Thanks to its complex molecular lattice, Multiplast possesses a number of exceptional characteristics:
+Incredible Strength: It demonstrates phenomenal resistance to physical wear, impact, and explosions, surpassing traditional alloys.
+Thermo- and Acid-Resistance: The material is completely inert to high temperatures, aggressive chemical environments, and even radiation.
+Exceptional Flexibility: Unlike other highly durable materials, Multiplast maintains a high degree of elasticity, making it suitable for use in dynamic systems.
+These properties make it an indispensable component for high-tier armored conveyors, reinforced protective walls, and structural elements where durability and versatility are critically important.",
+"details": "Material Type: Advanced Synthetic Composite. Acquisition: Complex polymerization process, requiring high temperatures and rare catalysts.",
+  "color": "06AE68FF",
+  "cost": 1.8,
+  "hardness": 4,
+  "flammability": 0,
+  "explosiveness": 0,
+  "charge": 0.01,
+  "radioactivity": 0.01,
+  "research": {
+    "parent": "surge-alloy",
+  }
+hiddenOnPlanets: [erekir, 312B55A]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "coal",
+  "color": "5C5A5AFF",
+  "cost": 0.2,
+  "hardness": 3,
+  "flammability": 1,
+  "explosiveness": 0,
+  "charge": 0,
+  "radioactivity": 0,
+  "research": {
+    "parent": basalt
+  }
+hiddenOnPlanets: [serpulo, erekir]
+}

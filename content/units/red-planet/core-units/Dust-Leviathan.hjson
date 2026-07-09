@@ -1,0 +1,179 @@
+flying: true
+type: payload
+name: Dust Leviathan
+description: It is a strongest core drone, but it can build quickly and can mine ore.
+isEnemy: false
+lowAltitude: true
+mineSpeed: 8.55
+mineTier: 5
+defaultController: BuilderAI
+buildSpeed: 3.55
+drag: 0.05
+speed: 2.15
+rotateSpeed: 4.75
+accel: 0.11
+itemCapacity: 200
+health: 955
+armor: 6
+engineOffset: 20
+engineSize: 10
+hitSize: 55
+outlineColor: 282727FF
+vulnerableWithPayloads: true
+pickupUnits: true
+payloadCapacity: 576
+weapons: [
+  {
+    name: Dust-Leviathan-turret1
+    reload: 65
+    recoil: 0
+    layerOffset: -0.01,
+    x: 0
+    y: 0
+    mirror: false
+    rotate: false
+    range: 280
+    chargeTime: 50
+    "parts": [
+ {
+      suffix: -spine1
+      mirror: true
+      outlineColor: 282727FF,
+      outlineRadius: 3,
+      progress: warmup
+      smoothAbility: 0.1
+      interp: pow5Out
+      moveRot: 0
+      moveY: -2.7
+      moveX: 2.7
+      y: 0
+      x: 0
+    }
+    {
+      suffix: -spine2
+      mirror: true
+      outlineColor: 282727FF,
+      outlineRadius: 3,
+      progress: warmup
+      smoothAbility: 0.1
+      interp: pow5Out
+      moveRot: 0
+      moveY: -3.1
+      moveX: 3.1
+      x: 0
+      y: 0
+    }
+    {
+      suffix: -spine3
+      mirror: true
+      outlineColor: 282727FF,
+      outlineRadius: 3,
+      progress: warmup
+      smoothAbility: 0.1
+      interp: pow5Out
+      moveRot: 0
+      moveY: -3.7
+      moveX: 3.7
+      y: 0
+      x: 0
+    }
+    {
+      suffix: -spine4
+      layerOffset: 0.01,
+      mirror: true
+      outlineColor: 282727FF,
+      outlineRadius: 3,
+      progress: warmup
+      smoothAbility: 0.1
+      interp: pow5Out
+      moveRot: 0
+      moveY: -1.7
+      moveX: 1.7
+      x: 0
+      y: 0
+    }
+]
+shoot: {
+      type: ShootSpread
+      shootY: 8
+      shots: 4
+      shotDelay: 5
+      firstShotDelay: 55
+    }
+    bullet: {
+      type: BasicBulletType
+      width: 7
+      height: 12
+      damage: 60
+      speed: 6
+      lifetime: 46.6
+      buildingDamageMultiplier: 0.15
+      fragBullets: 6
+      fragBullet: {
+        type: MissileBulletType
+        damage: 25
+        speed: 4
+        lifetime: 40
+        buildingDamageMultiplier: 0.15
+        homingPower: 0.55
+        homingRange: 120
+        backColor: ddb38c
+      }
+    }
+  }
+  {
+    name: Dust-Leviathan-turret2
+    layerOffset: -0.01,
+    shootY: 8
+    reload: 45
+    x: 0
+    y: 0
+    mirror: false
+    rotate: true
+    controllable: false
+    aiControllable: true
+    autoTarget: true
+    range: 280
+    bullet: {
+      type: BasicBulletType
+      width: 7
+      height: 12
+      damage: 45
+      speed: 8
+      lifetime: 35
+      buildingDamageMultiplier: 0.15
+      backColor: ffffff
+      frontColor: ddb38c
+    }
+  }
+  {
+    name: Dust-Leviathan-turret3
+    layerOffset: -0.01,
+    reload: 550
+    x: 0
+    y: 0
+    mirror: false
+    chargeTime: 180
+    cooldownTime: 400
+    range: 280
+    shoot: {
+      type: ShootSpread
+      shots: 15
+      shootY: 8
+      shotDelay: 5
+      firstShotDelay: 180
+    }
+    bullet: {
+      type: MissileBulletType
+      damage: 100
+      speed: 4
+      lifetime: 70
+      buildingDamageMultiplier: 0.15
+      homingPower: 0.15
+      homingRange: 200
+      trailColor: ddb38c
+      backColor: ddb38c
+      hitEffect: blastExplosion
+    }
+  }
+]

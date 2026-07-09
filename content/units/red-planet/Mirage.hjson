@@ -1,0 +1,287 @@
+flying: true
+name: Mirage
+description: An assault rocket carrier. Fires salvos of homing missiles that induce crystallization and slow down targets.
+drag: 0.05
+speed: 1.65
+rotateSpeed: 2.55
+accel: 0.11
+itemCapacity: 110
+health: 8800
+armor: 4
+engineOffset: 25
+engineSize: 6
+hitSize: 35
+outlineColor: 282727FF
+research: Red-Dust
+range: 760
+targetDistance: 720
+weapons: [
+{
+name: Mirage-turret
+reload: 650
+recoil: 0
+x: 0
+y: 0
+top: true
+mirror: false
+rotate: false
+chargeTime: 140
+cooldownTime: 240
+"parts": [
+ {
+      suffix: -spin1
+      layerOffset: -0.01,
+      mirror: true
+      outlineColor: 282727FF,
+      outlineRadius: 3,
+      progress: warmup
+      smoothAbility: 0.1
+      interp: pow5Out
+      moveRot: 0
+      moveY: 5
+      moveX: 8
+      y: 0
+      x: 0
+    }
+    {
+      suffix: -spin2
+      mirror: true
+      layerOffset: -0.01,
+      outlineColor: 282727FF,
+      outlineRadius: 3,
+      progress: warmup
+      smoothAbility: 0.1
+      interp: pow5Out
+      moveRot: 0
+      moveY: 0
+      moveX: 20
+      x: 0
+      y: 0
+    }
+    {
+      suffix: -spin3
+      mirror: true
+      layerOffset: -0.01,
+      outlineColor: 282727FF,
+      outlineRadius: 3,
+      progress: warmup
+      smoothAbility: 0.1
+      interp: pow5Out
+      moveRot: 0
+      moveY: -10
+      moveX: 10
+      x: 0
+      y: 0
+    }
+]
+shoot: {
+type: ShootSpread
+shots: 5
+shotDelay: 35
+spread: 15
+firstShotDelay: 140
+}
+inaccuracy: 1
+ejectEffect: casing1
+bullet: {
+      spawnUnit: bettervanilla-Mirage-missile
+     },
+}
+{
+name: Mirage-missile-turret
+reload: 65
+recoil: 2
+alternate: false
+x: 10
+y: 0
+rotate: false
+mirror: true
+ejectEffect: casing1
+shootSound: missile
+bullet: {
+type: MissileBulletType
+damage: 55
+splashDamage: 100
+splashDamageRadius: 25
+keepVelocity: false
+width: 8
+height: 8
+shrinkY: 0
+sprite: missile
+speed: 5
+drag: 0
+lifetime: 125
+homingRange: 200 
+homingPower: 0.12
+trailColor: 4769cc
+backColor: 4769cc
+frontColor: 8125F8FF
+hitEffect: {
+type: ExplosionEffect
+waveRad: 8
+waveLife: 13
+waveColor: 8125F8FF
+sparks: 5
+sparkColor: 8125F8FF
+sparkRad: 12
+sparkStroke: 3
+sparkLen: 7
+smokes: 6
+smokeSize: 7
+smokeRad: 12
+smokeColor: 8125F8FF
+}
+despawnEffect: {
+type: ExplosionEffect
+waveRad: 8
+waveLife: 13
+waveColor: 8125F8FF
+sparks: 5
+sparkColor: 8125F8FF
+sparkRad: 12
+sparkStroke: 3
+sparkLen: 7
+smokes: 6
+smokeSize: 7
+smokeRad: 12
+smokeColor: 8125F8FF
+}
+}
+}
+{
+name: Mirage-missile-turret
+reload: 65
+recoil: 2
+alternate: false
+x: 15
+y: 0
+rotate: false
+mirror: true
+ejectEffect: casing1
+shootSound: missile
+bullet: {
+type: MissileBulletType
+damage: 55
+splashDamage: 100
+splashDamageRadius: 25
+keepVelocity: false
+width: 8
+height: 8
+shrinkY: 0
+sprite: missile
+speed: 5
+drag: 0
+lifetime: 125
+homingRange: 200 
+homingPower: 0.12
+trailColor: 4769cc
+backColor: 4769cc
+frontColor: 8125F8FF
+hitEffect: {
+type: ExplosionEffect
+waveRad: 8
+waveLife: 13
+waveColor: 8125F8FF
+sparks: 5
+sparkColor: 8125F8FF
+sparkRad: 12
+sparkStroke: 3
+sparkLen: 7
+smokes: 6
+smokeSize: 7
+smokeRad: 12
+smokeColor: 8125F8FF
+}
+despawnEffect: {
+type: ExplosionEffect
+waveRad: 8
+waveLife: 13
+waveColor: 8125F8FF
+sparks: 5
+sparkColor: 8125F8FF
+sparkRad: 12
+sparkStroke: 3
+sparkLen: 7
+smokes: 6
+smokeSize: 7
+smokeRad: 12
+smokeColor: 8125F8FF
+}
+}
+}
+{
+name: Mirage-missile-turret
+reload: 65
+recoil: 2
+alternate: false
+x: 20
+y: 0
+rotate: false
+mirror: true
+ejectEffect: casing1
+shootSound: missile
+bullet: {
+type: MissileBulletType
+damage: 55
+splashDamage: 100
+splashDamageRadius: 25
+keepVelocity: false
+width: 8
+height: 8
+shrinkY: 0
+sprite: missile
+speed: 5
+drag: 0
+lifetime: 125
+homingRange: 200 
+homingPower: 0.12
+trailColor: 4769cc
+backColor: 4769cc
+frontColor: 8125F8FF
+hitEffect: {
+type: ExplosionEffect
+waveRad: 8
+waveLife: 13
+waveColor: 8125F8FF
+sparks: 5
+sparkColor: 8125F8FF
+sparkRad: 12
+sparkStroke: 3
+sparkLen: 7
+smokes: 6
+smokeSize: 7
+smokeRad: 12
+smokeColor: 8125F8FF
+}
+despawnEffect: {
+type: ExplosionEffect
+waveRad: 8
+waveLife: 13
+waveColor: 8125F8FF
+sparks: 5
+sparkColor: 8125F8FF
+sparkRad: 12
+sparkStroke: 3
+sparkLen: 7
+smokes: 6
+smokeSize: 7
+smokeRad: 12
+smokeColor: 8125F8FF
+}
+}
+}
+]
+abilities: [
+  {
+      type: mindustry.entities.abilities.RegenAbility,
+      amount: 1.5
+    }
+  {
+    type: SuppressionFieldAbility
+    range: 480
+    reloadMultiplier: 0.5
+    color: a488ebff
+    particleColor: a488ebff
+    particles: 25
+  }
+]

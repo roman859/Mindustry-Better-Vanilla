@@ -1,0 +1,14 @@
+name: "Outpost Radian"
+description: "Abandoned observation post on the outskirts of the official sector. The enemy does not expect serious resistance here. Use the basic supplies of beryllium and graphite to establish the first supply lines."
+difficulty: 3
+sector: 11
+planet: erekir
+research: {
+    parent: onset
+    objectives: [
+        {
+            type: SectorComplete
+            preset: onset
+        }
+    ]
+}

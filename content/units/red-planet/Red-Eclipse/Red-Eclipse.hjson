@@ -1,0 +1,152 @@
+flying: true
+name: Red-Eclipse
+description: An assault rocket carrier. Fires salvos of homing missiles that induce crystallization and slow down targets.
+drag: 0.05
+speed: 1.55
+rotateSpeed: 2.15
+accel: 0.11
+itemCapacity: 225
+health: 22500
+armor: 4
+engineOffset: 35
+engineSize: 12
+hitSize: 66
+outlineColor: 282727FF
+research: Mirage
+weapons: [
+{
+name: Red-Eclipse-turret
+reload: 1200
+recoil: 0
+x: 0
+y: 0
+top: true
+mirror: false
+rotate: false
+chargeTime: 140
+cooldownTime: 240
+"parts": [
+ {
+      suffix: -spin1
+      layerOffset: -0.01,
+      mirror: true
+      outlineColor: 282727FF,
+      outlineRadius: 3,
+      progress: warmup
+      smoothAbility: 0.1
+      interp: pow5Out
+      moveRot: -25
+      moveY: 20
+      moveX: 10
+      y: 0
+      x: 0
+    }
+    {
+      suffix: -spin2
+      mirror: true
+      layerOffset: -0.01,
+      outlineColor: 282727FF,
+      outlineRadius: 3,
+      progress: warmup
+      smoothAbility: 0.1
+      interp: pow5Out
+      moveRot: 0
+      moveY: -20
+      moveX: 20
+      x: 0
+      y: 0
+    }
+    {
+      suffix: -spin2
+      mirror: true
+      layerOffset: -0.01,
+      outlineColor: 282727FF,
+      outlineRadius: 3,
+      progress: warmup
+      smoothAbility: 0.1
+      interp: pow5Out
+      moveRot: 0
+      moveY: -30
+      moveX: 5
+      x: 0
+      y: 0
+    }
+]
+shoot: {
+type: ShootSpread
+shots: 2
+shotDelay: 35
+spread: 15
+firstShotDelay: 140
+}
+inaccuracy: 1
+ejectEffect: casing1
+bullet: {
+      spawnUnit: bettervanilla-Red-Eclipse-big-missile
+     },
+}
+{
+name: Red-Eclipse-turret1
+reload: 650
+recoil: 0
+x: 10
+y: 0
+top: true
+mirror: true
+rotate: false
+alternate: false
+chargeTime: 140
+cooldownTime: 240
+shoot: {
+type: ShootSpread
+shots: 4
+shotDelay: 35
+spread: 15
+firstShotDelay: 140
+}
+inaccuracy: 1
+ejectEffect: casing1
+bullet: {
+      spawnUnit: bettervanilla-Red-Eclipse-missile
+     },
+}
+{
+name: Red-Eclipse-turret-2
+reload: 350
+recoil: 0
+x: 25
+y: 0
+top: true
+mirror: true
+rotate: false
+alternate: false
+chargeTime: 140
+cooldownTime: 240
+shoot: {
+type: ShootSpread
+shots: 6
+shotDelay: 35
+spread: 15
+firstShotDelay: 140
+}
+inaccuracy: 1
+ejectEffect: casing1
+bullet: {
+      spawnUnit: bettervanilla-Red-Eclipse-tiny-missile
+     },
+}
+]
+abilities: [
+  {
+      type: mindustry.entities.abilities.RegenAbility,
+      amount: 1.7
+    }
+  {
+    type: SuppressionFieldAbility
+    range: 500
+    reloadMultiplier: 0.5
+    color: a488ebff
+    particleColor: a488ebff
+    particles: 25
+  }
+]

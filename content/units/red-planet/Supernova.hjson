@@ -1,0 +1,512 @@
+name: Supernova
+"singleTarget": true,
+  "lowAltitude": true,
+  "type": "mech",
+  fogRadius: 65
+  "lightRadius": 30,
+  "canDrown": false,
+  "fallSpeed": 0.006,
+  "rotateSpeed": 0.85,
+  "crashDamageMultiplier": 125,
+  "speed": 0.20,
+  "accel": 0.4,
+  "drag": 0.4,
+  "aimDst": 15,
+  "faceTarget": true,
+  "flying": false,
+  "health": 25600,
+  "hitSize": 50,
+  "armor": 20,
+  "mechFrontSway": 1,
+  "mechSideSway": 0.85,
+  "mechStepParticles": true,
+  "mechStepShake": 1,
+  "singleTarget": true,
+  "targetAir": true,
+  outlineColor: 282727FF
+"weapons": [
+   {
+    name: Supernova-turret
+      top: true,
+      mirror: true,
+      alternate: false,
+      y: -2
+      x: 28
+      "shootY": 20,
+      rotate: false
+      inaccuracy: 5,
+      reload: 125,
+      cooldownTime: 100
+      recoil: 1,
+      shake: 0.8,
+      ejectEffect: casing2,
+      shootSound: shootBig,
+      shoot: {
+type: ShootSpread
+spread: 4
+shots: 6
+shotDelay: 8
+}
+bullet: {
+type: BasicBulletType 
+homingPower: 3
+weaveMag: 5 
+weaveScale: 3 
+status: melting 
+statusDuration: 350 
+width: 10 
+height: 10 
+speed: 6
+lifetime: 80
+damage: 250
+backColor: FFA566FF 
+frontColor: FFA566FF 
+trailColor: FFA566FF 
+trailLength: 5 
+trailWidth: 2.5 
+ 
+despawnEffect: {
+type: WaveEffect 
+colorFrom: FFA566FF 
+colorTo: FFA566FF 
+sizeFrom: 0 
+sizeTo: 11 
+lightScl: 3 
+lightOpacity: 0 
+rotation: 45
+strokeFrom: 5 
+strokeTo: 0 
+sides: 3 
+}
+ 
+hitEffect: {
+type: WaveEffect 
+colorFrom: FFA566FF 
+colorTo: FFA566FF 
+sizeFrom: 0 
+sizeTo: 11 
+lightScl: 3 
+lightOpacity: 0 
+rotation: 0 
+strokeFrom: 5 
+strokeTo: 0 
+sides: 3 
+}
+}
+    },
+ {
+      "name": "Supernova-turret1",
+      layerOffset: -0.01,
+      "x": 0,
+      "y": 0,
+      "reload": 1650,
+      recoil: 2
+      cooldownTime: 1500
+      "alternate": false,
+      "mirror": false,
+      "top": true,
+      "rotate": false,
+      "shootY": 45,
+      "shots": 1,
+      "shake": 8,
+      "parentizeEffects": true,
+      "shootSound": "laserblast",
+      "ejectEffect": "none",
+      "shootStatus": "unmoving",
+      "shootStatusDuration": 370,
+       firstShootDalelay: 220
+      "parts": [
+    {
+      suffix: -spine1
+      layerOffset: -0.01,
+      mirror: true
+      outlineColor: 282727FF,
+      outlineRadius: 3,
+      moves: [
+    {
+      type: PartMove,
+      progress: charge,
+    }
+    ],
+      progress: {
+      type: warmup,
+      op: delay,
+      other: reload,
+      amount: 0.1
+    },
+      moveRot: -25
+      moveY: -2
+      moveX: 1
+      y: 0
+      x: 0
+    },
+    {
+      suffix: -spine2
+      layerOffset: -0.01,
+      mirror: true
+      outlineColor: 282727FF,
+      outlineRadius: 3,
+      moves: [
+    {
+      type: PartMove,
+      progress: charge,
+    }
+    ],
+      progress: {
+      type: warmup,
+      op: delay,
+      other: reload,
+      amount: 0.1
+    },
+      moveRot: -45
+      moveY: 0
+      moveX: 4
+      x: 0
+      y: 0
+    },
+    {
+      suffix: -spine3
+      layerOffset: -0.01,
+      mirror: true
+      outlineColor: 282727FF,
+      outlineRadius: 3,
+      moves: [
+    {
+      type: PartMove,
+      progress: charge,
+    }
+    ],
+      progress: {
+      type: warmup,
+      op: delay,
+      other: reload,
+      amount: 0.1
+    },
+      moveRot: 5
+      moveY: 0
+      moveX: 35
+      y: 0
+      x: 0
+    },
+    {
+      suffix: -spine4
+      layerOffset: -0.01,
+      mirror: true
+      outlineColor: 282727FF,
+      outlineRadius: 3,
+      moves: [
+    {
+      type: PartMove,
+      progress: charge,
+    }
+    ],
+      progress: {
+      type: warmup,
+      op: delay,
+      other: reload,
+      amount: 0.1
+    },
+      amount: 0.15
+      moveRot: 0
+      moveY: -10
+      moveX: 30
+      x: 0
+      y: 0
+    },
+]
+      "shoot": {
+        "firstShotDelay": 120
+      },
+      "bullet": {
+        "chargeEffect": {
+          "type": "multiEffect",
+          "lifetime": 120,
+          "followParent": true,
+          "rotWithParent": true,
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 45,
+              "offset": 100,
+              "sizeFrom": 0,
+              "sizeTo": 8,
+              "length": 200,
+              "baseLength": -200,
+              "interp": "pow3In",
+              "sizeInterp": "pow5Out",
+              "lifetime": 70,
+              "lightColor": "DA8B53FF",
+              "colorFrom": "FFA566FF",
+              "colorTo": "DA8B53FF"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 45,
+              "offset": 100,
+              "sizeFrom": 0,
+              "sizeTo": 7,
+              "length": 250,
+              "baseLength": -250,
+              "interp": "pow3In",
+              "sizeInterp": "pow5Out",
+              "lifetime": 80,
+              "lightColor": "FFA566FF",
+              "colorFrom": "DA8B53FF",
+              "colorTo": "FFA566FF"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 45,
+              "offset": 100,
+              "sizeFrom": 0,
+              "sizeTo": 6,
+              "length": 300,
+              "baseLength": -300,
+              "interp": "pow3In",
+              "sizeInterp": "pow5Out",
+              "lifetime": 90,
+              "lightColor": "FFA566FF",
+              "colorFrom": "DA8B53FF",
+              "colorTo": "FFA566FF"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 45,
+              "offset": 100,
+              "sizeFrom": 0,
+              "sizeTo": 5,
+              "length": 350,
+              "baseLength": -350,
+              "interp": "pow3In",
+              "sizeInterp": "pow5Out",
+              "lifetime": 100,
+              "lightColor": "DA8B53FF",
+              "colorFrom": "FFA566FF",
+              "colorTo": "DA8B53FF"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 45,
+              "offset": 100,
+              "sizeFrom": 0,
+              "sizeTo": 4,
+              "length": 400,
+              "baseLength": -400,
+              "interp": "pow3In",
+              "sizeInterp": "pow5Out",
+              "lifetime": 110,
+              "lightColor": "FFA566FF",
+              "colorFrom": "DA8B53FF",
+              "colorTo": "FFA566FF"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 45,
+              "offset": 100,
+              "sizeFrom": 0,
+              "sizeTo": 3,
+              "length": 450,
+              "baseLength": -450,
+              "interp": "pow3In",
+              "sizeInterp": "pow5Out",
+              "lifetime": 120,
+              "lightColor": "DA8B53FF",
+              "colorFrom": "FFA566FF",
+              "colorTo": "DA8B53FF"
+            },
+            {
+              "type": "WaveEffect",
+              "lifetime": 120,
+              "sizeFrom": 150,
+              "sizeTo": 0,
+              "strokeFrom": 6,
+              "strokeTo": 0,
+              "interp": "pow10Out",
+              "colorFrom": "DA8B53FF",
+              "colorTo": "FFA566FF"
+            },
+            {
+              "type": "WaveEffect",
+              "lifetime": 120,
+              "sizeFrom": 120,
+              "sizeTo": 0,
+              "strokeFrom": 4,
+              "strokeTo": 0,
+              "interp": "pow5Out",
+              "colorFrom": "DA8B53FF",
+              "colorTo": "FFA566FF"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 1,
+              "sizeFrom": 0,
+              "sizeTo": 20,
+              "length": 0,
+              "lightColor": "FFA566FF",
+              "lifetime": 120,
+              "colorFrom": "DA8B53FF",
+              "colorTo": "FFA566FF",
+              "cone": 360
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 1,
+              "sizeFrom": 0,
+              "sizeTo": 10,
+              "length": 0,
+              "lightColor": "FFA566FF",
+              "lifetime": 120,
+              "colorFrom": "DA8B53FF",
+              "colorTo": "FFA566FF"
+            }
+          ]
+        },
+        "type": "BasicBulletType",
+        "sprite": "circle-bullet",
+        "status": "blasted",
+        "statusDuration": 200,
+        "lightRadius": 80,
+        "lightColor": "FFA566FF",
+        "damage": 850,
+        "scaleVelocity": "true",
+        "splashDamage": 2550,
+        "splashDamageRadius": 160,
+        "height": 28.5,
+        "width": 28.5,
+        "speed": 6,
+        "hitSound": "plasmaboom",
+        "lifetime": 80,
+        "homingPower": 0.00856,
+        "homingRange": 160,
+        "shrinkX": 0,
+        "shrinkY": 0,
+        "hitEffect": {
+          "type": "multiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "line": true,
+              "particles": 16,
+              "lifetime": 50,
+              "baseLength": 75,
+              "length": 250,
+              "cone": -360,
+              "strokeFrom": 2.5,
+              "lenFrom": 15,
+              "lenTo": 15,
+              "colorFrom": "DA8B53FF",
+              "colorTo": "FFA566FF"
+            },
+            {
+              "type": "WaveEffect",
+              "lifetime": 35,
+              "sizeFrom": 60,
+              "sizeTo": 150,
+              "strokeFrom": 6,
+              "strokeTo": 0,
+              "interp": "pow10Out",
+              "colorFrom": "DA8B53FF",
+              "colorTo": "FFA566FF"
+            },
+            {
+              "type": "WaveEffect",
+              "lifetime": 35,
+              "sizeFrom": 40,
+              "sizeTo": 130,
+              "strokeFrom": 4,
+              "strokeTo": 0,
+              "interp": "pow5Out",
+              "colorFrom": "FFA566FF",
+              "colorTo": "DA8B53FF"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 12,
+              "length": 200,
+              "baseLength": 20,
+              "lifetime": 80,
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "sizeFrom": 8,
+              "sizeTo": 1,
+              "colorFrom": "FFA566FF",
+              "colorTo": "DA8B53FF"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 25,
+              "length": 190,
+              "baseLength": 10,
+              "lifetime": 130,
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "sizeFrom": 28,
+              "sizeTo": 1,
+              "colorFrom": "FFA566FF",
+              "colorTo": "DA8B53FF"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 15,
+              "length": 200,
+              "baseLength": 10,
+              "lifetime": 130,
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "sizeFrom": 18,
+              "sizeTo": 1,
+              "colorFrom": "DA8B53FF",
+              "colorTo": "FFA566FF"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 10,
+              "length": 250,
+              "baseLength": 10,
+              "lifetime": 170,
+              "interp": "circleOut",
+              "sizeInterp": "pow5In",
+              "sizeFrom": 11,
+              "sizeTo": 1,
+              "colorFrom": "DA8B53FF",
+              "colorTo": "FFA566FF"
+            }
+          ]
+        },
+        "despawnEffect": "none",
+        "trailEffect": {
+          "type": "ParticleEffect",
+          "particles": 7,
+          "length": 9,
+          "baseLength": 9,
+          "lifetime": 25,
+          "interp": "circleOut",
+          "cone": 360,
+          "offset": 5,
+          "lightColor": "DA8B53FF",
+          "colorFrom": "FFA566FF",
+          "colorTo": "DA8B53FF",
+          "sizeFrom": 7,
+          "sizeTo": 0
+        },
+        "trailChance": 1,
+        "trailParam": 5,
+        "trailLength": 25,
+        "trailColor": "DA8B53FF",
+        "trailWidth": 9,
+        "absorbable": false,
+        "hittable": false,
+        "buildingDamageMultiplier": 0.4,
+        "smokeEffect": "none",
+        "frontColor": "FFA566FF",
+        "backColor": "DA8B53FF"
+      }
+    }
+  ],
+"abilities": [
+  {
+      type: mindustry.entities.abilities.RegenAbility,
+      amount: 1.5
+    },
+   ]
+research: Kronos

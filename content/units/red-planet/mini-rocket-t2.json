@@ -1,0 +1,77 @@
+{
+  "type": "missile",
+  "name": "mini-rocket-t2",
+  "template": "MissileUnitType",
+  "flying": true,
+  "speed": 3.8,
+  "rotateSpeed": 6.5,
+  "health": 155,
+  "hitSize": 4,
+  "lifetime": 160,
+  "drawCell": false,
+  "engineColor": "c62a2aff",
+  "engineSize": 1.8,
+  "engineOffset": 3,
+  "trailColor": "c62a2aff",
+  "trailLength": 15,
+  "trailEffect": {
+    "type": "ParticleEffect",
+    "particles": 6,
+    "length": 8,
+    "lifetime": 40,
+    "sizeFrom": 2,
+    "sizeTo": 0.5,
+    "colorFrom": "45454566",
+    "colorTo": "c62a2aff22",
+    "interp": "pow2Out"
+  },
+  "weapons": [
+    {
+      "shootCone": 360,
+      "mirror": false,
+      "reload": 1,
+      "shootOnDeath": true,
+      "bullet": {
+  "type": "ExplosionBulletType",
+  "splashDamage": 75,
+  "splashDamageRadius": 35,
+  "status": "blasted",
+  "statusDuration": 340,
+  "hitEffect": {
+    "type": "MultiEffect",
+    "effects": [
+      {
+        "type": "ParticleEffect",
+        "line": true,
+        "particles": 12,
+        "length": 30,
+        "lifetime": 25,
+        "strokeFrom": 1.5,
+        "strokeTo": 0,
+        "colorFrom": "c62a2aff",
+        "colorTo": "c62a2aff"
+      },
+      {
+        "type": "ParticleEffect",
+        "particles": 8,
+        "sizeFrom": 4,
+        "sizeTo": 0,
+        "length": 15,
+        "lifetime": 60,
+        "colorFrom": "454545aa",
+        "colorTo": "c62a2aff22"
+      },
+      {
+        "type": "WaveEffect",
+        "colorFrom": "c62a2aff",
+        "colorTo": "c62a2aff00",
+        "sizeTo": 40,
+        "lifetime": 15,
+        "strokeFrom": 4
+      }
+    ]
+      }
+      }
+      }
+  ]
+}

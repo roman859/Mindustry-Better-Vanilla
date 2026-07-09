@@ -1,0 +1,7 @@
+name: crystallite-brine
+temperature: 0.8
+heatCapacity: 0.8
+color: E18760FF
+research: Liquid-crystallite
+boilPoint: 1.90
+gasColor: E18760FF

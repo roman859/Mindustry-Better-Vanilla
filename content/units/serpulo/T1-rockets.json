@@ -1,0 +1,31 @@
+{
+  "type": "missile",
+  "name": T1-rockets
+  "flying": true,
+  "template": "MissileUnitType",
+  "hitSize": 4,
+  "health": 55,
+  "speed": 3,
+  "rotateSpeed": 2.25,
+  "lifetime": 275,
+  "trailColor": "ffaa5f",
+  "trailLength": 10,
+  "drawCell": false,
+  "weapons": [
+    {
+      "shootCone": 360,
+      "mirror": false,
+      "reload": 1,
+      "shootOnDeath": true,
+      "shake": 1,
+      "bullet": {
+        "type": "ExplosionBulletType",
+        "splashDamage": 25,
+        "splashDamageRadius": 125,
+        "ammoMultiplier": 7
+        "status": "freezing",
+        "statusDuration": 1580,
+      }
+    }
+  ]
+}

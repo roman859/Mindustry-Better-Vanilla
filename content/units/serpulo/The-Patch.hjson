@@ -1,0 +1,44 @@
+name: The Patch
+"singleTarget": true,
+  "lowAltitude": true,
+  "type": "mech",
+   fogRadius: 25
+  "lightRadius": 45,
+  "canDrown": false,
+  "fallSpeed": 0.006,
+  "rotateSpeed": 0.95,
+  "crashDamageMultiplier": 10,
+  "speed": 0.35,
+  "accel": 0.4,
+  "drag": 0.4,
+  "aimDst": 15,
+  "faceTarget": true,
+  "flying": false,
+  "health": 150,
+  "hitSize": 15,
+  "armor": 1,
+  "mechFrontSway": 1,
+  "mechSideSway": 0.85,
+  "mechStepParticles": true,
+  "mechStepShake": 1,
+  "singleTarget": true,
+  "targetAir": true,
+"weapons": [
+   {
+                name: The-Patch-turret,
+                type: RepairBeamWeapon
+                x: 0,
+                y: 0,
+                mirror: false,
+                rotate: true,
+                rotateSpeed: 1.25,
+                shootY: 6,
+                beamWidth: 0.8,
+                repairSpeed: 1.4,
+                bullet: {
+                    type: BulletType,
+                    maxRange: 120,
+              }
+}
+  ]
+research: nova

@@ -1,0 +1,619 @@
+"type": "naval",
+  "name": battleship
+  "health": 19500,
+  "armor": 15,
+  "speed": 0.57,
+  "drag": 0.14,
+  "hitSize": 65,
+  "accel": 0.5,
+  "rotateSpeed": 0.68,
+  "trailLength": 45,
+  "waveTrailX": 8,
+  "trailScl": 1.9,
+  "faceTarget": false,
+weapons: [
+{
+name: light-ship-turret
+reload: 90
+recoil: 2
+x: 10
+y: 35
+rotateSpeed: 5
+rotate: true
+mirror: true
+ejectEffect: casing1
+shootSound: missile
+bullet: {
+type: MissileBulletType
+damage: 195
+splashDamage: 225
+splashDamageRadius: 60
+speed: 0.98
+keepVelocity: false
+width: 8
+height: 8
+shrinkY: 0
+drag: -0.03
+lifetime: 85
+sprite: missile
+homingRange: -1
+homingPower: -1
+lifetime: 85.3333333
+trailColor: 4769cc
+backColor: 4769cc
+frontColor: 8125F8FF
+hitEffect: {
+type: ExplosionEffect
+waveRad: 8
+waveLife: 13
+waveColor: 8125F8FF
+sparks: 5
+sparkColor: 8125F8FF
+sparkRad: 12
+sparkStroke: 3
+sparkLen: 7
+smokes: 6
+smokeSize: 7
+smokeRad: 12
+smokeColor: 8125F8FF
+}
+despawnEffect: {
+type: ExplosionEffect
+waveRad: 8
+waveLife: 13
+waveColor: 8125F8FF
+sparks: 5
+sparkColor: 8125F8FF
+sparkRad: 12
+sparkStroke: 3
+sparkLen: 7
+smokes: 6
+smokeSize: 7
+smokeRad: 12
+smokeColor: 8125F8FF
+}
+}
+},
+{
+name: light-ship-turret
+reload: 90
+recoil: 2
+x: 15
+y: 25
+rotateSpeed: 5
+rotate: true
+mirror: true
+ejectEffect: casing1
+shootSound: missile
+bullet: {
+type: MissileBulletType
+damage: 195
+splashDamage: 225
+splashDamageRadius: 60
+speed: 0.98
+keepVelocity: false
+width: 8
+height: 8
+shrinkY: 0
+drag: -0.03
+lifetime: 85
+sprite: missile
+homingRange: -1
+homingPower: -1
+lifetime: 85.3333333
+trailColor: 4769cc
+backColor: 4769cc
+frontColor: 8125F8FF
+hitEffect: {
+type: ExplosionEffect
+waveRad: 8
+waveLife: 13
+waveColor: 8125F8FF
+sparks: 5
+sparkColor: 8125F8FF
+sparkRad: 12
+sparkStroke: 3
+sparkLen: 7
+smokes: 6
+smokeSize: 7
+smokeRad: 12
+smokeColor: 8125F8FF
+}
+despawnEffect: {
+type: ExplosionEffect
+waveRad: 8
+waveLife: 13
+waveColor: 8125F8FF
+sparks: 5
+sparkColor: 8125F8FF
+sparkRad: 12
+sparkStroke: 3
+sparkLen: 7
+smokes: 6
+smokeSize: 7
+smokeRad: 12
+smokeColor: 8125F8FF
+}
+}
+},
+{
+name: light-ship-turret
+reload: 90
+recoil: 2
+x: 20
+y: 15
+rotateSpeed: 5
+rotate: true
+mirror: true
+ejectEffect: casing1
+shootSound: missile
+bullet: {
+type: MissileBulletType
+damage: 195
+splashDamage: 225
+splashDamageRadius: 60
+speed: 0.98
+keepVelocity: false
+width: 8
+height: 8
+shrinkY: 0
+drag: -0.03
+lifetime: 85
+sprite: missile
+homingRange: -1
+homingPower: -1
+lifetime: 85.3333333
+trailColor: 4769cc
+backColor: 4769cc
+frontColor: 8125F8FF
+hitEffect: {
+type: ExplosionEffect
+waveRad: 8
+waveLife: 13
+waveColor: 8125F8FF
+sparks: 5
+sparkColor: 8125F8FF
+sparkRad: 12
+sparkStroke: 3
+sparkLen: 7
+smokes: 6
+smokeSize: 7
+smokeRad: 12
+smokeColor: 8125F8FF
+}
+despawnEffect: {
+type: ExplosionEffect
+waveRad: 8
+waveLife: 13
+waveColor: 8125F8FF
+sparks: 5
+sparkColor: 8125F8FF
+sparkRad: 12
+sparkStroke: 3
+sparkLen: 7
+smokes: 6
+smokeSize: 7
+smokeRad: 12
+smokeColor: 8125F8FF
+}
+}
+},
+{
+name: light-ship-turret
+reload: 90
+recoil: 2
+x: 20
+y: 5
+rotateSpeed: 5
+rotate: true
+mirror: true
+ejectEffect: casing1
+shootSound: missile
+bullet: {
+type: MissileBulletType
+damage: 195
+splashDamage: 225
+splashDamageRadius: 60
+speed: 0.98
+keepVelocity: false
+width: 8
+height: 8
+shrinkY: 0
+drag: -0.03
+lifetime: 85
+sprite: missile
+homingRange: -1
+homingPower: -1
+lifetime: 85.3333333
+trailColor: 4769cc
+backColor: 4769cc
+frontColor: 8125F8FF
+hitEffect: {
+type: ExplosionEffect
+waveRad: 8
+waveLife: 13
+waveColor: 8125F8FF
+sparks: 5
+sparkColor: 8125F8FF
+sparkRad: 12
+sparkStroke: 3
+sparkLen: 7
+smokes: 6
+smokeSize: 7
+smokeRad: 12
+smokeColor: 8125F8FF
+}
+despawnEffect: {
+type: ExplosionEffect
+waveRad: 8
+waveLife: 13
+waveColor: 8125F8FF
+sparks: 5
+sparkColor: 8125F8FF
+sparkRad: 12
+sparkStroke: 3
+sparkLen: 7
+smokes: 6
+smokeSize: 7
+smokeRad: 12
+smokeColor: 8125F8FF
+}
+}
+},
+{
+name: light-ship-turret
+reload: 90
+recoil: 2
+x: 25
+y: -15
+rotateSpeed: 5
+rotate: true
+mirror: true
+ejectEffect: casing1
+shootSound: missile
+bullet: {
+type: MissileBulletType
+damage: 195
+splashDamage: 225
+splashDamageRadius: 60
+speed: 0.98
+keepVelocity: false
+width: 8
+height: 8
+shrinkY: 0
+drag: -0.03
+lifetime: 85
+sprite: missile
+homingRange: -1
+homingPower: -1
+lifetime: 85.3333333
+trailColor: 4769cc
+backColor: 4769cc
+frontColor: 8125F8FF
+hitEffect: {
+type: ExplosionEffect
+waveRad: 8
+waveLife: 13
+waveColor: 8125F8FF
+sparks: 5
+sparkColor: 8125F8FF
+sparkRad: 12
+sparkStroke: 3
+sparkLen: 7
+smokes: 6
+smokeSize: 7
+smokeRad: 12
+smokeColor: 8125F8FF
+}
+despawnEffect: {
+type: ExplosionEffect
+waveRad: 8
+waveLife: 13
+waveColor: 8125F8FF
+sparks: 5
+sparkColor: 8125F8FF
+sparkRad: 12
+sparkStroke: 3
+sparkLen: 7
+smokes: 6
+smokeSize: 7
+smokeRad: 12
+smokeColor: 8125F8FF
+}
+}
+},
+{
+     name: cruiser-turret
+     y: -20
+     x: 18
+     reload: 475
+     mirror: true,
+     alternate: true,
+     rotateSpeed: 1.25,
+     rotate: true,
+     shootSound: missileLaunch
+     shoot: {
+     type: shootAlternate
+     barrels: 1
+     spread: 1
+     shots: 1
+     },
+     bullet: {
+      spawnUnit: bettervanilla-T2-rockets-1
+     },
+     }
+{
+      "name": "battleship-turret",
+      "x": 0,
+      "y": 0,
+      "shootSound": "cannon",
+      "mirror": false,
+      "alternate": true,
+      "reload": 125,
+      "rotate": true,
+      "inaccuracy": 7,
+      "rotateSpeed": 0.85
+      "bullet": {
+        "type": "BasicBulletType",
+        "shootEffect": "shootTitan",
+        "smokeEffect": "shootSmokeTitan",
+        "hitColor": "BF92F9FF",
+        "sprite": "large-orb",
+        "trailEffect": "missileTrail",
+        "trailInterval": 3,
+        "trailParam": 4,
+        "pierceCap": 3,
+        "fragOnHit": false,
+        "speed": 5,
+        "lifetime": 150,
+        "damage": 325,
+        "width": 16,
+        "height": 16,
+        "backColor": "BF92F9FF",
+        "frontColor": "665C9FFF",
+        "shrinkX": 0,
+        "shrinkY": 0,
+        "trailColor": "BF92F9FF",
+        "trailLength": 12,
+        "trailWidth": 2.2,
+        "despawnEffect": {
+          "type": "ExplosionEffect",
+          "waveColor": "BF92F9FF",
+          "smokeColor": "C9A5C8FF",
+          "sparkColor": "89769AFF",
+          "waveStroke": 4,
+          "waveRad": 40
+        },
+        "hitEffect": {
+          "type": "ExplosionEffect",
+          "waveColor": "BF92F9FF",
+          "smokeColor": "C9A5C8FF",
+          "sparkColor": "89769AFF",
+          "waveStroke": 4,
+          "waveRad": 40
+        },
+        "despawnSound": "dullExplosion",
+        "fragBullet": {
+          "type": "BasicBulletType",
+          "speed": 2,
+          "damage": 125,
+          "width": 8,
+          "hitSize": 4,
+          "height": 12,
+          "pierce": true,
+          "lifetime": 21,
+          "pierceBuilding": true,
+          "hitColor": "BF92F9FF",
+          "backColor": "BF92F9FF",
+          "trailColor": "BF92F9FF",
+          "frontColor": "665C9FFF",
+          "trailWidth": 1.9,
+          "trailLength": 4,
+          "hitEffect": {
+            "colorFrom": "BF92F9FF",
+            "colorTo": "BF92F9FF",
+            "type": "WaveEffect",
+            "sizeTo": 4,
+            "strokeFrom": 4,
+            "lifetime": 10
+          },
+          "despawnEffect": {
+            "colorFrom": "BF92F9FF",
+            "colorTo": "665C9FFF",
+            "type": "WaveEffect",
+            "sizeTo": 4,
+            "strokeFrom": 4,
+            "lifetime": 10
+          },
+          "homingPower": 0.2
+        },
+        "intervalBullet": {
+          "type": "BasicBulletType",
+          "speed": 2,
+          "damage": 125,
+          "width": 8,
+          "hitSize": 4,
+          "height": 12,
+          "pierce": true,
+          "lifetime": 21,
+          "pierceBuilding": true,
+          "hitColor": "BF92F9FF",
+          "backColor": "BF92F9FF",
+          "trailColor": "BF92F9FF",
+          "frontColor": "665C9FFF",
+          "trailWidth": 1.9,
+          "trailLength": 4,
+          "hitEffect": {
+            "colorFrom": "BF92F9FF",
+            "colorTo": "665C9FFF",
+            "type": "WaveEffect",
+            "sizeTo": 4,
+            "strokeFrom": 4,
+            "lifetime": 10
+          },
+          "despawnEffect": {
+            "colorFrom": "BF92F9FF",
+            "colorTo": "665C9FFF",
+            "type": "WaveEffect",
+            "sizeTo": 4,
+            "strokeFrom": 4,
+            "lifetime": 10
+          },
+          "homingPower": 0.2
+        },
+        "bulletInterval": 3,
+        "intervalRandomSpread": 20,
+        "intervalBullets": 2,
+        "intervalAngle": 180,
+        "intervalSpread": 300,
+        "fragBullets": 10,
+        "fragVelocityMin": 0.5,
+        "fragVelocityMax": 1.5,
+        "fragLifeMin": 0.5
+      }
+    },
+{
+      "name": "light-ship-turret1",
+      "x": 25,
+      "y": -40,
+      "shootSound": "cannon",
+      "mirror": true,
+      "alternate": true,
+      "reload": 85,
+      "rotate": true,
+      "inaccuracy": 7,
+      "rotateSpeed": 0.85
+      "bullet": {
+        "type": "BasicBulletType",
+        "shootEffect": "shootTitan",
+        "smokeEffect": "shootSmokeTitan",
+        "hitColor": "BF92F9FF",
+        "sprite": "large-orb",
+        "trailEffect": "missileTrail",
+        "trailInterval": 3,
+        "trailParam": 4,
+        "pierceCap": 3,
+        "fragOnHit": false,
+        "speed": 5,
+        "lifetime": 55,
+        "damage": 85,
+        "width": 16,
+        "height": 16,
+        "backColor": "BF92F9FF",
+        "frontColor": "665C9FFF",
+        "shrinkX": 0,
+        "shrinkY": 0,
+        "trailColor": "BF92F9FF",
+        "trailLength": 12,
+        "trailWidth": 2.2,
+        "despawnEffect": {
+          "type": "ExplosionEffect",
+          "waveColor": "BF92F9FF",
+          "smokeColor": "C9A5C8FF",
+          "sparkColor": "89769AFF",
+          "waveStroke": 4,
+          "waveRad": 40
+        },
+        "hitEffect": {
+          "type": "ExplosionEffect",
+          "waveColor": "BF92F9FF",
+          "smokeColor": "C9A5C8FF",
+          "sparkColor": "89769AFF",
+          "waveStroke": 4,
+          "waveRad": 40
+        },
+        "despawnSound": "dullExplosion",
+        "fragBullet": {
+          "type": "BasicBulletType",
+          "speed": 2,
+          "damage": 30,
+          "width": 8,
+          "hitSize": 4,
+          "height": 12,
+          "pierce": true,
+          "lifetime": 21,
+          "pierceBuilding": true,
+          "hitColor": "BF92F9FF",
+          "backColor": "BF92F9FF",
+          "trailColor": "BF92F9FF",
+          "frontColor": "665C9FFF",
+          "trailWidth": 1.9,
+          "trailLength": 4,
+          "hitEffect": {
+            "colorFrom": "BF92F9FF",
+            "colorTo": "BF92F9FF",
+            "type": "WaveEffect",
+            "sizeTo": 4,
+            "strokeFrom": 4,
+            "lifetime": 10
+          },
+          "despawnEffect": {
+            "colorFrom": "BF92F9FF",
+            "colorTo": "665C9FFF",
+            "type": "WaveEffect",
+            "sizeTo": 4,
+            "strokeFrom": 4,
+            "lifetime": 10
+          },
+          "homingPower": 0.2
+        },
+        "intervalBullet": {
+          "type": "BasicBulletType",
+          "speed": 2,
+          "damage": 30,
+          "width": 8,
+          "hitSize": 4,
+          "height": 12,
+          "pierce": true,
+          "lifetime": 21,
+          "pierceBuilding": true,
+          "hitColor": "BF92F9FF",
+          "backColor": "BF92F9FF",
+          "trailColor": "BF92F9FF",
+          "frontColor": "665C9FFF",
+          "trailWidth": 1.9,
+          "trailLength": 4,
+          "hitEffect": {
+            "colorFrom": "BF92F9FF",
+            "colorTo": "665C9FFF",
+            "type": "WaveEffect",
+            "sizeTo": 4,
+            "strokeFrom": 4,
+            "lifetime": 10
+          },
+          "despawnEffect": {
+            "colorFrom": "BF92F9FF",
+            "colorTo": "665C9FFF",
+            "type": "WaveEffect",
+            "sizeTo": 4,
+            "strokeFrom": 4,
+            "lifetime": 10
+          },
+          "homingPower": 0.2
+        },
+        "bulletInterval": 3,
+        "intervalRandomSpread": 20,
+        "intervalBullets": 2,
+        "intervalAngle": 180,
+        "intervalSpread": 300,
+        "fragBullets": 10,
+        "fragVelocityMin": 0.5,
+        "fragVelocityMax": 1.5,
+        "fragLifeMin": 0.5
+      }
+    },
+]
+"abilities": [
+  {
+      type: mindustry.entities.abilities.RegenAbility,
+      amount: 1.98
+    },
+    {
+      type: mindustry.entities.abilities.ForceFieldAbility
+      radius: 185
+      regen: 1.85
+      max: 7650
+      cooldown: 925
+    }
+   ]
+research: cruiser

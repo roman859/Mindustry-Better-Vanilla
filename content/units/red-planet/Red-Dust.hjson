@@ -1,0 +1,283 @@
+flying: true
+name: Red-Dust
+description: An assault rocket carrier. Fires salvos of homing missiles that induce crystallization and slow down targets.
+drag: 0.05
+speed: 1.95
+rotateSpeed: 2.85
+accel: 0.11
+itemCapacity: 75
+health: 1250
+armor: 2
+engineOffset: 10
+engineSize: 3
+hitSize: 29
+outlineColor: 282727FF
+research: Haboob
+weapons: [
+{
+name: Red-Dust-turret
+reload: 450
+recoil: 0
+x: 14
+y: 0
+top: true
+mirror: true
+rotate: false
+chargeTime: 140
+cooldownTime: 240
+shoot: {
+type: ShootSpread
+shots: 8
+shotDelay: 25
+spread: 15
+firstShotDelay: 140
+}
+inaccuracy: 1
+ejectEffect: casing1
+bullet: {
+      spawnUnit: bettervanilla-mini-rocket-t2
+     },
+}
+{
+name: Red-Dust-turret-2
+x: 4
+y: 2
+mirror: true
+alternate: true
+reload: 225
+recoil: 1.3 
+shootSound: lasershoot
+shoot: {
+type: ShootSpread
+spread: 3
+shots: 5
+shotDelay: 3 
+}
+bullet: {
+type: BasicBulletType 
+homingPower: 6
+weaveMag: 5 
+weaveScale: 3 
+status: freezing 
+statusDuration: 120 
+width: 10 
+height: 10 
+speed: 6
+lifetime: 100
+damage: 55
+backColor: BF92F9FF 
+frontColor: BF92F9FF 
+trailColor: BF92F9FF 
+trailLength: 5 
+trailWidth: 2.5 
+despawnEffect: {
+type: WaveEffect 
+colorFrom: BF92F9FF 
+colorTo: BF92F9FF 
+sizeFrom: 0 
+sizeTo: 11 
+lightScl: 3 
+lightOpacity: 0 
+rotation: 45
+strokeFrom: 5 
+strokeTo: 0 
+sides: 3 
+}
+hitEffect: {
+type: WaveEffect 
+colorFrom: BF92F9FF 
+colorTo: BF92F9FF 
+sizeFrom: 0 
+sizeTo: 11 
+lightScl: 3 
+lightOpacity: 0 
+rotation: 0 
+strokeFrom: 5 
+strokeTo: 0 
+sides: 3 
+}
+}
+}
+{
+name: Red-Dust-turret-2
+x: 4
+y: 1.5
+mirror: true
+alternate: ture
+reload: 225
+recoil: 1.3 
+shootSound: lasershoot
+shoot: {
+type: ShootSpread
+spread: 3
+shots: 5
+shotDelay: 3 
+}
+bullet: {
+type: BasicBulletType 
+homingPower: 6
+weaveMag: 5 
+weaveScale: 3 
+status: freezing 
+statusDuration: 120 
+width: 10 
+height: 10 
+speed: 6
+lifetime: 100
+damage: 55
+backColor: BF92F9FF 
+frontColor: BF92F9FF 
+trailColor: BF92F9FF 
+trailLength: 5 
+trailWidth: 2.5 
+despawnEffect: {
+type: WaveEffect 
+colorFrom: BF92F9FF 
+colorTo: BF92F9FF 
+sizeFrom: 0 
+sizeTo: 11 
+lightScl: 3 
+lightOpacity: 0 
+rotation: 45
+strokeFrom: 5 
+strokeTo: 0 
+sides: 3 
+}
+hitEffect: {
+type: WaveEffect 
+colorFrom: BF92F9FF 
+colorTo: BF92F9FF 
+sizeFrom: 0 
+sizeTo: 11 
+lightScl: 3 
+lightOpacity: 0 
+rotation: 0 
+strokeFrom: 5 
+strokeTo: 0 
+sides: 3 
+}
+}
+}
+{
+name: Red-Dust-turret-2
+x: 4
+y: 1
+mirror: true
+alternate: true
+reload: 225
+recoil: 1.3 
+shootSound: lasershoot
+shoot: {
+type: ShootSpread
+spread: 3
+shots: 5
+shotDelay: 3 
+}
+bullet: {
+type: BasicBulletType 
+homingPower: 6
+weaveMag: 5 
+weaveScale: 3 
+status: freezing 
+statusDuration: 120 
+width: 10 
+height: 10 
+speed: 6
+lifetime: 100
+damage: 55
+backColor: BF92F9FF 
+frontColor: BF92F9FF 
+trailColor: BF92F9FF 
+trailLength: 5 
+trailWidth: 2.5 
+despawnEffect: {
+type: WaveEffect 
+colorFrom: BF92F9FF 
+colorTo: BF92F9FF 
+sizeFrom: 0 
+sizeTo: 11 
+lightScl: 3 
+lightOpacity: 0 
+rotation: 45
+strokeFrom: 5 
+strokeTo: 0 
+sides: 3 
+}
+hitEffect: {
+type: WaveEffect 
+colorFrom: BF92F9FF 
+colorTo: BF92F9FF 
+sizeFrom: 0 
+sizeTo: 11 
+lightScl: 3 
+lightOpacity: 0 
+rotation: 0 
+strokeFrom: 5 
+strokeTo: 0 
+sides: 3 
+}
+}
+}
+{
+name: Red-Dust-turret-1
+x: 8
+y: 0
+mirror: true
+top: true
+layerOffset: -0.01,
+rotate: false
+reload: 120
+recoil: 0.5
+shootSound: lasershoot
+shoot: {
+type: ShootSpread
+spread: 3
+shots: 6
+shotDelay: 5
+}
+bullet: {
+type: BasicBulletType 
+homingPower: 3
+weaveMag: 5 
+weaveScale: 3 
+status: freezing 
+statusDuration: 120 
+width: 10 
+height: 10 
+speed: 6
+lifetime: 100
+damage: 45
+backColor: BF92F9FF 
+frontColor: BF92F9FF 
+trailColor: BF92F9FF 
+trailLength: 5 
+trailWidth: 2.5 
+despawnEffect: {
+type: WaveEffect 
+colorFrom: BF92F9FF 
+colorTo: BF92F9FF 
+sizeFrom: 0 
+sizeTo: 11 
+lightScl: 3 
+lightOpacity: 0 
+rotation: 45
+strokeFrom: 5 
+strokeTo: 0 
+sides: 3 
+}
+hitEffect: {
+type: WaveEffect 
+colorFrom: BF92F9FF 
+colorTo: BF92F9FF 
+sizeFrom: 0 
+sizeTo: 11 
+lightScl: 3 
+lightOpacity: 0 
+rotation: 0 
+strokeFrom: 5 
+strokeTo: 0 
+sides: 3 
+}
+}
+}
+]

@@ -1,0 +1,11 @@
+{
+  name: "abyss-protocol"
+  localizedName: "Abyss Protocol"
+  color: d1efff
+  speedMultiplier: 0.4
+  dragMultiplier: 0.01
+  effect: electrified
+  effectChance: 0.12
+  permanent: true
+  show: true
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Ashenite",
+  "color": "999A8EFF",
+  "cost": 1.5,
+  "hardness": 4,
+  "flammability": 0,
+  "explosiveness": 0,
+  "charge": 0,
+  "radioactivity": 0,
+  "research": {
+    "parent": Sclerocite
+  }
+hiddenOnPlanets: [serpulo, erekir]
+}

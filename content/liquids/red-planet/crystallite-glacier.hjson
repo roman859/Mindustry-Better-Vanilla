@@ -1,0 +1,10 @@
+type: liquid
+name: Crystallite Glacier
+description: -
+color: 8fe9ff
+lightColor: 8fe9ff33
+heatCapacity: 0.92
+temperature: 0.1
+viscosity: 0.5
+effect: freezing
+research: Liquid-crystallite

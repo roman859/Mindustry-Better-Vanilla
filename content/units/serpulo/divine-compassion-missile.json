@@ -1,0 +1,65 @@
+{
+  "type": "missile",
+  "flying": true,
+  "template": "MissileUnitType",
+  "hitSize": 16,
+  "health": 650,
+  "trailLength": 30,
+  "drawCell": false,
+   loopSound: missileTrail
+  "drag": 0.01,
+  "speed": 15,
+  "rotateSpeed": 2.5,
+  "lifetime": 180,
+  "deathExplosionEffect": "massiveExplosion",
+  "trailColor": "F2EB27FF",
+  "weapons": [
+    {
+      "shootCone": 360,
+      "mirror": false,
+      "reload": 1,
+      "shootOnDeath": true,
+      "shake": 1,
+      "bullet": {
+        "type": "ExplosionBulletType",
+        "splashDamage": 5000,
+        "splashDamageRadius": 240,
+        "buildingDamageMultiplier": 0.05,
+        "suppressionRange": 240,
+        "suppressionDuration": 360,
+        "ammoMultiplier": 7
+        "hitSound": "nuke-hit",
+        "hitSoundVolume": 6,
+        "status": "bettervanilla-cleansing",
+        "statusDuration": 1800,
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sizeFrom": 0,
+              "sizeTo": 250,
+              "lifetime": 120,
+              "colorFrom": "A8A31FFF",
+              "colorTo": "F2EB27FF",
+              "startDelay": 20
+            },
+            {
+              "type": "ParticleEffect",
+              "baseLength": 120,
+              "lifetime": 120,
+              "colorFrom": "A8A31FFF",
+              "colorTo": "F2EB27FF",
+              "interp": "circleOut",
+              "cone": 360,
+              "particles": 32,
+              "sizeFrom": 12,
+              "sizeTo": 0,
+              "spin": 0.2
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

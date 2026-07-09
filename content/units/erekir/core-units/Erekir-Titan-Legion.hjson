@@ -1,0 +1,114 @@
+name: Erekir Titan: Legion
+"template": "ErekirUnitType",
+type: payload
+flying: true
+fogRadius: 0
+isEnemy: false
+lowAltitude: true
+defaultController: BuilderAI
+buildSpeed: 1.65
+drag: 0.05
+speed: 4.15
+rotateSpeed: 5.5
+accel: 0.11
+itemCapacity: 250
+health: 1650
+engineOffset: 10
+engineSize: 4
+hitSize: 22
+range: 250
+vulnerableWithPayloads: true
+pickupUnits: true
+payloadCapacity: 576
+weapons: [
+{
+name: Erekir-Titan-Legion-turret1
+layerOffset: -0.01
+reload: 45
+recoil: 0
+x: 2.5
+y: -2
+rotateSpeed: 3.5
+rotate: true
+mirror: true
+ejectEffect: casing1
+shootSound: missile
+bullet: {
+type: MissileBulletType
+buildingDamageMultiplier: 0.01
+damage: 24
+splashDamage: 25
+splashDamageRadius: 10
+speed: 0.98
+keepVelocity: false
+width: 8
+height: 8
+shrinkY: 0
+drag: -0.03
+lifetime: 85
+sprite: missile
+homingRange: 12
+homingPower: 5.6
+lifetime: 95.3333333
+trailColor: F9AB63FF
+backColor: F9AB63FF
+frontColor: E6CBB3FF
+hitEffect: {
+type: ExplosionEffect
+waveRad: 8
+waveLife: 13
+waveColor: E6CBB3FF
+sparks: 5
+sparkColor: E6CBB3FF
+sparkRad: 12
+sparkStroke: 3
+sparkLen: 7
+smokes: 6
+smokeSize: 7
+smokeRad: 12
+smokeColor: F9AB63FF
+}
+despawnEffect: {
+type: ExplosionEffect
+waveRad: 8
+waveLife: 13
+waveColor: E6CBB3FF
+sparks: 5
+sparkColor: F9AB63FF
+sparkRad: 12
+sparkStroke: 3
+sparkLen: 7
+smokes: 6
+smokeSize: 7
+smokeRad: 12
+smokeColor: F9AB63FF
+}
+}
+}
+{
+name: Erekir-Titan-Legion-turret
+x: 0
+y: 0
+mirror: false
+reload: 340
+cooldownTime: 300
+recoil: 0
+rotate: false
+continuous: true
+"shootSound": "laserblast",
+      "bullet": {
+        "type": "ContinuousLaserBulletType",
+        "length": 65,
+        "width": 2,
+        buildingDamageMultiplier: 0.3
+        "damage": 25,
+        "lifetime": 85,
+        "collidesTeam": true,
+        "damageInterval": 10,
+        "colors": ["E6CBB3FF", "F0B57DFF", "F9AB63FF"],
+        "fadeTime": 70,
+        "status": "sapped",
+        "statusDuration": 60,
+      }
+}
+]

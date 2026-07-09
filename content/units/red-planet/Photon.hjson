@@ -1,0 +1,65 @@
+name: Photon
+"singleTarget": true,
+  "lowAltitude": true,
+  "type": "mech",
+  fogRadius: 25
+  "lightRadius": 25,
+  "canDrown": false,
+  "fallSpeed": 0.006,
+  "rotateSpeed": 1.85,
+  "crashDamageMultiplier": 10,
+  "speed": 0.5,
+  "accel": 0.4,
+  "drag": 0.4,
+  "aimDst": 15,
+  "faceTarget": true,
+  "flying": false,
+  "health": 350,
+  "hitSize": 15,
+  "armor": 2,
+  "mechFrontSway": 1,
+  "mechSideSway": 0.85,
+  "mechStepParticles": true,
+  "mechStepShake": 1,
+  "singleTarget": true,
+  "targetAir": true,
+  outlineColor: 282727FF
+"weapons": [
+   {
+    name: Photon-turret
+   shootCone: 15,
+      shootY: 1,
+      mirror: true,
+      alternate: true,
+      rotate: false,
+      top: true
+      y: 0,
+      x: 6,
+      reload: 35
+      cooldownTime: 30
+      recoil: 1,
+      ejectEffect: casing2,
+      shootSound: shoot,
+      shoot: {
+        shots: 1
+      },
+      shake: 1,
+      bullet: {
+        splashDamage: 5,
+        splashDamageRadius: 10,
+        knockback: 1,
+        type: BasicBulletType,
+        hitEffect: blastExplosion,
+        shootEffect: shootBig2,
+        despawnEffect: blastExplosion,
+        lifetime: 25,
+        damage: 25,
+        speed: 8,
+        width: 5,
+        height: 30,
+        colorFrom: 00FF1EFF,
+        colorTo: A1FCACFF
+      }
+    },
+  ],
+research: Dune-Mosquito

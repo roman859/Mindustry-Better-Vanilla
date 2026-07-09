@@ -1,0 +1,217 @@
+{
+  "type": "tank",
+  "name": "Desert-Vector",
+  "health": 11550,
+  "armor": 6,
+  "lightRadius": 75,
+  "squareShape": true,
+  "treadPullOffset": 29,
+  "hitSize": 30,
+  "singleTarget": true,
+  "omniMovement": false,
+  "speed": 0.9,
+  "rotateSpeed": 6,
+  "crushDamage": 0.06,
+  "faceTarget": false,
+  "flying": false,
+  "targetAir": true,
+  outlineColor: 282727FF
+  "weapons": [
+   {
+    name: Desert-Vector-turret1,
+     "x": 13.5,
+      "y": 0,
+      "shootSound": "bolt",
+      "mirror": true,
+      "alternate": true,
+      "reload": 40,
+      cooldownTime: 35
+      "rotate": true,
+      "inaccuracy": 7,
+      "rotateSpeed": 2.95
+    bullet: {
+        type: SapBulletType
+        sapStrength: 1.25
+        length: 125
+        width: 0.75
+        lifetime: 35
+        damage: 55
+        hitColor: FFA566FF 
+        color: FFA566FF
+
+shootEffect: {
+type: ParticleEffect 
+colorFrom: FFA566FF
+colorTo: FFA566FF
+particles: 5
+cone: 4
+length: 12
+baseLength: 5
+lightScl: 3
+lightOpacity: 2
+spin: 0
+sizeFrom: 1.5
+sizeTo: 0 
+offset: 1
+}
+
+despawnEffect: {
+type: WaveEffect 
+colorFrom: FFA566FF
+colorTo: FFA566FF
+sizeFrom: 0 
+sizeTo: 4
+lightScl: 4 
+lightOpacity: 1
+rotation: 0 
+strokeFrom: 2
+strokeTo: 0 
+}
+hitEffect: {
+type: WaveEffect 
+colorFrom: FFA566FF
+colorTo: FFA566FF
+sizeFrom: 0 
+sizeTo: 4
+lightScl: 4 
+lightOpacity: 1
+rotation: 0 
+strokeFrom: 2
+strokeTo: 0 
+}
+}
+},
+{
+      "name": "Desert-Vector-turret",
+      "x": 0,
+      "y": 0,
+      "shootSound": "cannon",
+      "mirror": false,
+      "alternate": true,
+      "reload": 105,
+       cooldownTime:95
+      "rotate": true,
+      "inaccuracy": 7,
+      "rotateSpeed": 1.95
+      "bullet": {
+        "type": "BasicBulletType",
+        "shootEffect": "shootTitan",
+        "smokeEffect": "shootSmokeTitan",
+        "hitColor": "FFA566FF",
+        "sprite": "large-orb",
+        "trailEffect": "missileTrail",
+        "trailInterval": 3,
+        "trailParam": 4,
+        "pierceCap": 3,
+        "fragOnHit": false,
+        "speed": 5,
+        "lifetime": 55,
+        "damage": 85,
+        "width": 16,
+        "height": 16,
+        "backColor": "FFA566FF",
+        "frontColor": "FFA566FF",
+        "shrinkX": 0,
+        "shrinkY": 0,
+        "trailColor": "FFA566FF",
+        "trailLength": 12,
+        "trailWidth": 2.2,
+        "despawnEffect": {
+          "type": "ExplosionEffect",
+          "waveColor": "FFA566FF",
+          "smokeColor": "FFA566FF",
+          "sparkColor": "FFA566FF",
+          "waveStroke": 4,
+          "waveRad": 40
+        },
+        "hitEffect": {
+          "type": "ExplosionEffect",
+          "waveColor": "FFA566FF",
+          "smokeColor": "FFA566FF",
+          "sparkColor": "FFA566FF",
+          "waveStroke": 4,
+          "waveRad": 40
+        },
+        "despawnSound": "dullExplosion",
+        "fragBullet": {
+          "type": "BasicBulletType",
+          "speed": 2,
+          "damage": 35,
+          "width": 8,
+          "hitSize": 4,
+          "height": 12,
+          "pierce": true,
+          "lifetime": 10,
+          "pierceBuilding": true,
+          "hitColor": "FFA566FF",
+          "backColor": "FFA566FF",
+          "trailColor": "FFA566FF",
+          "frontColor": "FFA566FF",
+          "trailWidth": 1.9,
+          "trailLength": 4,
+          "hitEffect": {
+            "colorFrom": "FFA566FF",
+            "colorTo": "FFA566FF",
+            "type": "WaveEffect",
+            "sizeTo": 4,
+            "strokeFrom": 4,
+            "lifetime": 10
+          },
+          "despawnEffect": {
+            "colorFrom": "FFA566FF",
+            "colorTo": "FFA566FF",
+            "type": "WaveEffect",
+            "sizeTo": 4,
+            "strokeFrom": 4,
+            "lifetime": 10
+          },
+          "homingPower": 0.2
+        },
+        "intervalBullet": {
+          "type": "BasicBulletType",
+          "speed": 2,
+          "damage": 35,
+          "width": 8,
+          "hitSize": 4,
+          "height": 12,
+          "pierce": true,
+          "lifetime": 10,
+          "pierceBuilding": true,
+          "hitColor": "FFA566FF",
+          "backColor": "FFA566FF",
+          "trailColor": "FFA566FF",
+          "frontColor": "FFA566FF",
+          "trailWidth": 1.9,
+          "trailLength": 4,
+          "hitEffect": {
+            "colorFrom": "FFA566FF",
+            "colorTo": "FFA566FF",
+            "type": "WaveEffect",
+            "sizeTo": 4,
+            "strokeFrom": 4,
+            "lifetime": 10
+          },
+          "despawnEffect": {
+            "colorFrom": "FFA566FF",
+            "colorTo": "FFA566FF",
+            "type": "WaveEffect",
+            "sizeTo": 4,
+            "strokeFrom": 4,
+            "lifetime": 10
+          },
+          "homingPower": 0.2
+        },
+        "bulletInterval": 3,
+        "intervalRandomSpread": 20,
+        "intervalBullets": 2,
+        "intervalAngle": 180,
+        "intervalSpread": 300,
+        "fragBullets": 10,
+        "fragVelocityMin": 0.5,
+        "fragVelocityMax": 1.5,
+        "fragLifeMin": 0.5
+      }
+    },
+  ],
+  "research": "Predator-Zhar"
+}

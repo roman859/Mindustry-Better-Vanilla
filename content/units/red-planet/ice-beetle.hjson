@@ -1,0 +1,95 @@
+type: legs
+name: Ice Beetle
+description: -
+health: 12000
+armor: 6
+speed: 0.45
+hitSize: 36
+rotateSpeed: 1.4
+legCount: 8
+legLength: 25
+legBaseOffset: 12
+legExtension: -8
+legSpeed: 0.2
+legMoveSpace: 1.2
+legForwardScl: 0.8
+legWidth: 14 
+legBaseRegion: ice-beetle-leg-base
+legRegion: ice-beetle-leg
+research: ice-incubator
+outlineColor: 282727FF
+parts: [
+  {
+    type: RegionPart
+    suffix: "-glow"
+    blending: additive
+    color: 8fe9ff44 
+    colorTo: 8fe9ffff 
+    progress: warmup
+    outline: false
+    mirror: false
+    under: false
+  }
+]
+weapons: [
+  {
+    name: ice-beetle-turret
+    x: 0
+    y: 0
+    rotate: true
+    mirror: false
+    reload: 50
+    shootSound: splash
+    recoil: 4
+    bullet: {
+      type: LiquidBulletType
+      liquid: crystallite-glacier
+      damage: 170
+      speed: 7
+      lifetime: 40
+      orbSize: 6
+      puddleSize: 60
+      despawnHit: true
+      despawnSound: splash
+      status: freezing
+      statusDuration: 400
+      trailColor: 8fe9ff
+      trailLength: 30
+      trailWidth: 4
+    }
+  }
+  {
+    name: ice-beetle-weapon 
+    x: 0
+    y: 15
+    rotate: false
+    mirror: false
+    reload: 100
+    shootSound: splash
+    shoot: {
+      type: ShootSpread
+      shots: 8
+      spread: 10
+    }
+    bullet: {
+      type: LiquidBulletType
+      liquid: crystallite-glacier
+      damage: 125
+      speed: 4
+      lifetime: 40
+      orbSize: 4
+      puddleSize: 85
+      despawnHit: true
+      despawnSound: splash
+      status: freezing
+      statusDuration: 600
+      hitEffect: hitLiquid
+    }
+  }
+]
+abilities: [
+  {
+      type: mindustry.entities.abilities.RegenAbility,
+      amount: 2.15
+    },
+   ]

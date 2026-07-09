@@ -1,0 +1,52 @@
+{
+  "type": "missile",
+  "template": "MissileUnitType",
+  "speed": 8,
+  "lifetime": 120,
+  "health": 250,
+  "hitSize": 4,
+  "drag": 0,
+  "homingPower": 0.2,
+  "homingRange": 150,
+  "trailColor": "F2EB27FF",
+  "deathExplosionEffect": "none",
+  "weapons": [
+    {
+      "shootOnDeath": true,
+      "reload": 1,
+      "bullet": {
+        "type": "ExplosionBulletType",
+        "splashDamage": 150,
+        "splashDamageRadius": 32,
+        "hitSound": "base-hit",
+        "status": "bettervanilla-cleansing",
+        "statusDuration": 360,
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sizeFrom": 0,
+              "sizeTo": 40,
+              "lifetime": 40,
+              "colorFrom": "A8A31FFF",
+              "colorTo": "F2EB27FF",
+              "strokeFrom": 2,
+              "strokeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "baseLength": 20,
+              "particles": 10,
+              "lifetime": 50,
+              "colorFrom": "A8A31FFF",
+              "colorTo": "F2EB27FF",
+              "sizeFrom": 3,
+              "sizeTo": 0
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

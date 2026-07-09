@@ -1,0 +1,9 @@
+name: liquid-fluorite
+temperature: 0.7
+heatCapacity: 0
+flammability: 0.85
+explosiveness: 0.55
+color: EAD414FF
+research: sulfur
+boilPoint: 0.95
+gasColor: EAD414FF

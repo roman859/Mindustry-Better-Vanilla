@@ -1,0 +1,31 @@
+localizedName: 312B00A
+mesh: {
+  type: SunMesh
+  divisions: 5
+  octaves: 1
+  persistence: 0.5
+  scl: 2
+  pow: 1
+  mag: 1
+  colorScale: 1.35
+  colors: [
+    FF9501FF, 
+    FF4700FF, 
+    FF4700FF, 
+    FF9501FF, 
+    FF4700FF
+  ]
+}
+radius: 15
+accessible: false
+visible: true
+hasAtmosphere: false
+bloom: true
+orbitSpacing: 10
+solarSystem: 312B00A
+parent: sun
+orbitRadius: 12000
+drawOrbit: false
+tidalLock: true
+iconColor: FF4700FF
+icon: commandRally

@@ -1,0 +1,45 @@
+name: Delta
+flying: true
+isEnemy: false
+lowAltitude: true
+mineSpeed: 12.52
+mineTier: 4
+defaultController: BuilderAI
+buildSpeed: 1.65
+drag: 0.05
+speed: 4.15
+rotateSpeed: 21
+accel: 0.11
+itemCapacity: 150
+health: 450
+engineOffset: 10
+engineSize: 4
+hitSize: 24
+weapons: [
+{
+name: delta-turret
+reload: 30
+x: 4
+y: -2
+shoot: {
+type: ShootSpread
+shots: 3
+shotDelay: 4
+spread: 3
+}
+inaccuracy: 1
+ejectEffect: casing1
+bullet: {
+type: BasicBulletType
+speed: 4
+damage: 45
+buildingDamageMultiplier: 0.01
+width: 7
+height: 12
+lifetime: 85
+shootEffect: shootSmall
+smokeEffect: shootSmallSmoke
+homingPower: 0.06
+}
+}
+]

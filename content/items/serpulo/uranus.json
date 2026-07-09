@@ -1,0 +1,15 @@
+{
+  "name": "uranus",
+  "description": "tne uranus",
+  "color": "92DD7EFF",
+  "cost": 1.8,
+  "hardness": 4,
+  "explosiveness": 0.55,
+  "flammability": 0,
+  "charge": 0.25,
+  "radioactivity": 1.28,
+  "research": {
+    "parent": "titanium",
+  }
+hiddenOnPlanets: [erekir, 312B55A]
+}

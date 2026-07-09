@@ -1,0 +1,513 @@
+type: naval
+name: "[violet]Abyss [blue]Overlord"
+description: "This 'Lord'-class titan is made up of 7 merged T5 ships. It is equipped with two huge ship cannons: one is double-barreled, and the other fires super-powerful energy pulses that break into dozens of fragments. Inspiration: anime [green]Synduality: Noir."
+health: 185500
+armor: 35
+outlineColor: 282727FF
+speed: 0.25
+drag: 0.14
+hitSize: 155
+accel: 0.5
+rotateSpeed: 0.65
+trailLength: 45
+waveTrailX: 8
+trailScl: 1.9
+faceTarget: false
+engineColor: d1efff
+engineLayer: 110
+canBoost: true
+boostMultiplier: 1.75
+landShake: 15
+engines: [
+  {
+    x: -48
+    y: -115
+    radius: 16
+    capSize: 20
+  },
+  {
+    x: 48
+    y: -115
+    radius: 16
+    capSize: 20
+  },
+  {
+    x: 0
+    y: -110
+    radius: 6
+    capSize: 14
+  }
+]
+immunities: [
+muddy,
+melting,
+tarred,
+freezing,
+blasted,
+wet
+]
+research: battleship
+weapons: [
+  {
+    name: "abyss-titan-pulse"
+    reload: 480
+    mirror: false
+    x: 0
+    y: 0
+    shootCone: 360
+    alwaysShooting: true
+    display: true    
+    bullet: {
+      type: ExplosionBulletType
+      damage: 255
+      radius: 240
+        killShooter: false
+        collides: false
+        collidesTeam: false
+        keepVelocity: false
+      status: bettervanilla-system-overload
+      statusDuration: 1200
+      shootEffect: {
+        type: WaveEffect
+        colorFrom: d1efff
+        colorTo: d1efff
+        sizeFrom: 0
+        sizeTo: 240            
+        lifetime: 80           
+        strokeFrom: 8          
+        strokeTo: 0
+      }
+      lightning: 12            
+      lightningLength: 25      
+      lightningDamage: 55
+      lightningColor: d1efff
+      collidesAir: true
+      collidesGround: true
+      shake: 6                 
+      shootSound: spell
+    }
+  }
+{
+  name: "abyss-black-hole-launcher"
+  reload: 950
+  mirror: false
+  layerOffset: 0.02
+  x: 0
+  y: -13.1
+  rotate: true
+  rotateSpeed: 0.65
+  shootStatus: unmoving
+  shootStatusDuration: 240
+  firstShootDalelay: 220
+  parts: [
+    {
+      type: RegionPart
+      suffix: "-blade"
+      under: true
+      outlineColor: 282727FF
+      outlineRadius: 3
+      outline: true
+      heatColor: ff6214
+      mirror: true
+      progress: warmup
+      moveX: 3
+      moveY: -5
+    }
+    {
+      type: RegionPart
+      suffix: "-front"
+      under: false
+      outlineColor: 282727FF
+      outlineRadius: 3
+      outline: true
+      mirror: true
+      progress: warmup
+      moveRot: -2
+      moveY: -5
+    }
+    {
+      type: RegionPart
+      suffix: "-side"
+      under: true
+      outlineColor: 282727FF
+      outlineRadius: 3
+      outline: true
+      mirror: true
+      progress: warmup
+      moveX: -4
+      moveY: 4
+    }
+    ]
+  bullet: {
+  chargeEffect: {
+    type: "multiEffect"
+    lifetime: 160
+    effects: [
+      {
+        type: "WaveEffect"
+        lifetime: 100
+        sizeFrom: 180
+        sizeTo: 0
+        startDelay: 60
+        interp: "pow3In"
+        strokeFrom: 0
+        strokeTo: 40
+        colorFrom: "66B1FF80"
+        colorTo: "66B1FF80"
+      }
+      {
+        type: "WaveEffect"
+        lifetime: 100
+        sizeFrom: 180
+        sizeTo: 0
+        startDelay: 60
+        interp: "pow3In"
+        strokeFrom: 0
+        strokeTo: 19
+        colorFrom: "A9D8FFaa"
+        colorTo: "A9D8FFaa"
+      }
+      {
+        type: "WaveEffect"
+        lifetime: 100
+        sizeFrom: 180
+        sizeTo: 0
+        startDelay: 60
+        interp: "pow3In"
+        strokeFrom: 0
+        strokeTo: 10
+        colorFrom: "A9D8FFFF"
+        colorTo: "A9D8FFFF"
+      }
+      {
+        type: "ParticleEffect"
+        line: true
+        particles: 25
+        lifetime: 140
+        offset: 50
+        length: 255
+        baseLength: -255
+        cone: 360
+        interp: "pow3In"
+        sizeInterp: "pow5Out"
+        strokeFrom: 0
+        strokeTo: 2.5
+        lenFrom: 0
+        lenTo: 10
+        colorFrom: "A9D8FFFF"
+        colorTo: "66B1FFFF"
+      }
+      {
+        type: "ParticleEffect"
+        particles: 1
+        sizeFrom: 2
+        sizeTo: 45
+        length: 0
+        spin: 10
+        interp: "swingOut"
+        lifetime: 160
+        region: "circle"
+        colorFrom: "66B1FFFF"
+        colorTo: "66B1FFFF"
+      }
+      {
+        type: "WaveEffect"
+        lifetime: 110
+        sizeFrom: 180
+        sizeTo: 0
+        interp: "pow5Out"
+        startDelay: 10
+        strokeFrom: 0
+        strokeTo: 12
+        colorFrom: "A9D8FFff"
+        colorTo: "66B1FFff"
+      }
+    ]
+  }
+  type: "empBulletType"
+  sprite: "bettervanilla-star-core-bullet" 
+  status: "bettervanilla-system-overload"
+  timeIncrease: 0
+  powerDamageScl: 1
+  powerSclDecrease: 0.1
+  unitDamageScl: 0.5
+  lightRadius: 100
+  statusDuration: 300
+  hitSound: "plasmaboom"
+  hitColor: "A9D8FFFF"
+  shrinkY: 0
+  shrinkX: 0
+  lightning: 17
+  lightningDamage: 330
+  lightningColor: "A9D8FFFF"
+  lightningCone: 360
+  lightningLengthRand: 19
+  lightningLength: 10
+  speed: 5.5
+  spin: 6
+  lifetime: 120
+  damage: 4620
+  height: 104
+  width: 104
+  radius: 150
+  splashDamageRadius: 74
+  splashDamage: 2064
+  trailColor: "66B1FFff"
+  trailLength: 10
+  trailWidth: 6
+  frontColor: "A9D8FFFF"
+  backColor: "66B1FFff"
+  parts: [
+    {
+      sprite: "bettervanilla-energy-partical"
+      under: true
+      rotateSpeed: 2
+      width: 90
+      height: 90
+    }
+    {
+      sprite: "bettervanilla-energy-partical-back"
+      under: true
+      rotateSpeed: -1.5
+      width: 80
+      height: 80
+    }
+  ]
+  fragBullets: 14
+  fragLifeMin: 0.2
+  fragBullet: {
+    type: "basicBulletType"
+    sprite: "bettervanilla-tall" 
+    homingPower: 0.07
+    homingRange: 70
+    homingDelay: 8
+    trailColor: "66B1FFAA"
+    trailLength: 8
+    trailWidth: 2
+    lifetime: 60
+    damage: 88
+    statusDuration: 90
+    status: "freezing"
+    speed: 6
+    width: 27
+    height: 27
+    backColor: "66B1FFAA"
+    frontColor: "A9D8FFFF"
+  }
+}
+}
+{
+  name: abyss-ships-cannon
+  x: 0
+  y: 36.7
+  reload: 325
+  shake: 4
+  rotate: true
+  mirror: false
+  layerOffset: 0.01
+  rotateSpeed: 0.8
+  shootSound: cannon
+  shoot: {
+    type: ShootBarrel
+    shots: 4
+    shotDelay: 25
+    type: ShootBarrel
+    barrels: [
+      "-8", "28.6", "0", 
+       "8", "28.6", "0"
+    ]
+  }
+  parts: [
+  {
+      type: RegionPart
+      suffix: "-barrel1"
+      progress: recoil
+      outlineColor: 282727FF
+      outlineRadius: 3
+      layerOffset: -0.001
+      moveY: -6
+      under: false
+    }
+   {
+      type: RegionPart
+      suffix: "-barrel2"
+      progress: recoil
+      outlineColor: 282727FF
+      outlineRadius: 3
+      layerOffset: -0.001
+      moveY: -6
+      under: false
+    }
+]
+    bullet: {
+  type: BasicBulletType
+  shootEffect: shootTitan
+  smokeEffect: shootSmokeTitan
+  hitColor: 66B1FFFF
+  sprite: large-orb
+  trailEffect: missileTrail
+  trailInterval: 3
+  trailParam: 4
+  pierceCap: 3
+  fragOnHit: false
+  speed: 5
+  lifetime: 150
+  damage: 450
+  width: 16
+  height: 16
+  backColor: 66B1FFFF
+  frontColor: A9D8FFFF
+  shrinkX: 0
+  shrinkY: 0
+  trailColor: 66B1FFFF
+  trailLength: 12
+  trailWidth: 2.2
+  despawnEffect: {
+    type: ExplosionEffect
+    waveColor: 66B1FFFF
+    smokeColor: A9D8FFaa
+    sparkColor: A9D8FFFF
+    waveStroke: 4
+    waveRad: 40
+  }
+  hitEffect: {
+    type: ExplosionEffect
+    waveColor: 66B1FFFF
+    smokeColor: A9D8FFaa
+    sparkColor: A9D8FFFF
+    waveStroke: 4
+    waveRad: 40
+  }
+  despawnSound: dullExplosion
+  fragBullet: {
+    type: BasicBulletType
+    sprite: bullet
+    speed: 2
+    damage: 175
+    width: 8
+    hitSize: 4
+    height: 12
+    pierce: true
+    lifetime: 21
+    pierceBuilding: true
+    hitColor: 66B1FFFF
+    backColor: 66B1FFFF
+    trailColor: 66B1FFFF
+    frontColor: A9D8FFFF
+    trailWidth: 1.9
+    trailLength: 4
+    hitEffect: {
+      colorFrom: 66B1FFFF
+      colorTo: A9D8FFFF
+      type: WaveEffect
+      sizeTo: 4
+      strokeFrom: 4
+      lifetime: 10
+    }
+    despawnEffect: {
+      colorFrom: 66B1FFFF
+      colorTo: A9D8FFFF
+      type: WaveEffect
+      sizeTo: 4
+      strokeFrom: 4
+      lifetime: 10
+    }
+    homingPower: 0.2
+  }
+  intervalBullet: {
+    type: BasicBulletType
+    sprite: bullet
+    speed: 2
+    damage: 125
+    width: 8
+    hitSize: 4
+    height: 12
+    pierce: true
+    lifetime: 21
+    pierceBuilding: true
+    hitColor: 66B1FFFF
+    backColor: 66B1FFFF
+    trailColor: 66B1FFFF
+    frontColor: A9D8FFFF
+    trailWidth: 1.9
+    trailLength: 4
+    hitEffect: {
+      colorFrom: 66B1FFFF
+      colorTo: A9D8FFFF
+      type: WaveEffect
+      sizeTo: 4
+      strokeFrom: 4
+      lifetime: 10
+    }
+    despawnEffect: {
+      colorFrom: 66B1FFFF
+      colorTo: A9D8FFFF
+      type: WaveEffect
+      sizeTo: 4
+      strokeFrom: 4
+      lifetime: 10
+    }
+    homingPower: 0.2
+  }
+  bulletInterval: 3
+  intervalRandomSpread: 20
+  intervalBullets: 2
+  intervalAngle: 180
+  intervalSpread: 300
+  fragBullets: 10
+  fragVelocityMin: 0.5
+  fragVelocityMax: 1.5
+  fragLifeMin: 0.5
+}
+}
+  {
+    name: "abyss-missile-launcher"
+    x: 65
+    y: -20
+    rotate: false
+    baseRotation: -60
+    shootCone: 360
+    mirror: false
+    reload: 450
+    shoot: {
+      type: ShootBurst
+      shots: 4
+      shotDelay: 45
+    }
+    
+    bullet: {
+      spawnUnit: bettervanilla-boss-missile
+     }
+  }
+  {
+    name: "abyss-missile-launcher"
+    x: -65
+    y: -20
+    rotate: false 
+    baseRotation: 60
+    shootCone: 360
+    mirror: false
+    reload: 450
+    shoot: {
+      type: ShootBurst
+      shots: 4
+      shotDelay: 45
+    }
+    bullet: {
+      spawnUnit: bettervanilla-boss-missile
+     }
+  }
+]
+abilities: [
+  {
+      type: mindustry.entities.abilities.RegenAbility,
+      amount: 1.5
+    },
+    {
+      type: mindustry.entities.abilities.ForceFieldAbility
+      radius: 150
+      regen: 1.1
+      max: 12550
+      cooldown: 1200
+    }
+   ]
