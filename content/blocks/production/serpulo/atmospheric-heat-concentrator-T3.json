@@ -1,0 +1,54 @@
+{
+  "type": "HeatProducer",
+  "name": "Heating Element T3",
+  "size": 3,
+  "rotateDraw": false,
+  "researchCostMultiplier": 4,
+  "category": "crafting",
+  "research": "atmospheric-heat-concentrator-T2",
+  "requirements": [
+    "titanium/30",
+    "graphite/25"
+  ],
+  "heatOutput": 18,
+  "regionRotated1": 1,
+  "ambientSound": "extractLoop",
+  "ambientSoundVolume": 0.09,
+  "consumes": {
+    "power": 4.5
+  },
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawSpikes",
+        "color": "ffd59e",
+        "stroke": 0.6,
+        "layers": 2,
+        "length": 2,
+        "amount": 6,
+        "rotateSpeed": 0.5,
+        "layerSpeed": -0.9
+      },
+      {
+        "type": "DrawParticles",
+        "color": "ffd59e",
+        "alpha": 0.6,
+        "particleSize": 4,
+        "particles": 16,
+        "particleRad": 12,
+        "particleLife": 140
+      },
+      {
+        "type": "DrawDefault" 
+      },
+      {
+        "type": "DrawHeatOutput" 
+      }
+    ]
+  }
+}

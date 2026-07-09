@@ -1,0 +1,48 @@
+{
+  "type": "RegenProjector",
+  "name": "Nano-Repair Point",
+  "description": "Slowly repairs nearby allied blocks. Can be boosted with Red Silicon for 50% faster healing.",
+  "size": 1,
+  "health": 225,
+  "armor": 2,
+  "category": "effect",
+  "range": 10,
+  "healPercent": 0.02,
+  "baseColor": "c62a2aff",
+  "squareSprite": false,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      { "type": "DrawDefault" },
+      {
+        "type": "DrawPulseShape",
+        "square": true,
+        "color": "c62a2aff",
+        "layer": 110
+      },
+      {
+        "type": "DrawSoftGlow",
+        "color": "c62a2aff",
+        "radius": 15,
+        "alpha": 0.5
+      }
+    ]
+  },
+  "consumes": {
+    "power": 0.95,
+    "items": {
+      "items": [ "red-silicon/1" ],
+      "optional": true,
+      "booster": true
+    }
+  },
+  "optionalUseTime": 120,
+  "optionalMultiplier": 1.5,
+  "requirements": [
+    { "item": "red-beryllium", "amount": 10 },
+    { "item": "red-graphite", "amount": 5 },
+    { "item": "red-sand", "amount": 8 },
+    { "item": "basalt", "amount": 10 }
+  ],
+  "research": "sand-core"
+}

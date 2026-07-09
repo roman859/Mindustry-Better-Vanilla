@@ -1,0 +1,20 @@
+type: CoreBlock
+name: Core: "Fortress"
+description: This core has large storage capacity and good strength.
+requirements: [
+  copper/10000
+  lead/9000
+  silicon/7000
+  thorium/6000
+  surge-alloy/1200
+  phase-fabric/600
+]
+armor: 5
+size: 6
+squareSprite: false
+unitType: delta
+health: 14500
+itemCapacity: 25000
+unitCapModifier: 32
+category: effect
+research: core-nucleus

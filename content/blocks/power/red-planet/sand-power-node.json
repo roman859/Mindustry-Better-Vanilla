@@ -1,0 +1,18 @@
+{
+  "type": "PowerNode",
+  "name": "sand-power-node",
+  "size": 1,
+  "health": 65,
+  "laserRange": 10,
+  "maxNodes": 6,
+  "requirements": [
+  basalt/5
+  red-beryllium/4
+  ],
+  "category": "power",
+  "research": "sand-generator"
+  researchCost: [
+basalt/5
+red-beryllium/4
+]
+}

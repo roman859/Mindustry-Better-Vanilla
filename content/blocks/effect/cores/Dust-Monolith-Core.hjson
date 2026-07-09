@@ -1,0 +1,20 @@
+type: CoreBlock
+name: Dust-Monolith-Core
+description: -
+requirements: [
+  basalt/3500
+  crystallite/1550
+  red-beryllium/1645
+]
+incinerateNonBuildable: true
+buildCostMultiplier: 0.7
+requiresCoreZone: true
+size: 4
+squareSprite: false
+unitType: Sky-Nomad
+armor: 6
+health: 6750
+itemCapacity: 4500
+unitCapModifier: 15
+category: effect
+research: sand-core

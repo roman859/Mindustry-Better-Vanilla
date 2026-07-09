@@ -1,0 +1,73 @@
+{
+  "type": "ConsumeGenerator",
+  "name": "Chemical Ignition Reactor",
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawLiquidTile",
+        "drawLiquid": "ozone"
+        "padding": 2,
+        "alpha": 0.8,
+      },
+      {
+        "type": "DrawPistons",
+      },
+      {
+        "type": "DrawRegion",
+        "suffix": "-mid"
+      },
+      {
+        "type": "DrawLiquidTile",
+        "drawLiquid": "arkycite"
+        "padding": 13,
+        "alpha": 0.8,
+      },
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawGlowRegion",
+        "color": "7ec781",
+        "suffix": "-arkyglow"
+      },
+      {
+        "type": "DrawGlowRegion",
+        "color": "ffbdd4",
+        "suffix": "-ozoneglow"
+      },
+    ]
+  },
+  "health": 1860,
+  "size": 5,
+  "hasPower": true,
+  "hasLiquids": true,
+  "hasItems": true,
+  "itemCapacity": 10,
+  "liquidCapacity": 600,
+  "powerProduction": 80,
+  "consumes": {
+    "liquids": [
+      "ozone/0.2",
+      "arkycite/2",
+    ],
+    "items": [
+      "graphite/5",
+    ]
+  },
+  "squareSprite": false,
+  "requirements": [
+    "silicon/800",
+    "surge-alloy/360",
+    "carbide/600",
+    "phase-fabric/600",
+    "oxide/480"
+  ],
+  "craftTime": 60,
+  "category": "power",
+  "research": "chemical-combustion-chamber"
+}

@@ -1,0 +1,13 @@
+{
+type: battery
+name: red-battery
+	"size": 1,
+	"health": 250,
+	"category": "power",
+	"requirements": [
+		basalt/20
+  red-beryllium/15
+	],
+	"consumes": { "powerBuffered": 5500 },
+	"research": "sand-power-node"
+}

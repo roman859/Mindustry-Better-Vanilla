@@ -1,0 +1,51 @@
+{
+  "type": "GenericCrafter",
+  "name": "Iron mine",
+  "description": "the iron mine.",
+  "size": 2,
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": false,
+  "health": 160,
+  "craftTime": 240,
+  "craftEffect": "smeltsmoke",
+  "updateEffect": "smeltsmoke",
+  "consumes": {
+    "power": 0.8,
+    "items": {
+      "items": [
+        {
+          "item": "copper",
+          "amount": 2
+        },
+        {
+          "item": "scrap",
+          "amount": 4
+        }
+      ]
+    },
+    "liquid": 
+      {
+        "liquid": "water",
+        "amount": 0.2
+      }
+    },
+  "requirements": [
+    {
+      "item": "copper",
+      "amount": 150
+    },
+    {
+      "item": "lead",
+      "amount": 120
+    },
+    {
+      "item": "titanium",
+      "amount": 50
+    }
+  ],
+  itemCapacity: 50
+  "category": "crafting",
+  "research": "plastanium-compressor",
+  "outputItem": "iron/10"
+}

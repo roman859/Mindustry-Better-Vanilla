@@ -1,0 +1,34 @@
+{
+  "type": "PowerNode",
+  "name": "Advanced Surge Tower",
+  "description": "A power node with a lot of range but a max of 2 connections. A better surge tower.",
+  "details": "And upgraded version of the original.",
+  "size": 3,
+  "health": 320,
+  "laserRange": 200,
+  "maxNodes": 2,
+  "requirements": [
+    {
+      "item": "lead",
+      "amount": 36
+    },
+    {
+      "item": "silicon",
+      "amount": 65
+    },
+    {
+      "item": "titanium",
+      "amount": 35
+    },
+    {
+      "item": "phase-fabric",
+      "amount": 50
+    },
+    {
+      "item": "surge-alloy",
+      "amount": 20
+    }
+  ],
+  "category": "power",
+  "research": "surge-tower"
+}
