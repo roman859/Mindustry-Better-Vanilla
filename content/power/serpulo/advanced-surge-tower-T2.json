@@ -1,0 +1,37 @@
+{
+  "type": "BeamNode",
+  "name": "Advanced Surge Tower T2",
+  "description": "A power node with a lot of range but a max of 4 connections. A better surge tower.",
+  "size": 3,
+  "health": 1000,
+  "armor": 10,
+  "range": 400,
+  "requirements": [
+   {
+      "item": "lead",
+      "amount": 200
+    },
+    {
+      "item": "silicon",
+      "amount": 250
+    },
+    {
+      "item": "titanium",
+      "amount": 400
+    },
+    {
+      "item": "phase-fabric",
+      "amount": 120
+    },
+    {
+      "item": "surge-alloy",
+      "amount": 40
+    }
+  ],
+  "category": "power",
+  "research": "advanced-surge-tower",
+  "laserColor1": "00FF08FF",
+  "laserColor2": "FF0000FF",
+  "laserScale": 0.6,
+  "researchCostMultiplier": 0.2
+}

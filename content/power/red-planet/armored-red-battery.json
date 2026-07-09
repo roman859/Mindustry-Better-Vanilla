@@ -1,0 +1,15 @@
+{
+type: battery
+name: armored-red-battery
+	"size": 2,
+	"health": 750,
+ "armor": 2
+	"category": "power",
+	"requirements": [
+		basalt/40
+  red-beryllium/30
+  red-silicon/25
+	],
+	"consumes": { "powerBuffered": 6600 },
+	"research": "red-battery"
+}

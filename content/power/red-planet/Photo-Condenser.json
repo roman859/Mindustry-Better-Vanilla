@@ -1,0 +1,39 @@
+{
+  "type": "ConsumeGenerator",
+  "name": "Photo-Condenser",
+  "description": "-",
+  "size": 3,
+  "health": 250,
+  "armor": 2
+  "hasPower": true,
+  "hasItems": false,
+  "hasLiquids": true,
+  "itemCapacity": 25,
+  "liquidCapacity": 160,
+  "squareSprite": false,
+  "powerProduction": 0.95,
+  "outputLiquid": "water/0.05",
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "drawLiquid": "water"
+      },
+      {
+        "type": "DrawDefault"
+      },
+    ]
+  },
+  "category": "power",
+  "research": "sand-generator",
+  "requirements": [
+    { "item": "red-beryllium", "amount": 145 },
+    { "item": "red-graphite", "amount": 55 },
+    { "item": "red-silicon", "amount": 25 },
+  ]
+}

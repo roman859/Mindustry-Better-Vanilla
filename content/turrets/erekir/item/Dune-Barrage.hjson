@@ -1,0 +1,236 @@
+name: Dune-Barrage
+size: 4 
+health: 2550
+reload: 350
+squareSprite: false
+maxHeatEfficiency: 2
+type: ItemTurret
+ammoCapacity: 180
+ammoPerShot: 8
+rotateSpeed: 0.95
+recoil: 2
+shootSound: artillery
+range: 425,
+targetAir: false
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      suffix: -side
+      mirror: true,
+      progress: warmup
+      moveX: 1.5
+      under: true
+      moveRot: -15
+      moves: [
+        {
+          type: PartMove
+          progress: recoil
+          y: -1
+        }
+      ]
+    }
+    ]
+},
+consumes: {
+  coolant: {
+      amount: 0.25,
+      reloadMultiplier: 1.1,
+      optional: true
+    }
+  power: 6.5
+}
+shoot: {
+  firstShotDelay: 30
+  shots: 1
+}
+ammoTypes: {
+  thorium: {
+      type: ArtilleryBulletType
+          type: BasicBulletType,
+          pierce: true,
+          pierceBuilding: true,
+          damage: 450,
+          speed: 3.5,
+          hitSize: 6,
+          width: 4.5,
+          height: 10,
+          buildingDamageMultiplier: 0.3,
+          lifetime: 130,
+          mixColorFrom: F9A3C7FF,
+          mixColorTo: CB8EBFFF,
+          hitColor: F9A3C7FF,
+          trailColor: F9A3C7FF,
+          frontColor: FFFFFFF0,
+          trailWidth: 2,
+          trailLength: 14,
+        hitEffect: {
+          type: WaveEffect,
+          colorFrom: CB8EBF0F,
+          colorTo: CB8EBFFF,
+          sizeTo: 5,
+          strokeFrom: 4,
+          lifetime: 30
+        },
+      fragBullets: 4,
+      fragVelocityMin: 0.8,
+      fragVelocityMax: 2,
+      fragLifeMin: 0.6,
+      fragBullet: {
+        type: BasicBulletType,
+        pierce: true,
+        pierceBuilding: true,
+        damage: 65,
+        hitSize: 2,
+        width: 9,
+        height: 15,
+        lifetime: 60,
+        buildingDamageMultiplier: 0.3,
+        homingPower: 0.1,
+        mixColorFrom: F9A3C7FF,
+        mixColorTo: CB8EBFFF,
+        hitColor: F9A3C7FF,
+        trailColor: F9A3C7FF,
+        frontColor: FFFFFFF0,
+        trailWidth: 2,
+        trailLength: 20,
+        homingPower: 0.1,
+        homingRange: 50,
+        bulletInterval: 3,
+        intervalRandomSpread: 20,
+        intervalBullets: 2,
+        intervalAngle: 180,
+        intervalSpread: 300,
+        hitEffect: {
+          type: WaveEffect,
+          colorFrom: CB8EBF0F,
+          colorTo: CB8EBFFF,
+          sizeTo: 3,
+          strokeFrom: 2,
+          lifetime: 30
+        }
+      },
+      splashDamageRadius: 45,
+      splashDamage: 75,
+      hitSound: titanExplosion,
+      hitShake: 4,
+      shootEffect: thoriumShoot,
+      hitEffect: [
+        shootBig2,
+        {
+          sizeTo: 3,
+          lifetime: 58,
+          strokeFrom: 4,
+          colorFrom: CB8EBF01,
+          colorTo: CB8EBF0F
+        },
+        {
+          type: WaveEffect,
+          colorFrom: CB8EBF0F,
+          colorTo: CB8EBFFF,
+          sizeTo: 10,
+          strokeFrom: 4,
+          lifetime: 60
+        }
+      ]
+    },
+   carbide: {
+      type: ArtilleryBulletType
+          type: BasicBulletType,
+          pierce: true,
+          pierceBuilding: true,
+          damage: 850,
+          speed: 3.5,
+          hitSize: 6,
+          width: 4.5,
+          height: 15,
+          buildingDamageMultiplier: 0.3,
+          lifetime: 130,
+          mixColorFrom: 50477BFF,
+          mixColorTo: C9A5C8FF,
+          hitColor: 50477BFF,
+          trailColor: C9A5C8FF,
+          frontColor: 50477BFF,
+          trailWidth: 2,
+          trailLength: 14,
+        hitEffect: {
+          type: WaveEffect,
+          colorFrom: C9A5C8FF,
+          colorTo: 50477BFF,
+          sizeTo: 5,
+          strokeFrom: 4,
+          lifetime: 30
+        },
+      fragBullets: 8,
+      fragVelocityMin: 0.8,
+      fragVelocityMax: 2,
+      fragLifeMin: 0.6,
+      fragBullet: {
+        type: BasicBulletType,
+        pierce: true,
+        pierceBuilding: true,
+        damage: 85,
+        hitSize: 2,
+        width: 9,
+        height: 15,
+        lifetime: 60,
+        buildingDamageMultiplier: 0.3,
+        homingPower: 0.1,
+        mixColorFrom: 50477BFF,
+        mixColorTo: C9A5C8FF,
+        hitColor: 50477BFF,
+        trailColor: C9A5C8FF,
+        frontColor: 50477BFF,
+        trailWidth: 2,
+        trailLength: 20,
+        homingPower: 0.1,
+        homingRange: 50,
+        bulletInterval: 3,
+        intervalRandomSpread: 20,
+        intervalBullets: 2,
+        intervalAngle: 180,
+        intervalSpread: 300,
+        hitEffect: {
+          type: WaveEffect,
+          colorFrom: 50477BFF,
+          colorTo: 50477BFF,
+          sizeTo: 3,
+          strokeFrom: 2,
+          lifetime: 30
+        }
+      },
+      splashDamageRadius: 65,
+      splashDamage: 150,
+      hitSound: titanExplosion,
+      hitShake: 4,
+      shootEffect: thoriumShoot,
+      hitEffect: [
+        shootBig2,
+        {
+          sizeTo: 3,
+          lifetime: 58,
+          strokeFrom: 4,
+          colorFrom: C9A5C8FF,
+          colorTo: 50477BFF
+        },
+        {
+          type: WaveEffect,
+          colorFrom: C9A5C8FF,
+          colorTo: 50477BFF,
+          sizeTo: 10,
+          strokeFrom: 4,
+          lifetime: 60
+        }
+      ]
+    }
+}
+requirements: [
+thorium/450
+silicon/250
+carbide/125
+oxide/125
+surge-alloy/150
+]
+category: turret
+research: titan

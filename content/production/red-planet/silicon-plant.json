@@ -1,0 +1,66 @@
+{
+  "type": "GenericCrafter",
+  "name": "silicon plant",
+  "squareSprite": false,
+  "size": 4,
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": true,
+  "health": 360,
+  "craftTime": 240,
+  "craftEffect": "smeltsmoke",
+  "updateEffect": "smeltsmoke",
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "drawLiquid": "slag"
+      },
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawGlowRegion",
+        "color": "fdb380",
+      }
+    ]
+  },
+  "consumes": {
+    "power": 0.9,
+    "items": {
+      "items": [
+        {
+          "item": "red-coal",
+          "amount": 6
+        },
+        {
+          "item": "red-sand",
+          "amount": 10
+        }
+      ]
+    },
+    "liquids": {
+			"liquids": [
+				"slag/0.35"
+			]
+    },
+  }
+  "requirements": [
+    "basalt/135",
+    "red-beryllium/125",
+    "red-graphite/120"
+  ],
+  "category": "crafting",
+  "research": "graphite-plant",
+  "outputItem": "red-silicon/6",
+  "researchCost": [
+  "basalt/135",
+  "red-beryllium/125",
+  "red-graphite/120"
+]
+}

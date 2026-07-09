@@ -1,0 +1,54 @@
+{
+  "type": "HeatProducer",
+  "name": "Heating Element T1",
+  "size": 1,
+  "rotateDraw": false,
+  "researchCostMultiplier": 4,
+  "category": "crafting",
+  "research": "iron-mine",
+  "requirements": [
+    "titanium/5",
+    "graphite/10"
+  ],
+  "heatOutput": 2,
+  "regionRotated1": 1,
+  "ambientSound": "extractLoop",
+  "ambientSoundVolume": 0.09,
+  "consumes": {
+    "power": 1.5
+  },
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawSpikes",
+        "color": "ffd59e",
+        "stroke": 0.6,
+        "layers": 2,
+        "length": 2,
+        "amount": 6,
+        "rotateSpeed": 0.5,
+        "layerSpeed": -0.9
+      },
+      {
+        "type": "DrawParticles",
+        "color": "ffd59e",
+        "alpha": 0.6,
+        "particleSize": 4,
+        "particles": 16,
+        "particleRad": 12,
+        "particleLife": 140
+      },
+      {
+        "type": "DrawDefault" 
+      },
+      {
+        "type": "DrawHeatOutput" 
+      }
+    ]
+  }
+}

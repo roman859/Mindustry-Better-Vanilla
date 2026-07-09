@@ -1,0 +1,74 @@
+{
+  "type": "GenericCrafter",
+  "name": "red steel plant",
+  "squareSprite": false,
+  "size": 5,
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": true,
+  "health": 560,
+  "craftTime": 480,
+  "craftEffect": "smeltsmoke",
+  "updateEffect": "smeltsmoke",
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "drawLiquid": "slag"
+      },
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawGlowRegion",
+        "color": "fdb380",
+      }
+    ]
+  },
+  "consumes": {
+    "power": 1.55,
+    "items": {
+      "items": [
+        {
+          "item": "red-coal",
+          "amount": 6
+        },
+        {
+          "item": "red-beryllium",
+          "amount": 4
+        },
+        {
+          "item": "crystallite",
+          "amount": 1
+        }
+      ]
+    },
+    "liquids": {
+			"liquids": [
+				"slag/0.45"
+			]
+    },
+  }
+  "requirements": [
+    "basalt/315",
+    "red-beryllium/255",
+    "red-graphite/220",
+    "red-silicon/150",
+    "crystallite/120"
+  ],
+  "category": "crafting",
+  "research": "silicon-plant",
+  "outputItem": "red-steel/4",
+  "researchCost": [
+    "basalt/1500",
+    "red-beryllium/1000",
+    "red-graphite/880",
+    "red-silicon/550",
+    "crystallite/450"
+]
+}

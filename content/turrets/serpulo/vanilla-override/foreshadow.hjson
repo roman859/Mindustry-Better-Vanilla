@@ -1,0 +1,37 @@
+ammoTypes: {
+surge-alloy: {
+type: RailBulletType
+shootEffect: instShoot
+hitEffect: instHit
+pierceEffect: railHit
+smokeEffect: smokeCloud
+pointEffect: instTrail
+despawnEffect: instBomb
+pointEffectSpace: 20
+damage: 1350
+buildingDamageMultiplier: 0.2
+maxDamageFraction: 0.6
+pierceDamageFactor: 1
+length: 500
+hitShake: 6
+ammoMultiplier: 1
+}
+phase-fabric: {
+type: RailBulletType
+shootEffect: instShoot
+hitEffect: instHit
+pierceEffect: railHit
+smokeEffect: smokeCloud
+pointEffect: instTrail
+despawnEffect: instBomb
+pointEffectSpace: 20
+damage: 675
+buildingDamageMultiplier: 0.2
+maxDamageFraction: 0.6
+pierceDamageFactor: 1
+length: 750
+hitShake: 6
+ammoMultiplier: 1
+rangeChange: 250
+}
+}

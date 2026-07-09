@@ -1,0 +1,27 @@
+{
+  "name": "Phase Heater T2",
+  "type": "HeatProducer",
+  "requirements": [
+    "silicon/60",
+    "thorium/60",
+    "tungsten/60",
+    "oxide/40",
+    "surge-alloy/20",
+    "phase-fabric/25"
+  ],
+  "size": 2,
+  "hasPower": true,
+  "heatOutput": 25,
+  "regionRotated1": 1,
+  "ambientSound": "hum",
+  "itemCapacity": "20",
+  "consumes": {
+    "power": 2.5,
+    "items": [
+      "phase-fabric/2"
+    ]
+  },
+  "research": "phase-heater",
+  "category": "crafting",
+  "craftTime": "450",
+}

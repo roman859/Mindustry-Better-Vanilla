@@ -1,0 +1,70 @@
+{
+  "type": "ConsumeGenerator",
+  "name": "Crystallite-Reactor",
+  "description": "-",
+  "size": 4,
+  "health": 1556,
+  "armor": 5
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": true,
+  "itemCapacity": 30,
+  "liquidCapacity": 160,
+  "craftTime": 125,
+  "powerProduction": 20.5,
+  "liquidCapacity": 250,
+  "squareSprite": false,
+  "consumes": {
+    "items": [
+      {
+        "item": "crystallite",
+        "amount": 15
+      }
+    ],
+    "liquids": [
+      { "liquid": "water", "amount": 1.9 }
+    ]
+  },
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "drawLiquid": "water"
+      },
+      {
+        "type": "DrawBlurSpin",
+        "suffix": "-rotator1",
+        "rotateSpeed": 4.5
+      },
+      {
+        "type": "DrawBlurSpin",
+        "suffix": "-rotator2",
+        "rotateSpeed": -4.5
+      },
+      {
+        "type": "DrawDefault"
+      },
+      {
+       "type": "DrawGlowRegion",
+        "color": "c62a2aff"
+      }
+    ]
+  },
+  "ambientSound": "hum",
+  "ambientSoundVolume": 0.06,
+  "generateEffect": "generatespark",
+  "category": "power",
+  "research": "large-sand-generator",
+  "requirements": [
+    { "item": "red-steel", "amount": 250 },
+    { "item": "red-beryllium", "amount": 450 },
+    { "item": "red-graphite", "amount": 200 },
+    { "item": "red-silicon", "amount": 350 },
+    { "item": "crystallite", "amount": 120 }
+  ]
+}

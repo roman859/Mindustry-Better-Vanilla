@@ -1,0 +1,97 @@
+type: itemTurret
+name: spreading
+health: 3550
+size: 3
+range: 400
+reload: 75
+recoil: 1.8
+shake: 1.5
+shootY: 9
+targetAir: false
+shootSound: bang
+ammoUseEffect: casing3
+ammoEjectBack: 3
+ammoPerShot: 2
+ammoTypes: {
+      beryllium: {
+      type: BasicBulletType
+      hitSize: 4.8
+      width: 15
+      height: 21
+      shootEffect: shootBig
+      knockback: 0.6
+      speed: 7
+      damage: 80
+      buildingDamageMultiplier: 0.3,
+      lifetime: 70
+      hitEffect: hitBulletColor
+      despawnEffect: hitBulletColor
+      hitColor: 7EC781FF
+      frontColor: 4A8B6AFF
+      backColor: 7EC781FF
+      fragBullets: 5
+      fragBullet: {
+      type: ArtilleryBullletType
+      buildingDamageMultiplier: 0.1,
+      speed: 10
+      lifetime: 10
+      splashDamage: 20
+      splashDamageRadius: 62
+      despawnEffect: scatheSlash
+      hitColor: 4A8B6AFF
+      hitEffect: massiveExplosion
+      despawnHit: true
+      damage: 4
+      backColor: 7EC781FF
+      trailColor: 7EC781FF
+      frontColor: 4A8B6AFF
+      }
+    }
+      tungsten: {
+      type: BasicBulletType
+      hitSize: 4.8
+      width: 15
+      height: 21
+      shootEffect: shootBig
+      knockback: 0.6
+      speed: 7
+      damage: 200
+      buildingDamageMultiplier: 0.2,
+      lifetime: 80
+      hitEffect: hitBulletColor
+      despawnEffect: hitBulletColor
+      hitColor: 7d89d8
+      frontColor: dae1ee
+      backColor: 7d89d8
+      fragBullets: 10
+      fragBullet: {
+      type: ArtilleryBullletType
+      buildingDamageMultiplier: 0.1,
+      speed: 10
+      lifetime: 10
+      splashDamage: 85
+      splashDamageRadius: 65
+      despawnEffect: scatheSlash
+      hitColor: 7d89d8
+      hitEffect: massiveExplosion
+      despawnHit: true
+      damage: 6
+      backColor: 7d89d8
+      trailColor: 7d89d8
+      frontColor: dae1ee
+      }
+      }
+}
+   category: turret
+   requirements: [
+      beryllium/250
+      silicon/95
+      tungsten/125
+      oxide/65
+   ]
+research: breach
+consumes: {
+  coolant: {
+    amount: 0.4
+  }
+ }

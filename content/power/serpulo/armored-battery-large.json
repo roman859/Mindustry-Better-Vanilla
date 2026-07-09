@@ -1,0 +1,17 @@
+{
+type: battery
+name: Armored Battery Large
+  "description": "New version Battery Large.",
+	"size": 3,
+	"health": 2000,
+ "armor": 5,
+	"category": "power",
+	"requirements": [
+		{"item": "lead", "amount": 325},
+		{"item": "silicon", "amount": 150},
+		{"item": "titanium", "amount": 125},
+		{"item": "surge-alloy", "amount": 50}
+	],
+	"consumes": { "powerBuffered": 100000 },
+	"research": "battery-large"
+}

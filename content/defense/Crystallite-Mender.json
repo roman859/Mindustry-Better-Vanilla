@@ -1,0 +1,52 @@
+{
+  "type": "RegenProjector",
+  "name": "Crystallite Mender",
+  "description": "Advanced restoration field. Can be boosted with Red Steel for 125% faster healing speed.",
+  "size": 2,
+  "health": 450,
+  "armor": 4,
+  "category": "effect",
+  "range": 20,
+  "healPercent": 0.04,
+  "baseColor": "c62a2aff",
+  "squareSprite": false,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawPulseShape",
+        "square": false,
+        "color": "c62a2aff",
+        "layer": 110,
+        "radius": 12
+      },
+      {
+        "type": "DrawSoftGlow",
+        "color": "c62a2aff",
+        "radius": 32,
+        "alpha": 0.4
+      }
+    ]
+  }
+  "consumes": {
+    "power": 3.5,
+    "items": {
+      "items": [ "red-steel/1" ],
+      "optional": true,
+      "booster": true
+    }
+  },
+  "optionalUseTime": 180,
+  "optionalMultiplier": 2.25,
+  "requirements": [
+    { "item": "red-beryllium", "amount": 150 },
+    { "item": "red-silicon", "amount": 120 },
+    { "item": "red-steel", "amount": 60 },
+    { "item": "crystallite", "amount": 80 },
+    { "item": "basalt", "amount": 120 }
+  ],
+  "research": "nano-repair-point"
+}
