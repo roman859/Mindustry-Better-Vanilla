@@ -1,0 +1,23 @@
+{
+  "name": "Huge Plastanium-Wall",
+  "description": "A huge wall made from plastanium",
+  "type": "Wall",
+  "insulated": true,
+  "absorbLasers": true,
+  "health": 4500,
+  "size": 3,
+  "requirements": [
+    {
+      "item": "plastanium",
+      "amount": 54
+    }
+    {
+      "item": "metaglass",
+      "amount": 18
+    }
+  ],
+  "category": "defense",
+  "research": {
+   "parent": "plastanium-wall-large"
+  }
+}

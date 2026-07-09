@@ -1,0 +1,14 @@
+{
+  "name": "Titanium wall gigantic",
+  "description": "titanium wall.",
+  "type": "Wall",
+  "health": 7040,
+  "size": 4,
+  "requirements": [
+titanium/96,
+  ],
+  "category": "defense",
+  "research": {
+   "parent": "titanium-wall-huge"
+  }
+}

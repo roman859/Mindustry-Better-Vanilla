@@ -1,0 +1,51 @@
+name: Meltdown T2
+description: meltdown T2 Version 
+type: LaserTurret
+size: 4
+liquidCapacity: 200
+shootDuration: 240
+research: absole
+health: 2150
+range: 400
+consumes: {
+  power: 28
+  coolant: {
+    type: ConsumeCoolant
+    amount: 0.6
+  }
+}
+rotateSpeed: 8
+reload: 200
+recoil: 8
+shootSound: laserbig
+shoot: {
+  type: ShootSpread
+  shots: 1
+  spread: 0
+}
+shootType: {
+  type: ContinuousLaserBulletType
+  damage: 130
+  lifetime: 150
+  fadeTime: 10
+  length: 500
+  width: 10
+}
+category: turret
+requirements: [
+  copper/1600
+  lead/600
+  graphite/460
+  silicon/500
+  surge-alloy/420
+]
+research: {
+    parent: meltdown,
+    requirements: [
+      copper/5000
+      lead/2500
+      graphite/1500
+      silicon/1600
+      surge-alloy/1600
+    ]
+  }

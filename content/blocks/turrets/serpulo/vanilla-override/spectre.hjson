@@ -1,0 +1,87 @@
+ammoTypes: {
+graphite: {
+type: BasicBulletType
+speed: 7.5
+damage: 50
+width: 16
+height: 23
+knockback: 0.3
+shootEffect: shootBig
+pierceBuilding: true
+pierceCap: 2
+hitSize: 4.8
+reloadMultiplier: 1.7
+ammoMultiplier: 4
+}
+pyratite: {
+type: BasicBulletType
+speed: 7
+damage: 70
+width: 16
+height: 21
+frontColor: f8ad42
+backColor: f68021
+hitEffect: {
+type: MultiEffect
+effects: [hitBulletSmall, fireHit]
+}
+status: burning
+makeFire: true
+knockback: 0.6
+ammoMultiplier: 3
+splashDamage: 20
+splashDamageRadius: 25
+shootEffect: shootBig
+pierceBuilding: true
+pierceCap: 2
+hitSize: 5
+}
+thorium: {
+type: BasicBulletType
+speed: 8
+damage: 80
+width: 16
+height: 23
+knockback: 0.7
+shootEffect: shootBig
+pierceBuilding: true
+pierceCap: 2
+hitSize: 5
+}
+blast-compound: {
+type: BasicBulletType
+speed: 8
+damage: 80
+splashDamage: 55
+splashDamageRadius: 45
+hitEffect: {
+type: MultiEffect
+effects: [hitBulletSmall, blastExplosion]
+}
+width: 17
+height: 22
+knockback: 0.8
+reloadMultiplier: 0.7
+shootEffect: shootBig
+pierceBuilding: true
+pierceCap: 2
+status: blasted
+hitSize: 5
+rangeChange: 80
+}
+surge-alloy: {
+type: BasicBulletType
+speed: 8
+damage: 90
+width: 17
+height: 22
+knockback: 0.8
+shootEffect: shootBig
+pierceBuilding: true
+pierceCap: 2
+lightning: 2
+lightningLength: 7
+hitSize: 5
+reloadMultiplier: 1.25
+}
+}

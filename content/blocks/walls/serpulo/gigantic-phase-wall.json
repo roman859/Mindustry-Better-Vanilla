@@ -1,0 +1,14 @@
+{
+  "name": "gigantic phase wall",
+  "type": "Wall",
+  "size": 4,
+  "health": 9600
+  "requirements": [
+  phase-fabric/96
+  ],
+  "chanceDeflect": 20,
+  "category": "defense",
+  "research": {
+   "parent": "huge-phase-wall"
+  }
+}

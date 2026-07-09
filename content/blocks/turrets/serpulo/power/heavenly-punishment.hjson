@@ -1,0 +1,301 @@
+name: Heavenly Punishment
+description: This is a holy turret that has huge damage and range, and can apply cleansing.
+size: 4 
+health: 3500
+reload: 485
+range: 550
+heatRequirement: 20
+squareSprite: false
+maxHeatEfficiency: 2
+type: PowerTurret
+rotateSpeed: 0.95
+recoil: 0
+shootSound: cannon
+outlineColor: F3F9BF6D
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      suffix: -side
+      mirror: true,
+      progress: warmup
+      moveX: 1.5
+      under: true
+      moveY: 4
+      moveRot: 15
+      moves: [
+        {
+          type: PartMove
+          progress: recoil
+          y: -1
+        }
+      ]
+    },
+    {
+      type: RegionPart
+      suffix: -blade1
+      mirror: true,
+      progress: warmup
+      moveX: 20
+      under: true
+      moveY: 3
+      moves: [
+        {
+          type: PartMove
+          progress: recoil
+          y: -1
+        }
+      ]
+    },
+     {
+      type: RegionPart
+      suffix: -blade
+      mirror: true,
+      progress: warmup
+      under: true
+      moveRot: 35
+      moveX: 10
+      moves: [
+        {
+          type: PartMove
+          progress: recoil
+          y: -1
+        }
+      ]
+    },
+    {
+      type: RegionPart
+      suffix: -blade
+      mirror: true,
+      progress: warmup
+      under: true
+      moveRot: 65
+      moveX: 10
+      moveY: 5
+      moves: [
+        {
+          type: PartMove
+          progress: recoil
+          y: -1
+        }
+      ]
+    }
+{
+"type": "shapePart",
+"y": 0,
+"hollow": true,
+"circle": true,
+"layer": 110,
+"color": "F2EB27FF",
+"stroke": 0,
+"strokeTo": 1.9,
+"radiusTo": 38,
+"radius": 38
+},
+{
+"type": "shapePart",
+"y": 0,
+"hollow": true,
+"circle": true,
+"layer": 110,
+"color": "F2EB27FF",
+"stroke": 0,
+"strokeTo": 1.1,
+"radiusTo": 30,
+"radius": 30
+},
+ {
+"type": "shapePart",
+"y": 0,
+"hollow": true,
+"circle": true,
+"layer": 110,
+"color": "F2EB27FF",
+"stroke": 0,
+"strokeTo": 0.7,
+"radiusTo": 25,
+"radius": 25
+},
+{
+"type": "HaloPart",
+"y": 0,
+"radius": 8.6,
+"tri": true,
+"layer": 110,
+"color": "F2EB27FF",
+"haloRotateSpeed": 0.7,
+"haloRadius": 38,
+"haloRadiusTo": 38,
+"stroke": 0,
+"strokeTo": 2,
+"shapes": 4,
+"triLengthTo": 4,
+"triLength": 0
+},
+{
+"type": "HaloPart",
+"y": 0,
+"radius": 8.6,
+"tri": true,
+"layer": 110,
+"color": "F2EB27FF",
+"haloRotateSpeed": -0.7,
+"haloRadius": 30,
+"haloRadiusTo": 30,
+"stroke": 0,
+"strokeTo": 2,
+"shapes": 4,
+"triLengthTo": 4,
+"triLength": 0
+}
+  ]
+}
+consumes: {
+  power: 18
+}
+shoot: {
+  firstShotDelay: 30
+  type: ShootBarrel
+  barrels: [
+    0, -3, 0,
+  ],
+  barrelOffset: 1
+  shots: 1
+}
+shootType: {
+        "type": "BasicBulletType",
+        "shootEffect": "shootTitan",
+        "smokeEffect": "shootSmokeTitan",
+        "hitColor": "F2EB27FF",
+        "sprite": "large-orb",
+        "trailEffect": "missileTrail",
+        "trailInterval": 3,
+        "trailParam": 4,
+        "pierceCap": 3,
+        "fragOnHit": false,
+        "speed": 5,
+        "lifetime": 160
+        "damage": 1050,
+        "status": "bettervanilla-cleansing",
+        "statusDuration": 1600,
+        "buildingDamageMultiplier": 0.25,
+        "width": 16,
+        "height": 16,
+        "backColor": "A8A31FFF",
+        "frontColor": "F2EB27FF",
+        "shrinkX": 0,
+        "shrinkY": 0,
+        "trailColor": "A8A31FFF",
+        "trailLength": 12,
+        "trailWidth": 2.2,
+        "despawnEffect": {
+          "type": "ExplosionEffect",
+          "waveColor": "A8A31FFF",
+          "smokeColor": "F2EB27FF",
+          "sparkColor": "F2EB27FF",
+          "waveStroke": 4,
+          "waveRad": 40
+        },
+        "hitEffect": {
+          "type": "ExplosionEffect",
+          "waveColor": "A8A31FFF",
+          "smokeColor": "F2EB27FF",
+          "sparkColor": "F2EB27FF",
+          "waveStroke": 4,
+          "waveRad": 40
+        },
+        "despawnSound": "dullExplosion",
+        "fragBullet": {
+          "type": "BasicBulletType",
+          "speed": 2,
+          "damage": 250,
+          "status": "bettervanilla-cleansing",
+          "statusDuration": 260,
+          "buildingDamageMultiplier": 0.25,
+          "width": 8,
+          "hitSize": 4,
+          "height": 12,
+          "pierce": true,
+          "lifetime": 21,
+          "pierceBuilding": true,
+          "hitColor": "F2EB27FF",
+          "backColor": "F2EB27FF",
+          "trailColor": "F2EB27FF",
+          "frontColor": "A8A31FFF",
+          "trailWidth": 1.9,
+          "trailLength": 4,
+          "hitEffect": {
+            "colorFrom": "A8A31FFF",
+            "colorTo": "F2EB27FF",
+            "type": "WaveEffect",
+            "sizeTo": 4,
+            "strokeFrom": 4,
+            "lifetime": 10
+          },
+          "despawnEffect": {
+            "colorFrom": "A8A31FFF",
+            "colorTo": "F2EB27FF",
+            "type": "WaveEffect",
+            "sizeTo": 4,
+            "strokeFrom": 4,
+            "lifetime": 10
+          },
+          "homingPower": 0.2
+        },
+        "intervalBullet": {
+          "type": "BasicBulletType",
+          "speed": 2,
+          "damage": 250,
+          "status": "bettervanilla-cleansing",
+          "statusDuration": 260,
+          "buildingDamageMultiplier": 0.25,
+          "width": 8,
+          "hitSize": 4,
+          "height": 12,
+          "pierce": true,
+          "lifetime": 21,
+          "pierceBuilding": true,
+          "hitColor": "F2EB27FF",
+          "backColor": "F2EB27FF",
+          "trailColor": "F2EB27FF",
+          "frontColor": "A8A31FFF",
+          "trailWidth": 1.9,
+          "trailLength": 4,
+          "hitEffect": {
+            "colorFrom": "A8A31FFF",
+            "colorTo": "F2EB27FF",
+            "type": "WaveEffect",
+            "sizeTo": 4,
+            "strokeFrom": 4,
+            "lifetime": 10
+          },
+          "despawnEffect": {
+            "colorFrom": "A8A31FFF",
+            "colorTo": "F2EB27FF",
+            "type": "WaveEffect",
+            "sizeTo": 4,
+            "strokeFrom": 4,
+            "lifetime": 10
+          },
+          "homingPower": 0.2
+        },
+        "bulletInterval": 3,
+        "intervalRandomSpread": 20,
+        "intervalBullets": 2,
+        "intervalAngle": 180,
+        "intervalSpread": 300,
+        "fragBullets": 10,
+        "fragVelocityMin": 0.5,
+        "fragVelocityMax": 1.5,
+        "fragLifeMin": 0.5
+      }
+requirements: [
+iron/800
+steel/300
+graphite/260
+silicon/200
+surge-alloy/220
+]
+category: turret
+research: meltdown-T2

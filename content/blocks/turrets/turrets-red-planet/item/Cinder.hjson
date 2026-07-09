@@ -1,0 +1,88 @@
+type: ItemTurret
+name: Cinder
+description: "A medium-sized universal flamethrower turret. Uses electrical energy to ignite red coal, unleashing a devastating stream of fire against both ground and air targets."
+size: 2
+squareSprite: false
+armor: 5
+health: 850
+range: 120
+reload: 5
+recoil: 1.0
+shake: 1
+outlineColor: 42413E
+shootSound: flame
+rotateSpeed: 15
+targetAir: true
+targetGround: true
+shootWarmupSpeed: 0.08
+minWarmup: 0.9
+consumes: {
+  power: 1.5
+  coolant: {
+    amount: 0.2
+    optional: true
+  }
+}
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      suffix: "-side"
+      mirror: true
+      progress: warmup
+      moveX: 1.85
+      moveY: -1.5
+      moveRot: -15
+      outline: true
+      moves: [
+        {
+          type: PartMove
+          progress: recoil
+          y: -1
+        }
+      ]
+    },
+    {
+      type: RegionPart
+      suffix: "-barrel"
+      outline: true
+      moves: [
+        {
+          type: PartMove
+          progress: recoil
+          y: -2.5
+        }
+      ]
+    }
+  ]
+}
+shoot: {
+  type: ShootPattern
+  shots: 2
+  shotDelay: 1
+}
+ammoTypes: {
+  red-coal: {
+    type: ContinuousFlameBulletType
+    damage: 3.335
+    length: 120
+    width: 4
+    collidesTeam: false
+    incendChance: 0
+    incendAmount: 0
+    colors: [ff7b00, ffa600, ff6600, 454545]
+    status: burning
+    statusDuration: 180
+    flareColor: ff7b00
+    hitEffect: hitFlameSmall
+    shootEffect: shootSmallFlame
+  }
+}
+requirements: [
+  basalt/80
+  red-coal/60
+  red-graphite/45
+]
+category: turret
+research: glint

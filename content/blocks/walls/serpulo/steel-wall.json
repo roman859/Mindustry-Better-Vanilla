@@ -1,0 +1,15 @@
+{
+  "name": "Steel wall",
+  "description": "steel wall T1.",
+  "type": "Wall",
+  "health": 750,
+  "size": 1,
+  "armor": 1,
+  "requirements": [
+steel/6
+  ],
+  "category": "defense",
+  "research": {
+   "parent": "iron-wall-gigantic"
+  }
+}

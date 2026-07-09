@@ -1,0 +1,275 @@
+{
+  type: ItemTurret,
+
+  name: Disperser,
+  localizedName: Disperser,
+  description: A true shootgun.,
+  category: turret,
+
+  health: 2690,
+  size: 3,
+  squareSprite: false
+  hasLiquids: true,
+  hasItems: true,
+
+  liquidCapacity: 30,
+
+  consumes: {
+    coolant: {
+      amount: 0.25,
+      reloadMultiplier: 1.1,
+      optional: true
+    }
+  },
+
+  range: 180,
+  shootCone: 20,
+  shootSound: shotgun,
+  shoot: {
+    type: ShootSpread,
+    spread: 15,
+    shots: 4
+  },
+
+  maxAmmo: 80,
+  ammoPerShot: 5,
+  reload: 95,
+  recoil: 2,
+  shake: 4,
+  rotateSpeed: 2,
+
+  ammoTypes: {
+    oxide: {
+      type: BasicBulletType,
+      pierce: false,
+      width: 15,
+      height: 20,
+      speed: 6,
+      lifetime: 25,
+      damage: 100,
+      ammoMultiplier: 1.5,
+      knockback: 1.4,
+      mixColorFrom: A0B380FF,
+      mixColorTo: E4FFD6FF,
+      hitColor: A0B380FF,
+      trailColor: A0B380FF,
+      frontColor: E4FFD6FF,
+      trailWidth: 4,
+      trailLength: 80,
+      status: corroded,
+      statusDuration: 620,
+      bulletInterval: 3,
+      intervalRandomSpread: 20,
+      intervalBullets: 2,
+      intervalAngle: 180,
+      intervalSpread: 300,
+      fragBullets: 4,
+      fragVelocityMin: 0.8,
+      fragVelocityMax: 2,
+      fragLifeMin: 0.6,
+      fragBullet: {
+        type: BasicBulletType,
+        pierce: true,
+        pierceBuilding: true,
+        damage: 15,
+        hitSize: 2,
+        width: 9,
+        height: 15,
+        lifetime: 40,
+        buildingDamageMultiplier: 0.3,
+        homingPower: 0.1,
+        mixColorFrom: E4FFD6FF,
+        mixColorTo: A0B380FF,
+        hitColor: E4FFD6FF,
+        trailColor: E4FFD6FF,
+        frontColor: A0B380FF,
+        trailWidth: 2,
+        trailLength: 20,
+        homingPower: 0.1,
+        homingRange: 20,
+        bulletInterval: 3,
+        intervalRandomSpread: 20,
+        intervalBullets: 2,
+        intervalAngle: 180,
+        intervalSpread: 300,
+        fragBullets: 2,
+        fragVelocityMin: 0.8,
+        fragVelocityMax: 2,
+        fragLifeMin: 0.6,
+        fragBullet: {
+          # type: ArtilleryBulletType
+          type: BasicBulletType,
+          pierce: true,
+          pierceBuilding: true,
+          damage: 10,
+          hitSize: 5,
+          width: 4.5,
+          height: 7,
+          lifetime: 30,
+          splashDamageRadius: 5,
+          splashDamage: 5,
+          homingPower: 0.2,
+          mixColorFrom: E4FFD6FF,
+          mixColorTo: A0B380FF,
+          hitColor: E4FFD6FF,
+          trailColor: E4FFD6FF,
+          frontColor: A0B380FF,
+          trailWidth: 2,
+          trailLength: 14
+        },
+        hitEffect: {
+          type: WaveEffect,
+          colorFrom: E4FFD6FF,
+          colorTo: A0B380FF,
+          sizeTo: 3,
+          strokeFrom: 2,
+          lifetime: 30
+        }
+      },
+      splashDamageRadius: 15,
+      splashDamage: 5,
+      hitSound: titanExplosion,
+      hitShake: 4,
+      shootEffect: thoriumShoot,
+      hitEffect: [
+        shootBig2,
+        {
+          sizeTo: 3,
+          lifetime: 58,
+          strokeFrom: 4,
+          colorFrom: A0B380FF,
+          colorTo: A0B380FF
+        },
+        {
+          type: WaveEffect,
+          colorFrom: A0B380FF,
+          colorTo: A0B380FF,
+          sizeTo: 10,
+          strokeFrom: 4,
+          lifetime: 60
+        }
+      ]
+    },
+    thorium: {
+      type: BasicBulletType,
+      pierce: false,
+      width: 15,
+      height: 20,
+      speed: 6,
+      lifetime: 25,
+      damage: 250,
+      reloadMultiplier: 0.75
+      ammoMultiplier: 1.5,
+      knockback: 1.4,
+      mixColorFrom: F9A3C7FF,
+      mixColorTo: CB8EBFFF,
+      hitColor: F9A3C7FF,
+      trailColor: F9A3C7FF,
+      frontColor: FFFFFFF0,
+      trailWidth: 4,
+      trailLength: 80,
+      status: slow,
+      statusDuration: 120,
+      bulletInterval: 3,
+      intervalRandomSpread: 20,
+      intervalBullets: 2,
+      intervalAngle: 180,
+      intervalSpread: 300,
+      fragBullets: 6,
+      fragVelocityMin: 0.8,
+      fragVelocityMax: 2,
+      fragLifeMin: 0.6,
+      fragBullet: {
+        type: BasicBulletType,
+        pierce: true,
+        pierceBuilding: true,
+        damage: 25,
+        hitSize: 2,
+        width: 9,
+        height: 15,
+        lifetime: 60,
+        buildingDamageMultiplier: 0.3,
+        homingPower: 0.1,
+        mixColorFrom: F9A3C7FF,
+        mixColorTo: CB8EBFFF,
+        hitColor: F9A3C7FF,
+        trailColor: F9A3C7FF,
+        frontColor: FFFFFFF0,
+        trailWidth: 2,
+        trailLength: 20,
+        homingPower: 0.1,
+        homingRange: 50,
+        bulletInterval: 3,
+        intervalRandomSpread: 20,
+        intervalBullets: 2,
+        intervalAngle: 180,
+        intervalSpread: 300,
+        fragBullets: 4,
+        fragVelocityMin: 0.8,
+        fragVelocityMax: 2,
+        fragLifeMin: 0.6,
+        fragBullet: {
+          # type: ArtilleryBulletType
+          type: BasicBulletType,
+          pierce: true,
+          pierceBuilding: true,
+          damage: 15,
+          hitSize: 5,
+          width: 4.5,
+          height: 7,
+          lifetime: 30,
+          splashDamageRadius: 5,
+          splashDamage: 15,
+          homingPower: 0.2,
+          mixColorFrom: F9A3C7FF,
+          mixColorTo: CB8EBFFF,
+          hitColor: F9A3C7FF,
+          trailColor: F9A3C7FF,
+          frontColor: FFFFFFF0,
+          trailWidth: 2,
+          trailLength: 14
+        },
+        hitEffect: {
+          type: WaveEffect,
+          colorFrom: CB8EBF0F,
+          colorTo: CB8EBFFF,
+          sizeTo: 3,
+          strokeFrom: 2,
+          lifetime: 30
+        }
+      },
+      splashDamageRadius: 15,
+      splashDamage: 10,
+      hitSound: titanExplosion,
+      hitShake: 4,
+      shootEffect: thoriumShoot,
+      hitEffect: [
+        shootBig2,
+        {
+          sizeTo: 3,
+          lifetime: 58,
+          strokeFrom: 4,
+          colorFrom: CB8EBF01,
+          colorTo: CB8EBF0F
+        },
+        {
+          type: WaveEffect,
+          colorFrom: CB8EBF0F,
+          colorTo: CB8EBFFF,
+          sizeTo: 10,
+          strokeFrom: 4,
+          lifetime: 60
+        }
+      ]
+    },
+  },
+
+  requirements: [
+      beryllium/250
+      silicon/250
+      tungsten/125
+      oxide/125
+  ],
+
+  research: diffuse
+}

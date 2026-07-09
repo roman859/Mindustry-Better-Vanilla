@@ -1,0 +1,18 @@
+{
+  "name": "Red steel wall large",
+  "description": "Red steel wall T2.",
+  "type": "Wall",
+  "health": 4000,
+  "size": 2,
+  "armor": 10,
+  "lightningChance": 0.03,
+  "lightningDamage": 55,
+  "lightningLength": 45,
+  "requirements": [
+red-steel/24
+  ],
+  "category": "defense",
+  "research": {
+   "parent": "red-steel-wall"
+  }
+}

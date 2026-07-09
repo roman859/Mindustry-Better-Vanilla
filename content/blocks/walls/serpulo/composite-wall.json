@@ -1,0 +1,16 @@
+{
+  "name": "Composite wall",
+  "description": "Composite wall T1.",
+  "type": "Wall",
+  "health": 2100,
+  "size": 1,
+  "armor": 4,
+  "requirements": [
+steel/6
+Multiplast/6
+  ],
+  "category": "defense",
+  "research": {
+   "parent": "surge-alloy-wall-3"
+  }
+}

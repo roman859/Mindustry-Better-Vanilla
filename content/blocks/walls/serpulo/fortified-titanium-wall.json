@@ -1,0 +1,16 @@
+{
+  "name": "Fortified titanium wall",
+  "description": " armoured titanium wall.",
+  "type": "Wall",
+  "health": 500,
+  "size": 1,
+  "armor": 2,
+  "requirements": [
+titanium/6,
+silicon/2,
+  ],
+  "category": "defense",
+  "research": {
+   "parent": "titanium-wall-large"
+  }
+}

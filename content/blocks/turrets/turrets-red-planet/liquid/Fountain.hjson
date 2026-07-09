@@ -1,0 +1,119 @@
+type: LiquidTurret
+name: Fountain
+description: "A supercooled liquid derived from processed crystallites. Used for advanced cooling and high-end defensive systems."
+squareSprite: false
+size: 3
+armor: 6
+outlineColor: 42413E
+health: 2500
+range: 280
+reload: 80 
+shoot: {
+  type: ShootBurst
+  shots: 5
+  shotDelay: 5
+}
+drawer: {
+  type: DrawTurret
+  drawers: [
+    {
+      type: DrawLiquidRegion
+      suffix: "-side1-liquid"
+    }
+    {
+      type: DrawDefault
+    }
+  ]
+  parts: [
+    {
+      type: RegionPart
+      suffix: "-barrel"
+      progress: recoil
+      moveY: -6
+      layerOffset: -0.01
+    }
+    {
+      type: RegionPart
+      suffix: "-side1"
+      mirror: true
+      progress: warmup
+      moveRot: -4
+      moveX: 2
+      moveY: -0.5
+    } 
+    {
+      type: RegionPart
+      suffix: "-side1"
+      mirror: true
+      progress: warmup
+      moveRot: -8
+      moveX: 4
+      moveY: -1
+    }
+    {
+      type: RegionPart
+      suffix: "-side1"
+      mirror: true
+      progress: warmup
+      moveRot: -12
+      moveX: 6
+      moveY: -1.5
+    }
+    {
+      type: RegionPart
+      suffix: "-side2"
+      mirror: true
+      progress: warmup
+      moveRot: -16
+      moveX: 8
+      moveY: -2
+    }
+  ]
+}
+shootSound: splash
+inaccuracy: 7
+rotateSpeed: 3.5
+ammoTypes: {
+  water: {
+    type: LiquidBulletType
+    liquid: water
+    damage: 10
+    speed: 7
+    lifetime: 40
+    knockback: 2.2
+    puddleSize: 12
+    orbSize: 4
+    reloadMultiplier: 1.55
+    status: wet
+  }
+  slag: {
+    type: LiquidBulletType
+    liquid: slag
+    damage: 70 
+    speed: 6
+    lifetime: 46
+    knockback: 1.5
+    puddleSize: 16
+    orbSize: 5
+    makeFire: true
+    status: melting
+  }
+  "Liquid-crystallite": {
+    type: LiquidBulletType
+    liquid: "Liquid-crystallite"
+    damage: 20
+    speed: 8
+    lifetime: 35
+    knockback: 0.8
+    puddleSize: 10
+    status: freezing
+    statusDuration: 300
+  }
+}
+requirements: [
+  red-beryllium/350
+  red-silicon/200
+  crystallite/150
+]
+category: turret
+research: stream

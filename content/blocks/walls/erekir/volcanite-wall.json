@@ -1,0 +1,15 @@
+{
+  "name": "volcanite wall",
+  "description": "-",
+  "type": "Wall",
+  "health": 550,
+  "size": 1,
+  "armor": 5,
+  "requirements": [
+  "volcanite/6"
+  ],
+  "category": "defense",
+  "research": {
+   "parent": "tungsten-wall-large"
+  }
+}

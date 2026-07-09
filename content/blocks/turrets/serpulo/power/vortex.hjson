@@ -1,0 +1,64 @@
+name: Vortex
+description: High-tech ground target burner. Emits 10 laser pulses, applies radiation effect.
+type: PowerTurret
+size: 2
+health: 1450
+targetAir: false
+targetGround: true
+range: 200
+reload: 350
+recoil: 3
+shake: 2
+shootSound: spark
+rotateSpeed: 8
+shoot: {
+    type: ShootSpread
+    shots: 10
+    shotDelay: 4
+    spread: 2
+}
+consumes: {
+  power: 8.95
+  coolant: {
+    type: ConsumeCoolant
+    amount: 0.3
+  }
+}
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      suffix: -side
+      mirror: true
+      progress: warmup
+      moveX: -0.5
+      moveY: -1
+    }
+  ]
+}
+shootType: {
+  type: LaserBulletType
+  length: 200
+  width: 14
+  damage: 55
+  status: bettervanilla-radiation
+  statusDuration: 220
+  buildingDamageMultiplier: 0.2
+  colors: [62ae5f, 84f491, ffffff]
+  lightningColor: 84f491
+  lightning: 1
+  lightningLength: 45
+  lightningDamage: 10
+  lightningCone: 90
+  chargeEffect: lightningCharge
+}
+requirements: [
+    titanium/120
+    plastanium/55
+    silicon/120
+    thorium/65
+    uranus/120
+  ]
+  category: turret
+  research: charge

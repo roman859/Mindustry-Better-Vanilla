@@ -1,0 +1,136 @@
+  type: ItemTurret,
+  name: sprinkler,
+  localizedName: sprinkler
+  description: a tower that only beats air.
+  category: turret,
+  health: 2150,
+  size: 3,
+  squareSprite: false
+  hasLiquids: true,
+  hasItems: true,
+  liquidCapacity: 30,
+  targetGround: false
+  research: breach
+  requirements: [
+      beryllium/175
+      silicon/150
+      tungsten/125
+      oxide/125
+  ]
+  consumes: {
+    coolant: {
+      amount: 0.25,
+      reloadMultiplier: 1.1,
+      optional: true
+    }
+  },
+  drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      suffix: -side1
+      mirror: true,
+      progress: warmup
+      moveX: 2.5
+      under: false
+      layerOffset: -0.01,
+      moves: [
+        {
+          type: PartMove
+          progress: recoil
+          y: -1
+        }
+      ]
+    }
+    {
+      type: RegionPart
+      suffix: -side
+      mirror: true,
+      progress: warmup
+      moveX: 3.5
+      under: false
+      layerOffset: -0.001,
+      moves: [
+        {
+          type: PartMove
+          progress: recoil
+          y: -1
+        }
+      ]
+    }
+    ]
+},
+  range: 289,
+  shootSound: bang,
+  shoot: {
+    type: ShootBarrel
+    shots: 4
+    shotDelay: 10
+    barrels: [
+      "-3", "2", "0", 
+       "3", "2", "0",
+       "5", "2", "0",
+       "-5", "2", "0"
+    ]
+  }
+  maxAmmo: 80,
+  ammoPerShot: 5,
+  reload: 85,
+  recoil: 2,
+  shake: 4,
+  rotateSpeed: 2,
+ammoTypes: {
+tungsten: {
+damage: 20.75
+speed: 8.5
+width: 16
+height: 16
+shrinkY: 0.3
+backSprite: large-bomb-back
+sprite: mine-bullet
+collidesGround: false
+collidesTiles: false
+shootEffect: shootBig2
+smokeEffect: shootSmokeDisperse
+frontColor: ffffff
+hitColor: 87ceebff
+trailColor: 87ceebff
+backColor: 87ceebff
+trailChance: 0.44
+ammoMultiplier: 3
+lifetime: 34
+rotationOffset: 90
+trailRotation: true
+trailEffect: disperseTrail
+hitEffect: hitBulletColor
+despawnEffect: hitBulletColor
+}
+silicon: {
+damage: 25
+homingPower: 0.045
+speed: 9
+reloadMultiplier: 0.9
+width: 16
+height: 16
+shrinkY: 0.3
+backSprite: large-bomb-back
+sprite: mine-bullet
+collidesGround: false
+collidesTiles: false
+shootEffect: shootBig2
+smokeEffect: shootSmokeDisperse
+frontColor: dae1ee
+hitColor: 858a9b
+trailColor: 858a9b
+backColor: 858a9b
+trailChance: 0.44
+ammoMultiplier: 3
+lifetime: 34
+rotationOffset: 90
+trailRotation: true
+trailEffect: disperseTrail
+hitEffect: hitBulletColor
+despawnEffect: hitBulletColor
+}
+}

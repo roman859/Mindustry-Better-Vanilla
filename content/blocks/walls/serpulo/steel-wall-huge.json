@@ -1,0 +1,15 @@
+{
+  "name": "Steel wall huge",
+  "description": "steel wall T3.",
+  "type": "Wall",
+  "health": 6750,
+  "size": 3,
+  "armor": 3,
+  "requirements": [
+steel/54
+  ],
+  "category": "defense",
+  "research": {
+   "parent": "steel-wall-large"
+  }
+}

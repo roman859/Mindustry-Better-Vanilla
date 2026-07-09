@@ -1,0 +1,15 @@
+{
+  "name": "Iron wall huge",
+  "description": "iron wall T3.",
+  "type": "Wall",
+  "health": 5850,
+  "size": 3,
+  "armor": 3,
+  "requirements": [
+iron/54
+  ],
+  "category": "defense",
+  "research": {
+   "parent": "iron-wall-large"
+  }
+}

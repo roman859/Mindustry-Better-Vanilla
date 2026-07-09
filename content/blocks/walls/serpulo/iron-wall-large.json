@@ -1,0 +1,15 @@
+{
+  "name": "Iron wall large",
+  "description": "iron wall T2.",
+  "type": "Wall",
+  "health": 2600,
+  "size": 2,
+  "armor": 2,
+  "requirements": [
+iron/24
+  ],
+  "category": "defense",
+  "research": {
+   "parent": "iron-wall"
+  }
+}

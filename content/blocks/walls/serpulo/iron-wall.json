@@ -1,0 +1,15 @@
+{
+  "name": "Iron wall",
+  "description": "iron wall T1.",
+  "type": "Wall",
+  "health": 650,
+  "size": 1,
+  "armor": 1,
+  "requirements": [
+iron/6
+  ],
+  "category": "defense",
+  "research": {
+   "parent": "titanium-wall"
+  }
+}

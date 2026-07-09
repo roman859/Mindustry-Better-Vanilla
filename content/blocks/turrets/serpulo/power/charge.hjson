@@ -1,0 +1,44 @@
+name: charge
+type: PowerTurret
+size: 2
+liquidCapacity: 25
+shootDuration: 50
+research: absole
+health: 850
+range:150
+consumes: {
+  power: 8.95
+  coolant: {
+    type: ConsumeCoolant
+    amount: 0.6
+  }
+}
+rotateSpeed: 5.6
+reload: 225
+recoil: 8
+shootSound: shoot-laser
+chargeSound: short-laser-charge
+researchCostMultiplier: 0.5
+shootType: {
+  type: LaserBulletType
+  colors: [D1EFFFFF, 8CA9E8FF,8CA9E8FF]
+  lightningColor: 8CA9E8FF
+  length: 176
+  lightning: 4
+  lightningLength: 45
+  lightningDamage: 15
+  lightningCone: 90
+  damage: 125
+  buildingDamageMultiplier: 0.5
+  chargeEffect: lightningCharge
+  pierceCap: 4
+}
+category: turret
+requirements: [
+  copper/250
+  lead/125
+  graphite/100
+  silicon/56
+  titanium/35
+]
+research: arc

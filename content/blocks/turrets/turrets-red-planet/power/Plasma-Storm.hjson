@@ -1,0 +1,90 @@
+name: Plasma-Storm
+description: -
+size: 4 
+reload: 240
+range: 662
+type: PowerTurret
+rotateSpeed: 1.4
+recoil: 0
+shootSound: laser
+consumes: {
+  power: 42
+}
+inaccuracy: 20
+shoot: {
+  type: ShootBurst
+  shots: 10
+  shotDelay: 5
+}
+shootType: {
+      type: BasicBulletType,
+      pierce: false,
+      width: 15,
+      height: 20,
+      speed: 4.5,
+      lifetime: 130,
+      damage: 250,
+      ammoMultiplier: 1.5,
+      knockback: 1.4,
+      mixColorFrom: 8CA9E8FF,
+      mixColorTo: D1EFFFFF,
+      hitColor: 8CA9E8FF,
+      trailColor: 8CA9E8FF,
+      frontColor: D1EFFFFF,
+      trailWidth: 4,
+      trailLength: 80,
+      status: slow,
+      statusDuration: 120,
+      fragBullets": 1
+      fragVelocityMin: 0.5
+      ragVelocityMax: 1.5
+      fragLifeMin: 0.5
+      fragBullet: {
+      type: BasicBulletType,
+      pierce: false,
+      width: 15,
+      height: 20,
+      speed: 0.5,
+      lifetime: 60,
+      damage: 150,
+      homingPower: 50
+      homingRange: 150
+      ammoMultiplier: 1.5,
+      knockback: 1.4,
+      mixColorFrom: 8CA9E8FF,
+      mixColorTo: D1EFFFFF,
+      hitColor: 8CA9E8FF,
+      trailColor: 8CA9E8FF,
+      frontColor: D1EFFFFF,
+      trailWidth: 4,
+      trailLength: 80,
+      status: slow,
+      statusDuration: 120,
+      fragBullets: 1
+      fragVelocityMin: 0.5
+      ragVelocityMax: 1.5
+      fragLifeMin: 0.5
+      fragBullet: {
+        type: LaserBulletType
+        length: 462
+        width: 16
+        damage: 450
+        buildingDamageMultiplier: 0.01
+        colors: [D1EFFFFF, 8CA9E8FF,8CA9E8FF]
+        lightningColor: 8CA9E8FF
+        lightning: 4
+        lightningLength: 45
+        lightningDamage: 25
+        lightningCone: 90
+        chargeEffect: lightningCharge
+        pierceCap: 4
+}
+}
+}
+requirements: [
+  red-beryllium/350
+  red-silicon/200
+  crystallite/150
+]
+category: turret
+research: stream

@@ -1,0 +1,16 @@
+{
+  "name": "Composite wall large",
+  "description": "Composite wall T2.",
+  "type": "Wall",
+  "health": 8400
+  "size": 2,
+  "armor": 8,
+  "requirements": [
+steel/24
+Multiplast/24
+  ],
+  "category": "defense",
+  "research": {
+   "parent": "composite-wall"
+  }
+}

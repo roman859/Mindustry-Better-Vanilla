@@ -1,0 +1,13 @@
+{
+  "name": "Gigantic copper wall",
+  "type": "Wall",
+  "health": 5120,
+  "size": 4,
+  "requirements": [
+copper/96,
+  ],
+  "category": "defense",
+  "research": {
+   "parent": "huge-copper-wall"
+  }
+}
