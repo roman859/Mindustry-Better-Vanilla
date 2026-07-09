@@ -1,0 +1,12 @@
+{
+name: "bettervanilla"
+displayName: "Better Vanilla+"
+author: "Roman"
+description: "Better Vanilla New content.
+Languages:
+        - English
+        - Ukrainian coming soon!"
+version: "0.4.3"
+minGameVersion: 159
+repo: roman859/Mindustry-Better-Vanilla
+}
