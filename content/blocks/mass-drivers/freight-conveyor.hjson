@@ -1,0 +1,13 @@
+type: PayloadConveyor
+name: freight-conveyor
+category: units
+research: sand-core
+health: 200
+size: 3
+requirements: [
+basalt/100
+red-beryllium/85
+]
+canOverdrive: false
+payloadLimit: 4
+researchCostMultiplier: 0.5

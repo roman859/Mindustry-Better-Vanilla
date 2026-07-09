@@ -1,0 +1,14 @@
+{
+	"name": "Carbiduct",
+	"description": "Moves items forward but more faster. Is more armored than the Armored Duct.",
+	"type": "Duct",
+	"size": 1,
+    "speed": 2,
+	"health" : 630,
+	"requirements": [
+		{ "item": "beryllium", "amount": 2 },
+		{ "item": "carbide", "amount": 2 }
+	],
+	"category": "distribution",
+	"research": "armored-duct"
+}

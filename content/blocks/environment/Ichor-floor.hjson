@@ -1,0 +1,4 @@
+  type: Floor,
+  name: Ichor floor,
+  variants: 3,
+  wall: Ichor-wall

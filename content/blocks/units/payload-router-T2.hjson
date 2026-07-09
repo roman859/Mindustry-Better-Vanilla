@@ -1,0 +1,11 @@
+type: PayloadRouter
+name: payload-router-T2
+category: units
+research: payload-router
+requirements: [
+  silicon/25
+  thorium/40
+]
+canOverdrive: false
+payloadLimit: 6
+researchCostMultiplier: 0.5

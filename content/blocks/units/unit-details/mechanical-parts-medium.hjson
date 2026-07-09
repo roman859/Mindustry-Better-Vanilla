@@ -1,0 +1,11 @@
+type: Junction
+name: Medium Mechanical Parts
+description: Reinforced mechanical components for mid-tier unit construction.
+size: 2
+placeablePlayer: false
+requirements: [
+basalt/65
+red-beryllium/95
+red-steel/25
+]
+research: mechanical-parts

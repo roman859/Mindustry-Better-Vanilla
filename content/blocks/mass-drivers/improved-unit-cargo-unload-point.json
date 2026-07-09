@@ -1,0 +1,32 @@
+{
+    "type": "UnitCargoUnloadPoint",
+    "name": "Improved Unit Cargo Unload Point",
+    "description": "Acts as unloading point for cargo drones. Accepts items that match the selected filter.",
+
+    "size": 2,
+    "health": 350,
+
+    "itemCapacity": 600,
+    "liquidCapacity": 0,
+    "separateItemCapacity": true,
+    "requirements": 
+    [
+		"carbide/15",
+		"oxide/25"
+	],
+    "category": "distribution",
+    squareSprite: false
+    "hasItems": true,
+    "hasLiquids": flase,
+    "outputsLiquid": flase,
+    "outputItems": true,
+    "buildTime": 200,
+
+    research: {
+  parent: improved-unit-cargo-loader
+  requirements: [
+    carbide/150
+    oxide/250
+  ]
+}
+}

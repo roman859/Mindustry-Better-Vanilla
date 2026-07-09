@@ -1,0 +1,18 @@
+{
+type: DuctRouter
+name: basalt-duct-router
+description: A weak basalt router, but it can quickly transfer resources, can sort.
+health: 175
+speed: 5
+range: 1
+category: distribution
+research: basalt-duct
+requirements: [
+    basalt/5
+   ]
+underBullets: true
+solid: false
+researchCost: [
+basalt/5
+]
+}

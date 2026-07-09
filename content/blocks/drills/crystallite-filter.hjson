@@ -1,0 +1,69 @@
+ {
+ "type": "GenericCrafter",
+  "name": "Crystallite filter",
+  "health": 260,
+  "size": 2,
+  "hasLiquids": true,
+  "liquidCapacity": 180
+  "hasItems": true,
+  "hasPower": false,
+  squareSprite: false
+  "itemCapacity": 20,
+  "liquidCapacity": 100,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "drawLiquid": "Liquid-crystallite"
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "drawLiquid": "water"
+      },
+      {
+        "type": "DrawRegion",
+        "suffix": "-grid"
+      },
+      {
+        "type": "DrawDefault"
+      }
+    ]
+  },
+  "craftEffect": {
+    "type": "MultiEffect",
+    "effects": [
+      {
+        "type": "WaveEffect",
+        "sizeFrom": 0,
+        "sizeTo": 12,
+        "colorFrom": "FFB04AFF",
+        "colorTo": "FFE18FFF",
+        "interp": "pow2Out"
+      }
+    ]
+  },
+  "consumes": {
+    "liquid": {
+      "liquid": "Liquid-crystallite",
+      "amount": 0.4
+    }
+  },
+  "craftTime": 1920,
+  "outputLiquid": "water/0.2"
+  "outputItem": {
+    "item": "crystallite",
+    "amount": 1
+  },
+  "category": "production",
+  "research": "basalt-liquid-pump",
+  "requirements": [
+  "basalt/120"
+  "red-beryllium/85"
+  "red-silicon/75"
+  ]
+  }

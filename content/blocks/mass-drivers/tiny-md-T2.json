@@ -1,0 +1,29 @@
+{
+  "type": "MassDriver",
+  "name": "Tiny Mass Driver T2",
+  "health": 200,
+  "description": "Short range item transport structure. Collects small batches of items and shoots them to other tiny mass drivers.",
+  "itemCapacity": 30,
+  "reload": 8,
+  "range": 100,
+  "size": 1,
+  "consumes": {
+    "power": 0.3333333355
+  },
+  "requirements": [
+    {
+      "item": "copper",
+      "amount": 125
+    },
+    {
+      "item": "lead",
+      "amount": 60
+    },
+    {
+      "item": "titanium",
+      "amount": 30
+    }
+  ],
+  "category": "distribution",
+  "research": "tiny-md"
+}

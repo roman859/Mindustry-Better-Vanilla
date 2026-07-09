@@ -1,0 +1,15 @@
+{
+  name: basalt-duct-unloader
+  description: Basalt unloader,
+  type: DirectionalUnloader,
+  category: distribution,
+  group: transportation,
+  speed: 5,
+  health: 120,
+  squareSprite: false
+  requirements: [
+basalt/25
+red-beryllium/10
+  ],
+  research: basalt-container
+}

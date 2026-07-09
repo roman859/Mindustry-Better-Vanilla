@@ -1,0 +1,61 @@
+{
+  "type": "Pump",
+  "name": "Impulse pump T2",
+  "description": "A impulse pump T2 version.",
+  "hasPower": true,
+  "hasLiquids": true,
+  "liquidCapacity": 50,
+  "size": 3,
+  "consumes": {
+    "power": 4.6 
+  },
+  "pumpAmount": 0.80,
+  "category": "liquid",
+  "research": "impulse-pump",
+  "requirements": [
+    "copper/200",
+    "metaglass/150",
+    "silicon/40",
+    "titanium/250",
+    "thorium/50",
+    "surge-alloy/10"
+  ],
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "drawLiquid": "water"
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "drawLiquid": "arkycite"
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "drawLiquid": "slag"
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "drawLiquid": "oil"
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "drawLiquid": "cryofluid"
+      },
+      {
+        "type": "DrawBlurSpin",
+        "suffix": "-rotator",
+        "rotateSpeed": 1.2
+      },
+      {
+        "type": "DrawDefault"
+      }
+    ]
+  },
+  "squareSprite": false
+}

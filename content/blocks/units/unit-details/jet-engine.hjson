@@ -1,0 +1,11 @@
+type: Junction
+name: Jet Engine
+description: High-performance propulsion system designed for fast-moving aerial units.
+size: 2
+placeablePlayer: false
+requirements: [
+basalt/25
+red-beryllium/55
+crystallite/25
+]
+research: engine

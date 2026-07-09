@@ -1,0 +1,31 @@
+{
+  "type": "PayloadUnloader",
+  "name": "freight-unloader",
+  "size": 3,
+  "health": 350,
+  "armor": 2
+  "hasItems": true,
+  "hasLiquids": true,
+  "hasPower": true,
+  "unloadSpeed": 2.0,
+  "consumes": {
+    "power": 1.8
+  },
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      { "type": "DrawDefault" },
+      {
+        "type": "DrawRegion",
+        "suffix": "-top",
+      }
+    ]
+  },
+  "category": "units",
+  "research": "freight-loader",
+  "requirements": [
+    basalt/100
+    red-beryllium/255
+    red-silicon/250,
+  ]
+}

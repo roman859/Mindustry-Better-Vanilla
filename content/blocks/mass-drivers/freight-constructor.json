@@ -1,0 +1,23 @@
+{
+  "type": "Constructor",
+  "name": "freight-constructor",
+  "description": "Creates 1x1 and 2x2 blocks",
+  "size": 3,
+  "health": 450,
+  "armor": 2
+  "itemCapacity": 300,
+  "buildSpeed": 2.5,
+  "maxBlockSize": 2,
+  "minBlockSize": 1,
+  "hasPower": true,
+  "consumes": {
+    "power": 1.8
+  },
+  "research": "freight-router"
+  "category": "units",
+  "requirements": [
+    basalt/150
+    red-beryllium/155
+    red-silicon/230,
+  ]
+}

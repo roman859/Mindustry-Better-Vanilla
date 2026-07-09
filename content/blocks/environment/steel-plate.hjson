@@ -1,0 +1,4 @@
+  type: Floor,
+  name: Steel plate,
+  variants: 6,
+  wall: steel2-wall

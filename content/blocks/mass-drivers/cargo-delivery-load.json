@@ -1,0 +1,39 @@
+{
+    "type": "UnitCargoLoader",
+    "name": "Cargo Drone Loader",
+    "description": "Constructs cargo drones. Drones automatically distribute items to Unloading Points with a matching filter",
+
+    "size": 3,
+    "health": 200,
+
+    "unitType": "genm",
+    "itemCapacity": 200,
+    "separateItemCapacity": true,
+    "requirements": 
+    [
+		"lead/200",
+		"titanium/200",
+		"silicon/220",
+	 "surge-alloy/50"
+	],
+    "category": "distribution",
+
+    "buildTime": 300,
+
+    "hasItems": true,
+    "hasPower": true,
+    "hasLiquids": flase,
+    "consumes":
+    {
+        "power": 2.85
+  }
+    research: {
+  parent: mass-driver
+  requirements: [
+    lead/700
+    silicon/420
+    titanium/600
+    surge-alloy/300
+  ]
+}
+}

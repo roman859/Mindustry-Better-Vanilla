@@ -1,0 +1,13 @@
+name: basalt-liquid-tank
+"type": "LiquidRouter",
+squareSprite: false
+requirements: [
+basalt/25
+]
+liquidCapacity: 2500
+size: 2
+solid: true
+research: basalt-liquid-pipe
+health: 250
+category: liquid
+researchCostMultiplier: 0.5

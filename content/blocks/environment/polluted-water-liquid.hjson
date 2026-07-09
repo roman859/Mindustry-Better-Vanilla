@@ -1,0 +1,11 @@
+type: Floor
+name: polluted-water-liquid
+speedMultiplier: 0.6
+variants: 0
+liquidDrop: polluted-water
+isLiquid: true
+cacheLayer: water
+speedMultiplier: 0.35
+liquidMultiplier: 0.95
+albedo: 0.9
+supportsOverlay: true

@@ -1,0 +1,36 @@
+{
+	"name": "Force Dome",
+	"type": "ForceProjector",
+	"size": 3,
+ "health": 4500,
+ "armor": 8,
+  "sides": 90,
+  "radius": 150,
+	"phaseRadiusBoost": 100,
+  "shieldHealth": 5500,
+  "cooldownNormal": 1.2,
+  "cooldownLiquid": 0.85,
+  "cooldownBrokenBase": 1.75,
+  "consumes": {
+        "power": 5,
+        "items": {
+            "items": [
+              {
+                "item": "phase-fabric",
+                "amount": 1
+              }
+            ],
+            "booster": true,
+            "optional": true
+          }
+    },
+	"requirements": [
+		{ "item": "beryllium", "amount": 250 },
+		{ "item": "oxide", "amount": 165 },
+		{ "item": "tungsten", "amount": 200 },
+		{ "item": "thorium", "amount": 165 },
+		{ "item": "silicon", "amount": 135 }
+	],
+	"category": "effect",
+	"research": "5-instant-pyrolysis-furnace"
+}

@@ -1,0 +1,7 @@
+  type: Floor,
+  name: Backlight-in-a-steel-case,
+  variants: 2,
+  emitLight: true
+  lightRadius: 100
+  lightColor: FFE18FFF
+  wall: steel2-wall

@@ -1,0 +1,68 @@
+{
+  "type": "PayloadMassDriver",
+  "name": "freight-mass-driver",
+  "size": 3,
+  "health": 400,
+  squareSprite: false
+  "armor": 3
+  "range": 480,
+  "reload": 140,
+  "chargeTime": 90,
+  "consumes": {
+    "power": 1.8
+  },
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion",
+        "suffix": "-base"
+      },
+      {
+        "type": "DrawRegion",
+        "suffix": "",
+        "rotate": true
+      },
+      {
+        "type": "DrawPart",
+        "suffix": "-left",
+        "mirror": false,
+        "under": false,
+        "moveX": -2.5,
+        "progress": "warmup"
+      },
+      {
+        "type": "DrawPart",
+        "suffix": "-right",
+        "mirror": false,
+        "moveX": 2.5,
+        "progress": "warmup"
+      },
+      {
+        "type": "DrawPart",
+        "suffix": "-cap",
+        "moveY": 2.0,
+        "progress": "warmup"
+      },
+      {
+        "type": "DrawRegion",
+        "suffix": "-top",
+        "rotate": true
+      }
+    ]
+  },
+  "shootEffect": "shootPayloadDriver",
+  "smokeEffect": "shootBigSmoke",
+  "bullet": {
+    "type": "PayloadBulletType",
+    "speed": 5.5,
+    "lifetime": 90
+  },
+  "category": "units",
+  "research": "freight-constructor",
+  "requirements": [
+    basalt/100
+    red-beryllium/155
+    red-silicon/230,
+  ]
+}

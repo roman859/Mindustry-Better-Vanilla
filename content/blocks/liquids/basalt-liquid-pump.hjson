@@ -1,0 +1,13 @@
+category: liquid
+name: basalt-liquid-pump
+research: basalt-liquid-pipe
+size: 2
+pumpAmount: 0.15
+squareSprite: false
+liquidCapacity: 25
+ "type": "Pump",
+placeableLiquid: true
+requirements: [
+  basalt/25
+]
+researchCostMultiplier: 0.5

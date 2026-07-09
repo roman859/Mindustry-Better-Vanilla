@@ -1,0 +1,27 @@
+{
+  "type": "unitFactory",
+  "name": "support-fabricator",
+  "size": 3,
+  "consumes": {
+    "power": 5.2
+  },
+  "plans": [
+    {
+      "unit": "AlphaRepairman",
+      "requirements": [
+        graphite/40
+        silicon/60
+        tungsten/50
+      ],
+      "time": 2600
+    }
+  ],
+  "requirements": [
+    beryllium/250
+    graphite/300
+    silicon/250
+    tungsten/250
+  ],
+  "category": "units",
+  "research": "mech-refabricator"
+}

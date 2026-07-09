@@ -1,0 +1,16 @@
+{
+ "type": "junction", 
+ "name": "Surge-alloy junction", 
+ "health": 500, 
+ "speed": 2,
+ "capacity": 10, 
+ "size": 1, 
+ "requirements": [
+	"copper/15",
+	"titanium/10",
+	"thorium/8",
+	"surge-alloy/2"
+ ], 
+ "research": "surge-alloy-conveyor",
+ "category": "distribution"
+ }

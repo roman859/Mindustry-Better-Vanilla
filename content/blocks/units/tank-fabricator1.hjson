@@ -1,0 +1,25 @@
+name: tank fabricator
+size: 3
+description: Produces pyrolobus units.
+type: unitFactory
+configurable: true
+  consumes: {
+    power: 2
+  }
+plans: [
+{
+unit: Dune-Mosquito
+  requirements: [
+    red-silicon/100
+    red-beryllium/120
+  ]
+time: 2700
+}
+]
+research: sand-core
+category: units
+requirements: [
+    red-beryllium/200
+    red-silicon/200
+    basalt/100
+  ]

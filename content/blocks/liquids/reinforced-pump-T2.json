@@ -1,0 +1,62 @@
+{
+  "type": "Pump",
+  "name": "Reinforced pump T2",
+  "description": "A reinforced pump T2 version.",
+  "hasPower": false,
+  "hasLiquids": true,
+  "liquidCapacity": 50,
+  "size": 3,
+  "consumes": {
+    "liquids": [
+          "nitrogen/0.1"
+        ]
+  },
+  "pumpAmount": 0.35,
+  "category": "liquid",
+  "research": "reinforced-pump",
+  "requirements": [
+    "tungsten/150",
+    "carbide/55",
+    "beryllium/200",
+    "silicon/30",
+    "oxide/25"
+  ],
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "drawLiquid": "water"
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "drawLiquid": "arkycite"
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "drawLiquid": "slag"
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "drawLiquid": "oil"
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "drawLiquid": "cryofluid"
+      },
+      {
+        "type": "DrawBlurSpin",
+        "suffix": "-rotator",
+        "rotateSpeed": 1.2
+      },
+      {
+        "type": "DrawDefault"
+      }
+    ]
+  },
+  "squareSprite": false
+}

@@ -1,0 +1,11 @@
+type: Junction
+name: Engine
+description: A basic power unit required for ground and air vehicle propulsion.
+size: 2
+placeablePlayer: false
+requirements: [
+basalt/25
+red-beryllium/55
+crystallite/55
+]
+research: 

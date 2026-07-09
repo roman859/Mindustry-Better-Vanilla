@@ -1,0 +1,41 @@
+{
+  "type": "PayloadDeconstructor",
+  "name": "freight-deconstructor",
+  "description": "Deconstructs payloads and units into their constituent items.",
+  "size": 3,
+  "armor": 2,
+  "health": 450,
+  "itemCapacity": 100,
+  "deconstructSpeed": 1.5,
+  "consumes": {
+    "power": 1.8
+  },
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawRegion",
+        "suffix": "-top",
+        "rotate": false
+      }
+    ]
+  },
+  "updateEffect": {
+    "type": "ParticleEffect",
+    "particles": 2,
+    "length": 10,
+    "lifetime": 40,
+    "colorFrom": "c62a2aff",
+    "colorTo": "45454566"
+  },
+  "category": "units",
+  "research": "freight-constructor",
+  "requirements": [
+    basalt/150
+    red-beryllium/155
+    red-silicon/230,
+  ]
+}

@@ -1,0 +1,15 @@
+type: Floor
+name: Liquid crystallite
+liquidDrop: Liquid-crystallite
+albedo: 0.9
+liquidMultiplier: 2
+isLiquid: true
+drownTime: 660
+speedMultiplier: 0.5
+cacheLayer: water
+variants: 3
+emitLight: true
+lightRadius: 25
+attributes: {
+water: 1.5
+}

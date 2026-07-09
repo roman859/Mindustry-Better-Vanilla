@@ -1,0 +1,15 @@
+{
+  "type": "LiquidRouter",
+  "name": "Reinforced liquid tank T2",
+  "description": "A reinforced liquid tank T2 version.",
+  "category": "liquid",
+  "research": "reinforced-liquid-tank",
+  "size": 3,
+  "solid": true,
+  "health": 5500,
+  "liquidCapacity": 12560,
+  "requirements": [
+    "tungsten/150",
+    "carbide/55"
+  ]
+}

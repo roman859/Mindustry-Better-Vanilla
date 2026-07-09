@@ -1,0 +1,46 @@
+type: UnitFactory
+name: ice incubator
+size: 5
+health: 2550
+category: units
+squareSprite: false
+drawTeamOverlay: false
+regionSuffix: ""
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawPulse
+        color: 8fe9ff33
+        speed: 0.05
+    }
+  ]
+}
+plans: [
+  {
+    unit: ice-beetle
+    time: 1800
+    requirements: [
+      Sclerocite/155
+      red-coal/255
+      basalt/255
+      red-steel/45
+    ]
+  }
+]
+requirements: [
+    basalt/315
+    red-beryllium/255
+    red-graphite/220
+    red-silicon/150
+    crystallite/120
+    Sclerocite/175
+    red-coal/155
+  ]
+consumes: {
+  liquid: crystallite-glacier/0.95
+}
+research: red-steel-plant

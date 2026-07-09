@@ -1,0 +1,10 @@
+  type: Floor,
+  name: Magmatic-steel-floor,
+  variants: 2,
+  attributes: {
+  heat: 1.25
+  }
+  emitLight: true
+  lightRadius: 60
+  lightColor: DD7B52FF
+  wall: steel2-wall

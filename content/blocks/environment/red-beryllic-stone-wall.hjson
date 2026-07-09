@@ -1,0 +1,6 @@
+  type: StaticWall,
+  name: red-beryllic-stone-wall,
+  variants: 2,
+  attributes: {
+  sand: 0.75
+  }

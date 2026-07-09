@@ -1,0 +1,17 @@
+{
+	"name": "basalt-duct",
+	"type": "Duct",
+ description: A weak basalt duct, but it can quickly transfer resources.
+	"size": 1,
+    "speed": 5,
+	"health" : 125,
+	"requirements": [
+		basalt/2
+	],
+bridgeReplacement: basalt-duct-bridge
+	"category": "distribution",
+	"research": "sand-core"
+ researchCost: [
+basalt/2
+]
+}

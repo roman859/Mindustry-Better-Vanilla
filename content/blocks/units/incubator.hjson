@@ -1,0 +1,48 @@
+type: UnitFactory
+name: Incubator
+size: 1
+health: 650
+category: units
+squareSprite: false
+drawTeamOverlay: false
+regionSuffix: ""
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawPulse
+        color: e05438
+        speed: 0.05
+    }
+  ]
+}
+plans: [
+  {
+    unit: red-beetle
+    time: 900
+    requirements: [
+      Sclerocite/40
+      red-coal/20
+    ]
+  }
+  {
+    unit: Larva
+    time: 1000
+    requirements: [
+      Sclerocite/20
+      basalt/45
+    ]
+  }
+]
+requirements: [
+    red-beryllium/45
+    Sclerocite/55
+    red-coal/50
+  ]
+consumes: {
+  liquid: Ichor/0.2
+}
+research: sand-core

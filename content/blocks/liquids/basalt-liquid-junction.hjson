@@ -1,0 +1,11 @@
+type: LiquidJunction
+name: Basalt Liquid Junction
+description: Used for crossing two pipe.
+solid: false
+category: liquid
+squareSprite: false
+research: basalt-liquid-pipe
+requirements: [
+  basalt/8
+]
+researchCostMultiplier: 0.5

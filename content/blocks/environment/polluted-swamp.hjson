@@ -1,0 +1,5 @@
+  type: Floor,
+  name: polluted-swamp,
+  variants: 3,
+  speedMultiplier: 0.45
+  wall: polluted-swamp-wall

@@ -1,0 +1,30 @@
+{
+	"name": "basalt-drill",
+	"type": "Drill",
+	"size": 2,
+ "hasPower": false,
+	"tier": 2,
+	"drillTime": 345,
+ squareSprite: false
+	"itemCapacity": 25,
+	"rotateSpeed": 0.85,
+	"warmupSpeed": 0.001,
+	"liquidBoostIntensity": 2.9,
+	"liquidCapacity": 25,
+	"consumes": {
+		"liquid": {
+			"liquid": "Liquid-crystallite", 
+			"amount": 0.4,
+			"optional": true,
+			"booster": true
+		}
+	},
+	"requirements": [
+		basalt/15
+	],
+	"category": "production",
+	"research": "sand-core"
+ researchCost: [
+ basalt/15
+]
+}

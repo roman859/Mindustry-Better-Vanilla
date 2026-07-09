@@ -1,0 +1,10 @@
+type: Junction
+name: Tracks
+description: Heavy-duty reinforced tracks for tanks and heavy ground platforms.
+size: 2
+placeablePlayer: false
+requirements: [
+basalt/65
+red-beryllium/125
+]
+research: engine

@@ -1,0 +1,14 @@
+type: Junction
+name: Large Reactor
+description: An ultra-powerful energy core. Essential for Tier 4 and Tier 5 strategic units.
+size: 3
+placeablePlayer: false
+requirements: [
+basalt/125
+red-beryllium/255
+red-steel/125
+Ferrosclerite/155
+Ashenite/125
+red-silicon/255
+]
+research: reactor

@@ -1,0 +1,32 @@
+{
+    "type": "UnitCargoUnloadPoint",
+    "name": "Drone Unloading Point",
+    "description": "Acts as unloading point for cargo drones. Accepts items that match the selected filter.",
+
+    "size": 2,
+    "health": 150,
+
+    "itemCapacity": 400,
+    "liquidCapacity": 0,
+    "separateItemCapacity": true,
+    "requirements": 
+    [
+		"titanium/200",
+		"silicon/150"
+	],
+    "category": "distribution",
+
+    "hasItems": true,
+    "hasLiquids": flase,
+    "outputsLiquid": flase,
+    "outputItems": true,
+    "buildTime": 300,
+
+    research: {
+  parent: cargo-delivery-load
+  requirements: [
+    titanium/550
+    silicon/350
+  ]
+}
+}

@@ -1,0 +1,29 @@
+  "plans": [
+    {
+      "unit": "risso",
+      "requirements": [
+        "metaglass/35",
+        "silicon/20"
+      ],
+      "time": 2700
+    },
+     {
+      "unit": "retusa",
+      "requirements": [
+        "titanium/20",
+        "metaglass/25",
+        "silicon/15"
+      ],
+      "time": 2100
+    },
+    {
+      "unit": "light-ship",
+      "requirements": [
+        "titanium/25",
+        "metaglass/35",
+        "silicon/25",
+        "steel/25"
+      ],
+      "time": 3000
+    },
+  ],

@@ -1,0 +1,10 @@
+type: Junction
+name: Mechanical Parts
+description: Standard mechanical assemblies, gears, and fasteners.
+size: 1
+placeablePlayer: false
+requirements: [
+basalt/35
+red-beryllium/35
+]
+research: engine

@@ -1,0 +1,24 @@
+{
+  "type": "Constructor",
+  "name": "large-freight-constructor",
+  "description": "Creates 1x1, 2x2, 3x3 end 4x4 blocks",
+  "size": 5,
+  "health": 850,
+  "armor": 4
+  "itemCapacity": 300,
+  "buildSpeed": 3.5,
+  "maxBlockSize": 4,
+  "minBlockSize": 1,
+  "hasPower": true,
+  "consumes": {
+    "power": 3.8
+  },
+  "research": "freight-constructor"
+  "category": "units",
+  "requirements": [
+    red-steel/255,
+    red-silicon/330,
+    crystallite/155
+    basalt/455
+  ]
+}

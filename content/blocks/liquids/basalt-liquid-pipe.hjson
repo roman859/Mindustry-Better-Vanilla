@@ -1,0 +1,14 @@
+"type": "conduit",
+category: liquid
+name: basalt-liquid-pipe
+health: 115
+liquidCapacity: 25
+liquidPressure: 1.025
+placeableLiquid: true
+bridgeReplacement: basalt-liquid-bridge
+junctionReplacement: basalt-liquid-junction
+requirements: [
+  basalt/2
+]
+researchCostMultiplier: 0.5
+research: sand-core

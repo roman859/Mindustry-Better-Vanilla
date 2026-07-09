@@ -1,0 +1,6 @@
+  type: StaticWall,
+  name: Red stone wall,
+  variants: 3,
+  attributes: {
+  sand: 1
+  }

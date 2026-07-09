@@ -1,0 +1,68 @@
+{
+	"name": "Crystallite drill",
+	"type": "BurstDrill",
+	"size": 4,
+	"tier": 5,
+    "squareSprite": false,
+    "hasPower": true,
+    "hasLiquid": true,
+	   "drillTime": 280,
+    "shake": 8,
+    "itemCapacity": 60,
+    "liquidCapacity": 40,
+    "arrowOffset": 0,
+    "arrowSpacing": 3,
+    "arrows": 3,
+    "drillMultipliers": {
+        "basalt": 2.5
+    },
+    "drillEffect": [
+        {
+            "type": "WrapEffect",
+            "effect": "dynamicSpikes",
+            "color": "F88833FF",
+            "rotation": 30
+        },
+        {
+            "type": "WrapEffect",
+            "effect": "mineImpactWave",
+            "color": "F88833FF",
+            "rotation": 35
+        },
+        {
+            "type": "WrapEffect",
+            "effect": "shieldBreak",
+            "color": "F88833FF",
+            "rotation": 30
+        },
+        {
+            "type": "WrapEffect",
+            "effect": "colorTrail",
+            "color": "F88833FF",
+            "rotation": 10
+        },
+        {
+            "type": "WrapEffect",
+            "effect": "colorTrail",
+            "color": "ffffff",
+            "rotation": 7
+        }
+    ],
+	"consumes": {
+		"power": 1.2,
+        "liquids": [
+            {
+                "liquid": "Liquid-crystallite",
+                "amount": "0.5"
+            }
+        ]
+	},
+	"requirements": [
+		basalt/120
+  red-beryllium/45
+  crystallite/15
+  red-silicon/75
+	],
+	"category": "production",
+	"research": "basalt-drill"
+}

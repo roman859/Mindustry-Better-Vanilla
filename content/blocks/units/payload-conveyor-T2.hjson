@@ -1,0 +1,11 @@
+type: PayloadConveyor
+name: payload-conveyor-T2
+category: units
+research: payload-conveyor
+requirements: [
+  silicon/10
+  thorium/25
+]
+canOverdrive: false
+payloadLimit: 6
+researchCostMultiplier: 0.5

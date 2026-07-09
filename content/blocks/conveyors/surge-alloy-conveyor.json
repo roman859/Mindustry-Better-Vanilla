@@ -1,0 +1,29 @@
+{
+  "type": "Conveyor",
+  "name": "Alloy Conveyor",
+  "description": "Transports items forward. Faster than a titanium conveyor.",
+  "details": "You hear a faint Speeeeeeedwagggoooooooon in the distance.",
+  "health": 1000,
+  "requirements": [
+    {
+      "item": "copper",
+      "amount": 6
+    },
+    {
+      "item": "lead",
+      "amount": 5
+    },
+    {
+      "item": "titanium",
+      "amount": 3
+    },
+    {
+      "item": "surge-alloy",
+      "amount": 2
+    }
+  ],
+  "category": "distribution",
+  "speed": 0.16,
+  "displayedSpeed": 22,
+  "research": "titanium-conveyor"
+}

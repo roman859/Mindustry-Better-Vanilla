@@ -1,0 +1,36 @@
+name: tank refabricator
+size: 3
+type: Reconstructor
+configurable: false
+description: Upgrades tank units to their second tier.
+constructTime: 2400
+category: units
+  hasPower: true
+  hasItems: true
+  hasLiquids: true
+  consumes: {
+    power: 2
+items: {
+    items: [
+      red-silicon/100
+      crystallite/50
+    ]
+}
+liquids: {
+liquids: [
+     Liquid-crystallite/0.05
+]
+}
+  }
+upgrades: [
+[
+Dune-Mosquito,
+Predator-Zhar
+]
+]
+requirements: [
+  crystallite/200
+  red-beryllium/80
+  red-silicon/250
+]
+research: tank-fabricator1

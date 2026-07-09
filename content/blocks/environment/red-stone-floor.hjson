@@ -1,0 +1,4 @@
+  type: Floor,
+  name: red-stone,
+  variants: 5,
+  wall: stone-red-wall

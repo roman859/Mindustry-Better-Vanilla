@@ -1,0 +1,18 @@
+type: UnitAssemblerModule
+name: Superior Frame Reconstructor
+description: -
+size: 3
+category: units
+research: advanced-systems-broadcaster
+requirements: [
+  red-steel/155
+  red-silicon/250
+  Ashenite/255
+  Ferrosclerite/155
+]
+squareSprite: false
+consumes: {
+  power: 3.5
+}
+tier: 2
+researchCostMultiplier: 0.025

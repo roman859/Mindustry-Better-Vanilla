@@ -1,0 +1,15 @@
+{
+  "type": "LiquidRouter",
+  "name": "Liquid tank T2",
+  "description": "A liquid tank T2 version.",
+  "category": "liquid",
+  "research": "liquid-tank",
+  "size": 3,
+  "solid": true,
+  "health": 1850,
+  "liquidCapacity": 5000,
+  "requirements": [
+    "metaglass/85",
+    "titanium/150",
+  ]
+}

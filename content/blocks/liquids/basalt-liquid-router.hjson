@@ -1,0 +1,12 @@
+health: 100
+"type": "LiquidRouter",
+name: basalt-liquid-router
+liquidCapacity: 40
+category: liquid
+requirements: [
+basalt/4
+]
+researchCostMultiplier: 0.5
+research: basalt-liquid-pipe
+placeableLiquid: true
+solid: true

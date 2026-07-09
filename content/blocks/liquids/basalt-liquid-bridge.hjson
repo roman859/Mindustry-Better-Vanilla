@@ -1,0 +1,14 @@
+type: LiquidBridge
+category: liquid
+name: basalt-liquid-bridge
+squareSprite: false
+health: 100
+hasPower: false
+range: 4
+placeableLiquid: true
+liquidCapacity: 25
+requirements: [
+  basalt/5
+]
+researchCostMultiplier: 0.5
+research: basalt-liquid-pipe

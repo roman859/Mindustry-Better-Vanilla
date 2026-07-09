@@ -1,0 +1,10 @@
+type: Floor
+name: Ichor-liquid
+speedMultiplier: 0.7
+variants: 4
+liquidDrop: Ichor
+isLiquid: true
+cacheLayer: water
+liquidMultiplier: 1.5
+albedo: 0.9
+supportsOverlay: true

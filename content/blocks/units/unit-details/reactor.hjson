@@ -1,0 +1,11 @@
+type: Junction
+name: Reactor
+description: A compact power core providing stable energy for Tier 3 and Tier 4 units.
+size: 1
+placeablePlayer: false
+requirements: [
+basalt/55
+red-beryllium/25
+red-silicon/55
+]
+research: engine

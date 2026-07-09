@@ -1,0 +1,23 @@
+{
+  "type": "WallCrafter",
+  "name": "redstone-crusher",
+  "size": 2,
+  "category": "production",
+  "research": "basalt-drill",
+  researchCost: [
+    "basalt/40",
+    "red-beryllium/35"
+ ]
+  "requirements": [
+    "basalt/40",
+    "red-beryllium/35"
+  ],
+  "drillTime": 80,
+  "attribute": "sand",
+  "output": "red-sand",
+  "consumes": {
+    "power": 0.2,
+  },
+  "ambientSound": "drill",
+  "ambientSoundVolume": 0.06
+}

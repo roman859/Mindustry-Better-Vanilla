@@ -1,0 +1,3 @@
+  type: StaticWall,
+  name: polluted-swamp-wall,
+  variants: 2

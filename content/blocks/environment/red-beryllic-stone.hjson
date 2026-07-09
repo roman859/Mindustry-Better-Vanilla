@@ -1,0 +1,4 @@
+  type: Floor,
+  name: red-beryllic-stone,
+  variants: 4,
+  wall: red-beryllic-stone-wall

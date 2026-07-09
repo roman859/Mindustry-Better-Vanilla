@@ -1,0 +1,18 @@
+{
+    "type": "ItemBridge",
+    "name": "Surge-alloy bridge conveyor",
+    "health": 1000,
+	"itemCapacity": 30,
+    "requirements": [
+	"copper/15",
+	"lead/10",
+	"titanium/5",
+	"thorium/5",
+	"surge-alloy/4"
+    ],
+    "range": 20,
+    "transportTime": 4.5,
+    "hasPower": false,
+    "category": "distribution",
+    "research": "surge-alloy-conveyor"
+}

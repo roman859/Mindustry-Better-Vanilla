@@ -1,0 +1,5 @@
+type: TallBlock
+name: crystal bloom red
+variants: 3
+shadowAlpha: 0.5
+shadowOffset: -1.5

@@ -1,0 +1,16 @@
+{
+ "type": "router",
+ "name": "Surge-alloy router",
+ "health": 500,
+ "size": 1,
+ "speed": 2, 
+ "capacity": 5, 
+ "requirements": [
+	"copper/20",
+	"titanium/4",
+	"thorium/10",
+	"surge-alloy/2"
+ ],
+ "research": "surge-alloy-conveyor",
+ "category": "distribution"
+}

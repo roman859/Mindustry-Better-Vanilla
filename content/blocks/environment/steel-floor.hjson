@@ -1,0 +1,4 @@
+  type: Floor,
+  name: Steel floor,
+  variants: 4,
+  wall: steel-walls

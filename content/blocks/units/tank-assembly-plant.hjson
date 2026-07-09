@@ -1,0 +1,64 @@
+researchCostMultiplier: 0.5
+type: UnitAssembler
+name: Tank Assembly Plant
+description: -
+size: 5
+category: units
+droneType: construction-drone
+research: tank-refabricator1
+requirements: [
+  basalt/250
+  crystallite/255
+  red-beryllium/155
+  red-silicon/355
+]
+plans: [
+  {
+    type: AssemblerUnitPlan
+    unit: Desert-Vector
+    requirements: [
+      bettervanilla-Dune-Mosquito/2
+      bettervanilla-reactor/1
+      bettervanilla-tracks/2
+      bettervanilla-engine/1
+      bettervanilla-basalt-wall-large/5
+    ]
+    time: 3400
+  }
+  {
+    type: AssemblerUnitPlan
+    unit: Sarcophagus
+    requirements: [
+      bettervanilla-Predator-Zhar/4
+      bettervanilla-reactor/2
+      bettervanilla-tracks/6
+      bettervanilla-engine/4
+      bettervanilla-red-beryllium-wall-large/10
+    ]
+    time: 9000
+  }
+  {
+    type: AssemblerUnitPlan
+    unit: Embalmer
+    requirements: [
+      bettervanilla-Dune-Mosquito/2
+      bettervanilla-Predator-Zhar/4
+      bettervanilla-large-reactor/1
+      bettervanilla-reactor/2
+      bettervanilla-tracks/10
+      bettervanilla-engine/8
+      bettervanilla-red-steel-wall-large/20
+    ]
+    time: 19800
+  }
+]
+squareSprite: false
+consumes: {
+    power: 4
+liquids: {
+liquids: [
+     crystallite-glacier/0.95
+]
+}
+  }
+areaSize: 11

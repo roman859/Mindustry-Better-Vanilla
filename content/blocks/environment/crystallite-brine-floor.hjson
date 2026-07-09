@@ -1,0 +1,5 @@
+  type: Floor,
+  name: crystallite brine floor,
+  variants: 3,
+  itemDrop: Sclerocite,
+  wall: crystallite-brine-wall

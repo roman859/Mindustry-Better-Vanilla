@@ -1,0 +1,13 @@
+type: Junction
+name: Large Mechanical Parts
+description: Massive mechanical structures designed for heavy combat machinery.
+size: 3
+placeablePlayer: false
+requirements: [
+basalt/125
+red-beryllium/255
+red-steel/55
+Ferrosclerite/35
+Ashenite/25
+]
+research: mechanical-parts-medium

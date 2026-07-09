@@ -1,0 +1,19 @@
+{
+    "type": "DuctBridge",
+    "name": "basalt-duct-bridge",
+    description: The basalt bridge can transport resources over a building. However, it can only receive items from three sides and only output items from the front.
+    "health": 125,
+	"itemCapacity": 10,
+    "requirements": [
+	basalt/6
+    ],
+    squareSprite: false
+    "range": 4,
+    "transportTime": 0.65,
+    "hasPower": false,
+    "category": "distribution",
+    "research": "basalt-duct"
+    researchCost: [
+   basalt/6
+]
+}
