@@ -67,7 +67,7 @@
     "phase-fabric/600",
     "oxide/480"
   ],
-  "craftTime": 60,
+  "itemDuration": 60,
   "category": "power",
   "research": "chemical-combustion-chamber"
 }

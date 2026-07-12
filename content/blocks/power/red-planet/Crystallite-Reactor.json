@@ -10,7 +10,7 @@
   "hasLiquids": true,
   "itemCapacity": 30,
   "liquidCapacity": 160,
-  "craftTime": 125,
+  "itemDuration": 125,
   "powerProduction": 20.5,
   "liquidCapacity": 250,
   "squareSprite": false,

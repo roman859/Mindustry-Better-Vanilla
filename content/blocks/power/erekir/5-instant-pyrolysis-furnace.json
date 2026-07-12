@@ -43,7 +43,7 @@
     ]
   },
   "outputLiquid": { "liquid": "water", "amount": "1.5" },
-  "craftTime": 60,
+  "itemDuration": 60,
   "squareSprite": false,
   "requirements": [
     "silicon/600",
