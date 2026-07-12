@@ -17,7 +17,7 @@ engineColor: d1efff
 engineLayer: 110
 canBoost: true
 boostMultiplier: 1.75
-landShake: 15
+stepShake: 15
 engines: [
   {
     x: -48
@@ -59,8 +59,8 @@ weapons: [
     display: true    
     bullet: {
       type: ExplosionBulletType
-      damage: 255
-      radius: 240
+      splashDamage: 255
+      splashDamageRadius: 240
         killShooter: false
         collides: false
         collidesTeam: false
@@ -83,7 +83,7 @@ weapons: [
       lightningColor: d1efff
       collidesAir: true
       collidesGround: true
-      shake: 6                 
+      hitShake: 6                 
       shootSound: spell
     }
   }
@@ -98,14 +98,12 @@ weapons: [
   rotateSpeed: 0.65
   shootStatus: unmoving
   shootStatusDuration: 240
-  firstShootDalelay: 220
+  firstShootDelay: 220
   parts: [
     {
       type: RegionPart
       suffix: "-blade"
       under: true
-      outlineColor: 282727FF
-      outlineRadius: 3
       outline: true
       heatColor: ff6214
       mirror: true
@@ -117,8 +115,6 @@ weapons: [
       type: RegionPart
       suffix: "-front"
       under: false
-      outlineColor: 282727FF
-      outlineRadius: 3
       outline: true
       mirror: true
       progress: warmup
@@ -129,8 +125,6 @@ weapons: [
       type: RegionPart
       suffix: "-side"
       under: true
-      outlineColor: 282727FF
-      outlineRadius: 3
       outline: true
       mirror: true
       progress: warmup
@@ -311,7 +305,6 @@ weapons: [
     type: ShootBarrel
     shots: 4
     shotDelay: 25
-    type: ShootBarrel
     barrels: [
       "-8", "28.6", "0", 
        "8", "28.6", "0"
@@ -322,8 +315,6 @@ weapons: [
       type: RegionPart
       suffix: "-barrel1"
       progress: recoil
-      outlineColor: 282727FF
-      outlineRadius: 3
       layerOffset: -0.001
       moveY: -6
       under: false
@@ -332,8 +323,6 @@ weapons: [
       type: RegionPart
       suffix: "-barrel2"
       progress: recoil
-      outlineColor: 282727FF
-      outlineRadius: 3
       layerOffset: -0.001
       moveY: -6
       under: false
@@ -470,7 +459,7 @@ weapons: [
     mirror: false
     reload: 450
     shoot: {
-      type: ShootBurst
+      type: ShootPattern
       shots: 4
       shotDelay: 45
     }
@@ -489,7 +478,7 @@ weapons: [
     mirror: false
     reload: 450
     shoot: {
-      type: ShootBurst
+      type: ShootPattern
       shots: 4
       shotDelay: 45
     }
