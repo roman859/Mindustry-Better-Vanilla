@@ -10,5 +10,5 @@
   "research": {
     "parent": red-graphite
   }
-hiddenOnPlanets: [serpulo, erekir]
+shownPlanets: [312B55A]
 }

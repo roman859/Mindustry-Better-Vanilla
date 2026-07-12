@@ -11,5 +11,5 @@
   "research": {
     "parent": sand-core
   }
-hiddenOnPlanets: [serpulo, erekir]
+shownPlanets: [312B55A]
 }

@@ -10,5 +10,5 @@
   "research": {
     "parent": Sclerocite
   }
-hiddenOnPlanets: [serpulo, erekir]
+shownPlanets: [312B55A]
 }
