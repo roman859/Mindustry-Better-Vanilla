@@ -2,6 +2,8 @@
   "name": "Composite wall large",
   "description": "Composite wall T2.",
   "type": "Wall",
+  "insulated": true,
+  "absorbLasers": true,
   "health": 8400
   "size": 2,
   "armor": 8,
