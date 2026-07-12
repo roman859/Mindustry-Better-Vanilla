@@ -5,7 +5,7 @@ reload: 350
 squareSprite: false
 maxHeatEfficiency: 2
 type: ItemTurret
-ammoCapacity: 180
+itemCapacity: 180
 ammoPerShot: 8
 rotateSpeed: 0.95
 recoil: 2

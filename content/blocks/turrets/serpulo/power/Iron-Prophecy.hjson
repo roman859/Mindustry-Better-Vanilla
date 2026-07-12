@@ -426,7 +426,6 @@ shootType: {
         "lightRadius": 120,
         "lightColor": "F2EB27FF",
         "damage": 850,
-        "scaleVelocity": "true",
         "splashDamage": 6550,
         "splashDamageRadius": 260,
         "height": 28.5,

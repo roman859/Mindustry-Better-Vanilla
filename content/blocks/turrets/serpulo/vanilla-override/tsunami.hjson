@@ -51,7 +51,7 @@ ammoTypes: {
         damage: 0.2
         liquid: oil
     }
-    steam: {
+    steamA: {
 type: ContinuousFlameBulletType
 damage: 25
 rangeChange: -35

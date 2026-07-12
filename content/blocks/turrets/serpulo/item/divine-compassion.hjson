@@ -9,7 +9,7 @@ heatRequirement: 20
 squareSprite: false
 maxHeatEfficiency: 2
 type: ItemTurret
-ammoCapacity: 180
+itemCapacity: 180
 ammoPerShot: 30
 rotateSpeed: 0.50
 recoil: 0
