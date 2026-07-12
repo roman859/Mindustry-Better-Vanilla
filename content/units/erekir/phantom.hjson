@@ -28,7 +28,7 @@ legSplashRange: 4
 drownTimeMultiplier: 9
 legGroupSize: 4
 rippleScale: 1.2
-research: mech-assembler-T2
+research: BetaRepairman
 "weapons": [
   {
       name: phantom-weapon,

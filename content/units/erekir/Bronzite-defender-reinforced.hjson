@@ -34,7 +34,7 @@ rippleScale: 0.2
 legMoveSpace: 1
 allowLegStep: true
 legPhysicsLayer: false
-research: mech-assembler-T2
+research: BetaRepairman
 "weapons": [
   {
       name: Bronzite-defender-artillery,
