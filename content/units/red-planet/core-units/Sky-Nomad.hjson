@@ -43,11 +43,7 @@ firstShotDelay: 140
  {
       suffix: -spine1
       mirror: true
-      outlineColor: 282727FF,
-      outlineRadius: 3,
       progress: warmup
-      smoothAbility: 0.1
-      interp: pow5Out
       moveRot: 0
       moveY: -1.5
       moveX: 1.5
@@ -57,11 +53,7 @@ firstShotDelay: 140
     {
       suffix: -spine2
       mirror: true
-      outlineColor: 282727FF,
-      outlineRadius: 3,
       progress: warmup
-      smoothAbility: 0.1
-      interp: pow5Out
       moveRot: 0
       moveY: 1
       moveX: 1
@@ -71,11 +63,7 @@ firstShotDelay: 140
     {
       suffix: -spine3
       mirror: true
-      outlineColor: 282727FF,
-      outlineRadius: 3,
       progress: warmup
-      smoothAbility: 0.1
-      interp: pow5Out
       moveRot: 0
       moveY: 1.3
       moveX: 1.3
@@ -86,11 +74,7 @@ firstShotDelay: 140
       suffix: -spine4
       layerOffset: -0.01,
       mirror: true
-      outlineColor: 282727FF,
-      outlineRadius: 3,
       progress: warmup
-      smoothAbility: 0.1
-      interp: pow5Out
       moveRot: 0
       moveY: -4.5
       moveX: 8

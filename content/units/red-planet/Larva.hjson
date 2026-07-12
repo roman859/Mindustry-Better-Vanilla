@@ -41,11 +41,7 @@ weapons: [
       damage: 25
       speed: 4
       lifetime: 20 
-      width: 4
-      height: 10
-      shrinkY: 1
-      frontColor: e05438
-      backColor: a02020
+      color: e05438
       trailColor: e05438
       trailWidth: 1.5
       trailLength: 4

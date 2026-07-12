@@ -20,7 +20,7 @@ name: Ra-Cannon
   "mechFrontSway": 1,
   "mechSideSway": 0.85,
   "mechStepParticles": true,
-  "mechStepShake": 1,
+  "stepShake": 1,
   "singleTarget": true,
   "targetAir": true,
   outlineColor: 282727FF
@@ -76,7 +76,6 @@ name: Ra-Cannon
       "top": true,
       "rotate": false,
       "shootY": 15,
-      "shots": 1,
       "shake": 8,
       "parentizeEffects": true,
       "shootSound": "laserblast",
@@ -84,6 +83,7 @@ name: Ra-Cannon
       "shootStatus": "unmoving",
       "shootStatusDuration": 250,
       "shoot": {
+        "shots": 1,
         "firstShotDelay": 120
       },
       "bullet": {

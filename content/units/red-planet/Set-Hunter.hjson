@@ -20,7 +20,7 @@ name: Set-Hunter
   "mechFrontSway": 1,
   "mechSideSway": 0.85,
   "mechStepParticles": true,
-  "mechStepShake": 1,
+  "stepShake": 1,
   "singleTarget": true,
   "targetAir": true,
   outlineColor: 282727FF

@@ -32,11 +32,7 @@ cooldownTime: 240
       suffix: -spin1
       layerOffset: -0.01,
       mirror: true
-      outlineColor: 282727FF,
-      outlineRadius: 3,
       progress: warmup
-      smoothAbility: 0.1
-      interp: pow5Out
       moveRot: 0
       moveY: 5
       moveX: 8
@@ -47,11 +43,7 @@ cooldownTime: 240
       suffix: -spin2
       mirror: true
       layerOffset: -0.01,
-      outlineColor: 282727FF,
-      outlineRadius: 3,
       progress: warmup
-      smoothAbility: 0.1
-      interp: pow5Out
       moveRot: 0
       moveY: 0
       moveX: 20
@@ -62,11 +54,7 @@ cooldownTime: 240
       suffix: -spin3
       mirror: true
       layerOffset: -0.01,
-      outlineColor: 282727FF,
-      outlineRadius: 3,
       progress: warmup
-      smoothAbility: 0.1
-      interp: pow5Out
       moveRot: 0
       moveY: -10
       moveX: 10

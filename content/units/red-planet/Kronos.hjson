@@ -20,7 +20,7 @@ name: Kronos
   "mechFrontSway": 1,
   "mechSideSway": 0.85,
   "mechStepParticles": true,
-  "mechStepShake": 1,
+  "stepShake": 1,
   "singleTarget": true,
   "targetAir": true,
   outlineColor: 282727FF
@@ -76,7 +76,6 @@ name: Kronos
       "top": true,
       "rotate": false,
       "shootY": 15,
-      "shots": 1,
       "shake": 8,
       "parentizeEffects": true,
       "shootSound": "laserblast",
@@ -85,6 +84,7 @@ name: Kronos
       "shootStatusDuration": 310,
       "shoot": {
         "firstShotDelay": 120
+        "shots": 1,
       },
       "bullet": {
         "chargeEffect": {

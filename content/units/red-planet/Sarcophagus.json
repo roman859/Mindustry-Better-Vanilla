@@ -85,7 +85,7 @@
     top: true
     mirror: false
     rotate: true
-    roteteSpeed: 0.55
+    rotateSpeed: 0.55
     reload: 165
     range: 440
     shootSound: largeCannon

@@ -20,7 +20,7 @@ name: Photon
   "mechFrontSway": 1,
   "mechSideSway": 0.85,
   "mechStepParticles": true,
-  "mechStepShake": 1,
+  "stepShake": 1,
   "singleTarget": true,
   "targetAir": true,
   outlineColor: 282727FF
@@ -57,8 +57,7 @@ name: Photon
         speed: 8,
         width: 5,
         height: 30,
-        colorFrom: 00FF1EFF,
-        colorTo: A1FCACFF
+        color: 00FF1EFF
       }
     },
   ],

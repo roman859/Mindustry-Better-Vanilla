@@ -34,11 +34,7 @@ firstShotDelay: 140
  {
       suffix: -side1
       mirror: true
-      outlineColor: 282727FF,
-      outlineRadius: 3,
       progress: warmup
-      smoothAbility: 0.1
-      interp: pow5Out
       moveRot: 0
       moveY: -0.5
       moveX: -0.2
@@ -48,11 +44,7 @@ firstShotDelay: 140
     {
       suffix: -side2
       mirror: true
-      outlineColor: 282727FF,
-      outlineRadius: 3,
       progress: warmup
-      smoothAbility: 0.1
-      interp: pow5Out
       moveRot: 0
       moveY: 4
       x: 0

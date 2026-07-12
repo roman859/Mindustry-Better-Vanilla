@@ -32,17 +32,12 @@ weapons: [
     y: 0
     mirror: false
     rotate: false
-    range: 280
-    chargeTime: 50
+    shootY: 8
     "parts": [
  {
       suffix: -spine1
       mirror: true
-      outlineColor: 282727FF,
-      outlineRadius: 3,
       progress: warmup
-      smoothAbility: 0.1
-      interp: pow5Out
       moveRot: 0
       moveY: -2.7
       moveX: 2.7
@@ -52,11 +47,7 @@ weapons: [
     {
       suffix: -spine2
       mirror: true
-      outlineColor: 282727FF,
-      outlineRadius: 3,
       progress: warmup
-      smoothAbility: 0.1
-      interp: pow5Out
       moveRot: 0
       moveY: -3.1
       moveX: 3.1
@@ -66,11 +57,7 @@ weapons: [
     {
       suffix: -spine3
       mirror: true
-      outlineColor: 282727FF,
-      outlineRadius: 3,
       progress: warmup
-      smoothAbility: 0.1
-      interp: pow5Out
       moveRot: 0
       moveY: -3.7
       moveX: 3.7
@@ -81,11 +68,7 @@ weapons: [
       suffix: -spine4
       layerOffset: 0.01,
       mirror: true
-      outlineColor: 282727FF,
-      outlineRadius: 3,
       progress: warmup
-      smoothAbility: 0.1
-      interp: pow5Out
       moveRot: 0
       moveY: -1.7
       moveX: 1.7
@@ -95,7 +78,6 @@ weapons: [
 ]
 shoot: {
       type: ShootSpread
-      shootY: 8
       shots: 4
       shotDelay: 5
       firstShotDelay: 55
@@ -133,7 +115,6 @@ shoot: {
     controllable: false
     aiControllable: true
     autoTarget: true
-    range: 280
     bullet: {
       type: BasicBulletType
       width: 7
@@ -152,14 +133,12 @@ shoot: {
     reload: 550
     x: 0
     y: 0
+    shootY: 8
     mirror: false
-    chargeTime: 180
     cooldownTime: 400
-    range: 280
     shoot: {
       type: ShootSpread
       shots: 15
-      shootY: 8
       shotDelay: 5
       firstShotDelay: 180
     }
