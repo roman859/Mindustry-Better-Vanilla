@@ -29,7 +29,6 @@ liquids: [
 }
 outputLiquid: crystallite-glacier/0.3
 craftTime: 360
-regionSuffix: ""
 drawer: {
   type: DrawMulti
   drawers: [
