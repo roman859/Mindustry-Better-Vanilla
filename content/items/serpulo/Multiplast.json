@@ -17,5 +17,5 @@ These properties make it an indispensable component for high-tier armored convey
   "research": {
     "parent": "surge-alloy",
   }
-hiddenOnPlanets: [erekir, 312B55A]
+shownPlanets: [serpulo]
 }
