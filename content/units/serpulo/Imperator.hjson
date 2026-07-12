@@ -1,0 +1,141 @@
+name: Imperator
+type: mech
+mechStepParticles: true
+stepShake: 0.75
+drownTimeMultiplier: 1.6
+mechFrontSway: 1.9
+mechSideSway: 0.6
+health: 30000
+speed: 0.55
+rotateSpeed: 1.75
+armor: 20
+hitSize: 32
+drag: 0.1 
+lightRadius: 25
+canDrown: false
+fallSpeed: 0.006
+crashDamageMultiplier: 125
+accel: 0.4
+aimDst: 15
+faceTarget: true
+flying: false
+singleTarget: true
+targetAir: true
+weapons: [ 
+    {
+        name: Imperator-weapon 
+        x: 21.5
+        y: -1
+        reload: 85
+        top: false
+        mirror: true 
+        alternate: true 
+        ejectEffect: casing3 
+        shootSound: artillery 
+        shake: 4 
+        recoil: 4
+        shootY:6
+        velocityRnd:0.1
+        inaccuracy:2
+        shoot: {
+            type: ShootMulti
+            source: {
+                type: ShootPattern
+                shotDelay: 30
+                shots: 3
+                }
+
+        dest: [
+        {
+            type: ShootPattern
+            shotDelay: 6
+            shots: 3
+            }
+        ]
+            }
+        bullet: { 
+            type: BasicBulletType 
+            speed: 8.75
+            damage: 115
+            hitEffect: flakExplosion 
+            knockback: 0.8 
+            lifetime: 35
+            sprite: bettervanilla-laser-bullet 
+            pierce: true
+            pierceBuilding: true
+            pierceCap: 2
+            width: 20 
+            height: 75 
+            backColor: DA8B53FF
+            frontColor: FFA566FF 
+            hitSound: explosion 
+            smokeEffect: { 
+                type: ParticleEffect 
+                particles: 4
+                sizeFrom: 8
+                sizeTo: 0 
+                length: 25 
+                lifetime: 60 
+                colorFrom: FFA566FF 
+                colorTo: DA8B53FF 
+                cone: 360 
+            }
+            status: melting
+            backColor: FFA566FF 
+            frontColor: DA8B53FF 
+            hitEffect: hitLancer 
+            despawnHit: true 
+            trailChance: 1 
+            trailColor: FFA566FF 
+            trailEffect: { 
+                type: ParticleEffect 
+                particles: 4
+                line: true
+                lifetime:40
+                length: -40 
+                lenFrom: 7
+                lenTo: 2
+                strokeFrom: 2
+                strokeTo: 0 
+                colorFrom: DA8B53FF 
+                colorTo: FFA566FF
+            } 
+            fragRandomSpread: 40
+            fragBullets: 4
+            fragLifeMin: 0.9
+            fragLifeMax: 2
+            fragVelocityMin:0.4
+            fragVelocityMax:1.2
+            fragBullet: { 
+                type: BasicBulletType 
+                speed: 6
+                damage: 65
+                hitEffect: {
+                   type: ParticleEffect
+                   lifetime: 50
+                   particles: 21
+                   line: true
+                   cone:16
+                   interp:circleOut
+                   length:50
+                   strokeFrom: 3
+                   strokeTo: 0
+                   colorFrom: FFA566FF
+                   colorTo: FFA566FF
+                }
+                despawnEffect:none
+                knockback: 0.3 
+                lifetime: 15
+                width: 6
+                height: 17
+                status: burning
+                trailColor: DA8B53FF
+                trailWidth:1
+                trailLength:6
+                backColor: DA8B53FF 
+                frontColor: FFA566FF
+            } 
+        } 
+    } 
+]
+research: reign
