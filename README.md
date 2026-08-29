@@ -3,13 +3,24 @@
 
 ![Logo]
 <br>
-Better Vanilla New content. 
+
+# Mindustry Better Vanilla+
+
+Better Vanilla New content.
+**Languages:** English
+
+</div>
+
 <br>
-Languages: English
-<br>
-The mod adds content for vanilla planets and adds a new planet.
-The mod already has 4 ready-made unit branches, but one branch is for Serpulo and the others are for the new planet (it is currently not being developed because it is paused).
-The mod currently adds the most content for Serpulo, there are already 2 sectors for Erekir.
+
+The mod adds content for vanilla planets and adds a new planet. 
+
+### 🌟 Features:
+* **Units:** 4 ready-made unit branches (one branch is for Serpulo, others are for the new planet).
+* **Erekir:** 2 brand new sectors are already available.
+* **New Planet:** Currently in development (development is temporarily paused).
+
+The mod currently adds the most content for Serpulo.
 <!----------------------------------[ Links ]--------------------------------->
 [Logo]:  github/logo.png
 [Banner]: github/banner.png
