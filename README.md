@@ -4,7 +4,6 @@
 ![Logo]
 <br>
 
-# Mindustry Better Vanilla+
 
 Better Vanilla New content.
 <br>
