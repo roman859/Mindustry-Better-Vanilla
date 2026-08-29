@@ -7,7 +7,7 @@
 # Mindustry Better Vanilla+
 
 Better Vanilla New content.
-**Languages:** English
+**Languages:** English, Ukrainian (coming soon!)
 
 </div>
 
