@@ -21,6 +21,10 @@ The mod adds content for vanilla planets and adds a new planet.
 * **New Planet:** Currently in development (development is temporarily paused).
 
 The mod currently adds the most content for Serpulo.
+<br>
+
+Version 0.4.8 (currently under development!) new content for Serpulo:
+![banner1]
 <!----------------------------------[ Links ]--------------------------------->
 [Logo]:  github/logo.png
 [Banner]: github/banner.png
