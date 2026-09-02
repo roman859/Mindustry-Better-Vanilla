@@ -26,8 +26,8 @@ The mod currently adds the most content for Serpulo.
 Version 0.4.8 (currently under development!) new content for Serpulo:
 <br>
 
-![banner1]
-<br>
+![Banner1]
 <!----------------------------------[ Links ]--------------------------------->
 [Logo]:  github/logo.png
 [Banner]: github/banner.png
+[Banner1]: github/banner1.png
