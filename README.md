@@ -27,7 +27,15 @@ Version 0.4.8 (currently under development!) new content for Serpulo:
 <br>
 
 ![Banner1]
+<br>
+
+Version 0.4.8 is very difficult to develop because it will add a lot of new content and changes to old content. (At the moment, the release date of the new version of the mod is unknown)
+<br>
+
+![Banner2]
+
 <!----------------------------------[ Links ]--------------------------------->
 [Logo]:  github/logo.png
 [Banner]: github/banner.png
 [Banner1]: github/banner1.png
+[Banner2]: github/banner2.png
